@@ -7,10 +7,9 @@
             "pattern": "*linux*",
             "build_tool": "meson",
             "library_type": "shared",
-            "env_vars": [ ],
-            "arguments": [ ],
-            "dependencies": [
-            ],
+            "env_vars": [],
+            "arguments": [],
+            "dependencies": [],
             "cmake_config": "linux_shared"
         }
     ]

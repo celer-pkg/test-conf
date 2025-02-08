@@ -1,0 +1,16 @@
+{
+    "url": "https://gitee.com/li_ning_jie/libexpat_github.git",
+    "name": "expat",
+    "version": "R_2_6_3",
+    "source_folder": "expat",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "arguments": [],
+            "dependencies": []
+        }
+    ]
+}
