@@ -1,0 +1,17 @@
+{
+    "url": "https://dri.freedesktop.org/libdrm/libdrm-2.4.100.tar.gz",
+    "name": "libdrm",
+    "version": "2.4.100",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ "xcb-proto@1.6" ]
+        }
+    ]
+}

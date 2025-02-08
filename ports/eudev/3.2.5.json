@@ -1,0 +1,17 @@
+{
+    "url": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.5.tar.gz",
+    "name": "eudev",
+    "version": "3.2.5",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

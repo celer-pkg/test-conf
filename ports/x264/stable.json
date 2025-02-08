@@ -1,0 +1,22 @@
+{
+    "url": "https://gitee.com/chooosky/x264.git",
+    "name": "x264",
+    "version": "stable",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}",
+                "--sysroot=${SYSROOT}",
+                "--cross-prefix=${CROSS_PREFIX}",
+                "--disable-cli",
+                "--enable-pic"
+            ],
+            "dependencies": [ ],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

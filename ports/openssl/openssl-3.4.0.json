@@ -1,0 +1,28 @@
+{
+    "url": "https://gitee.com/pedoc/openssl.git",
+    "name": "openssl",
+    "version": "openssl-3.4.0",
+    "build_configs": [
+        {
+            "pattern": "aarch64-linux*",
+            "build_tool": "makefiles",
+            "env_vars": [ ],
+            "arguments": [
+                "linux-aarch64",
+                "--cross-compile-prefix=${CROSS_PREFIX}",
+                "shared"
+            ],
+            "dependencies": [ ]
+        },
+        {
+            "pattern": "x86_64-linux*",
+            "build_tool": "makefiles",
+            "env_vars": [ ],
+            "arguments": [
+                "linux-x86_64",
+                "shared"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "url": "https://gitee.com/zhangxiangzwl/gflags.git",
+    "name": "gflags",
+    "version": "v2.2.2",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "arguments": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_STATIC_LIBS=OFF",
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+            "dev_dependencies": [
+                "sqlite3@version-3.47.0"
+            ],
+            "dependencies": [
+            ]
+        }
+    ]
+}

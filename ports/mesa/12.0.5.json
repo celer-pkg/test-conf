@@ -1,0 +1,21 @@
+{
+    "url": "https://archive.mesa3d.org/older-versions/12.x/12.0.5/mesa-12.0.5.tar.gz",
+    "name": "mesa",
+    "version": "12.0.5",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}",
+                "--disable-dri3"
+            ],
+            "dependencies": [
+                "glproto@1.4.14",
+                "dri2proto@dri2proto-2.8"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "url": "https://bitbucket.org/multicoreware/x265_git.git",
+    "name": "x265",
+    "version": "4.1",
+    "source_folder": "source",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "arguments": [
+                "-DENABLE_ASSEMBLY=OFF",
+                "-DCMAKE_EXE_LINKER_FLAGS=-ldl"
+            ],
+            "dependencies": [ ],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

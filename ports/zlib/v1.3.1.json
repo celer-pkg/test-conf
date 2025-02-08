@@ -1,0 +1,16 @@
+{
+    "url": "https://www.zlib.net/zlib-1.3.1.tar.gz",
+    "name": "zlib",
+    "version": "v1.3.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "arguments": [
+                "-DZLIB_BUILD_EXAMPLES=OFF"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

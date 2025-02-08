@@ -1,0 +1,18 @@
+{
+    "url": "https://gitee.com/hengke/icu.git",
+    "name": "icu",
+    "version": "release-75-1",
+    "source_folder": "icu4c/source",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

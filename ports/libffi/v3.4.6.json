@@ -1,0 +1,33 @@
+{
+    "url": "https://gitee.com/kumo-hub/libffi.git",
+    "name": "libffi",
+    "version": "v3.4.6",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "patches": [
+                "v3.4.6_fix_configure.patch"
+            ],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "prepare_steps": {
+                "scripts": [
+                    "libtoolize",
+                    "autoreconf -vfi"
+                ],
+                "work_dir": "${SOURCE_DIR}"
+            },
+            "arguments": [
+                "--host=${HOST}",
+                "--disable-docs",
+                "--disable-multi-os-directory"
+            ],
+            "dependencies": [],
+            "dev_dependencies": [
+                "automake@1.17",
+                "libtool@2.5.4"
+            ]
+        }
+    ]
+}

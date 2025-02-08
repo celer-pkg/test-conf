@@ -1,0 +1,20 @@
+{
+    "url": "http://sqkm997w5.hd-bkt.clouddn.com/sqlite-src-3490000.zip",
+    "name": "sqlite3",
+    "version": "3.49.0",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "arguments": [
+                "--host=${HOST}",
+                "--disable-tcl",
+                "--disable-readline",
+                "--disable-editline"
+            ],
+            "dependencies": [ ],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

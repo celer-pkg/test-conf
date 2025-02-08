@@ -1,0 +1,24 @@
+{
+    "url": "https://gitee.com/baolingyi/opencv.git",
+    "name": "opencv",
+    "version": "4.5.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "patches": [
+                "4.5.1_fix_github_download.patch"
+            ],
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "arguments": [
+                "-DENABLE_NEON=OFF",
+                "-DBUILD_TESTING=OFF",
+                "-DWITH_FFMPEG=ON"
+            ],
+            "dependencies": [
+                "ffmpeg@3.4.13",
+                "zlib@v1.3.1"
+            ]
+        }
+    ]
+}

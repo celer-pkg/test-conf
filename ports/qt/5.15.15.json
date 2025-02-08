@@ -1,0 +1,37 @@
+{
+    "url": "https://download.qt.io/official_releases/qt/5.15/5.15.15/single/qt-everywhere-opensource-src-5.15.15.tar.xz",
+    "name": "qt",
+    "version": "5.15.15",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [],
+            "arguments": [
+                "-xplatform linux-x86_64-gnu-g++",
+                "-sysroot ${SYSROOT}",
+                "-extprefix ${INSTALLED_DIR}",
+                "-confirm-license",
+                "-opensource",
+                "-optimize-size",
+                "-ccache",
+                "-silent",
+                "-static",
+                "-static-runtime",
+                "-release",
+                "-xcb",
+                "-fontconfig",
+                "-make-tool make",
+                "-nomake tests",
+                "-nomake examples",
+                "-skip qtdoc"
+            ],
+            "dependencies": [
+                "icu@release-75-1",
+                "libjpeg@libjpeg-turbo-2.1.0",
+                "libdrm@2.4.100"
+            ]
+        }
+    ]
+}

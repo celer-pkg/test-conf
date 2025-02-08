@@ -1,0 +1,17 @@
+{
+    "url": "https://xorg.freedesktop.org/archive/individual/proto/xproto-7.0.23.tar.gz",
+    "name": "xproto",
+    "version": "7.0.23",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

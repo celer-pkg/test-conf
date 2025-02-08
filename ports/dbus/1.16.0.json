@@ -1,0 +1,17 @@
+{
+    "url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz",
+    "name": "dbus",
+    "version": "1.16.0",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [ ],
+            "dependencies": [
+            ],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

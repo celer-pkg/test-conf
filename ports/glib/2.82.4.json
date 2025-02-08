@@ -1,0 +1,25 @@
+{
+    "url": "https://gitee.com/phil-zhang/glib.git",
+    "name": "glib",
+    "version": "2.82.4",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [
+                "PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
+            ],
+            "arguments": [
+                "-Dinstalled_tests=false",
+                "-Dtests=false",
+                "--libdir=lib"
+            ],
+            "dependencies": [
+                "zlib@v1.3.1",
+                "pcre2@pcre2-10.44",
+                "libffi@v3.4.6"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "url": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.10.tar.gz",
+    "name": "libiconv",
+    "version": "1.10",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [  ]
+        }
+    ]
+}

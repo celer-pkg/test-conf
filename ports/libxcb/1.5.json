@@ -1,0 +1,17 @@
+{
+    "url": "https://xcb.freedesktop.org/dist/libxcb-1.5.tar.gz",
+    "name": "libxcb",
+    "version": "1.5",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ "pthread-stubs@0.4" ]
+        }
+    ]
+}

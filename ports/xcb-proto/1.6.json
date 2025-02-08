@@ -1,0 +1,17 @@
+{
+    "url": "https://xcb.freedesktop.org/dist/xcb-proto-1.6.tar.gz",
+    "name": "xcb-proto",
+    "version": "1.6",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

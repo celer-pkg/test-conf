@@ -1,0 +1,31 @@
+{
+    "url": "https://ffmpeg.org/releases/ffmpeg-3.4.13.tar.xz",
+    "name": "ffmpeg",
+    "version": "3.4.13",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--sysroot=${SYSROOT}",
+                "--cross-prefix=${CROSS_PREFIX}",
+                "--arch=${SYSTEM_PROCESSOR}",
+                "--target-os=${SYSTEM_NAME}",
+                "--pkg-config=pkg-config",
+                "--enable-cross-compile",
+                "--disable-programs",
+                "--disable-doc",
+                "--enable-libx264",
+                "--disable-libx265",
+                "--enable-pic",
+                "--enable-gpl"
+            ],
+            "dependencies": [
+                "x264@stable"
+            ],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

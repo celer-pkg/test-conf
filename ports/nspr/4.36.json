@@ -1,0 +1,21 @@
+{
+    "url": "https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz",
+    "name": "nspr",
+    "version": "4.36",
+    "source_folder": "nspr",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "--host=${HOST}",
+                "--enable-64bit",
+                "--with-pthreads",
+                "--with-mozilla"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "url": "https://gitlab.freedesktop.org/pixman/pixman.git",
+    "name": "pixman",
+    "version": "pixman-0.44.2",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [ ],
+            "dependencies": [ ]
+        }
+    ]
+}

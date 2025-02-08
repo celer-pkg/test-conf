@@ -1,0 +1,31 @@
+{
+    "rootfs": {
+        "url": "http://sqkm997w5.hd-bkt.clouddn.com/ubuntu-base-20.04.5-base-amd64.tar.gz",
+        "path": "ubuntu-base-20.04.5-base-amd64",
+        "pkg_config_libdir": [
+            "usr/lib/x86_64-linux-gnu/pkgconfig",
+            "usr/share/pkgconfig",
+            "usr/lib/pkgconfig"
+        ]
+    },
+    "toolchain": {
+        "url": "http://sqkm997w5.hd-bkt.clouddn.com/gcc-9.5.0.tar.gz",
+        "path": "gcc-9.5.0/bin",
+        "system_name": "Linux",
+        "system_processor": "x86_64",
+        "host": "x86_64-linux-gnu",
+        "toolchain_prefix": "x86_64-linux-gnu-",
+        "cc": "x86_64-linux-gnu-gcc",
+        "cxx": "x86_64-linux-gnu-g++",
+        "fc": "x86_64-linux-gnu-gfortran",
+        "ranlib": "x86_64-linux-gnu-ranlib",
+        "ar": "x86_64-linux-gnu-ar",
+        "nm": "x86_64-linux-gnu-nm",
+        "objdump": "x86_64-linux-gnu-objdump",
+        "strip": "x86_64-linux-gnu-strip"
+    },
+    "tools": [
+        "cmake-3.30.5-linux-x86_64",
+        "nasm-2.16.03"
+    ]
+}
