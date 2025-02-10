@@ -13,7 +13,9 @@
             "arguments": [
                 "-DENABLE_NEON=OFF",
                 "-DBUILD_TESTING=OFF",
-                "-DWITH_FFMPEG=ON"
+                "-DWITH_FFMPEG=ON",
+                "-DCMAKE_C_FLAGS=-D_FILE_OFFSET_BITS=64",
+                "-DCMAKE_CXX_FLAGS=-D_FILE_OFFSET_BITS=64"
             ],
             "dependencies": [
                 "ffmpeg@3.4.13",
