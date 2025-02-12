@@ -1,0 +1,41 @@
+{
+    "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_55_RTM/src/nss-3.55.tar.gz",
+    "name": "nss",
+    "version": "3.55",
+    "source_folder":"nss",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "patches": [
+                "nss-standalone-1.patch"
+            ],
+            "build_tool": "gpy",
+            "library_type": "shared",
+            "env_vars": [
+                "CFLAGS=${SYSROOT}/usr/include:/home/phil/Workspace/buildenv/packages/nspr@4.36/include/nspr",
+                "CXXFLAGS=${SYSROOT}/usr/include:/home/phil/Workspace/buildenv/packages/nspr@4.36/include/nspr",
+                "CC=${TOOLCHAIN_PREFIX}-gcc",
+                "CCC=${TOOLCHAIN_PREFIX}-g++",
+                "BUILD_OPT=1",
+                "NSPR_INCLUDE_DIR=/home/phil/Workspace/buildenv/installed/dev/include/nspr",
+                "NSPR_LIB_DIR=${INATALLED_DIR}/lib",
+                "NSS_USE_SYSTEM_SQLITE=1",
+                "NSS_ENABLE_WERROR=0",
+                "USE_SYSTEM_ZLIB=1"
+             ],
+            "arguments": [
+                "-v", 
+                "-g", 
+                "--disable-tests",
+                "--with-nspr=${INSTALLED_DIR}/include:${INSTALLED_DIR}/include/nspr", 
+                "--system-sqlite",
+                "-Dsign_libs=0",
+                "--target=aarch64"
+            ],
+            "dependencies": [
+                "sqlite3@3.49.0",
+                "zlib@v1.3.1"
+            ]
+        }
+    ]
+}

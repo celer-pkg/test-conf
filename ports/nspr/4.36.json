@@ -9,11 +9,19 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
+            "prepare_steps": {
+                "scripts": [
+                    "sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in",
+                    "sed -i 's|$(LIBRARY) ||' config/rules.mk"
+                ],
+                "work_dir": "${SOURCE_DIR}/nspr"
+            },
             "arguments": [
                 "--host=${HOST}",
                 "--enable-64bit",
                 "--with-pthreads",
-                "--with-mozilla"
+                "--with-mozilla",
+                "$([ $(uname -m) = x86_64 ] && echo --enable-64bit)"
             ],
             "dependencies": [ ]
         }
