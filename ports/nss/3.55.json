@@ -12,16 +12,18 @@
             "build_tool": "gpy",
             "library_type": "shared",
             "env_vars": [
-                "CFLAGS=${SYSROOT}/usr/include:/home/phil/Workspace/buildenv/packages/nspr@4.36/include/nspr",
-                "CXXFLAGS=${SYSROOT}/usr/include:/home/phil/Workspace/buildenv/packages/nspr@4.36/include/nspr",
+                "CFLAGS=-I ${INSTALLED_DIR}/include/nspr",
+                "CXXFLAGS=-I ${INSTALLED_DIR}/include/nspr",
                 "CC=${TOOLCHAIN_PREFIX}-gcc",
                 "CCC=${TOOLCHAIN_PREFIX}-g++",
                 "BUILD_OPT=1",
-                "NSPR_INCLUDE_DIR=/home/phil/Workspace/buildenv/installed/dev/include/nspr",
+                "NSPR_INCLUDE_DIR=${INSTALLED_DIR}/include/nspr",
                 "NSPR_LIB_DIR=${INATALLED_DIR}/lib",
                 "NSS_USE_SYSTEM_SQLITE=1",
                 "NSS_ENABLE_WERROR=0",
-                "USE_SYSTEM_ZLIB=1"
+                "USE_SYSTEM_ZLIB=1",
+                "USE_STATIC_RTL=1",
+                "OS_TEST=arm"
              ],
             "arguments": [
                 "-v", 
@@ -30,11 +32,15 @@
                 "--with-nspr=${INSTALLED_DIR}/include:${INSTALLED_DIR}/include/nspr", 
                 "--system-sqlite",
                 "-Dsign_libs=0",
-                "--target=aarch64"
+                "--target=armv8-a"
             ],
             "dependencies": [
                 "sqlite3@3.49.0",
-                "zlib@v1.3.1"
+                "zlib@v1.3.1",
+                "nspr@4.36"
+            ],
+            "dev_dependencies": [
+                "nspr@4.36"
             ]
         }
     ]

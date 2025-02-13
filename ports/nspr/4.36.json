@@ -6,15 +6,23 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "patches": [
+               "fix_negative_array_size.patch"
+            ],
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
-            "prepare_steps": {
+            "fix_configure": {
                 "scripts": [
                     "sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in",
                     "sed -i 's|$(LIBRARY) ||' config/rules.mk"
                 ],
                 "work_dir": "${SOURCE_DIR}/nspr"
+            },
+            "fix_build": {
+                "scripts": [
+                    "cp -f ${BUILD_DIR}/../dev/config/nsinstall ${BUILD_DIR}/config"
+                ]
             },
             "arguments": [
                 "--host=${HOST}",
@@ -22,8 +30,7 @@
                 "--with-pthreads",
                 "--with-mozilla",
                 "$([ $(uname -m) = x86_64 ] && echo --enable-64bit)"
-            ],
-            "dependencies": [ ]
+            ]
         }
     ]
 }

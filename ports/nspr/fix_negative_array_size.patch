@@ -1,0 +1,12 @@
+diff -ruN nspr_fixed/pr/include/prtypes.h nspr/pr/include/prtypes.h
+--- nspr_fixed/pr/include/prtypes.h	2025-02-13 22:17:40.031870200 +0800
++++ nspr/pr/include/prtypes.h	2024-10-21 19:31:57.000000000 +0800
+@@ -551,7 +551,7 @@
+ ** allowed.
+ */
+ #define PR_STATIC_ASSERT(condition) \
+-    extern void pr_static_assert(int arg[(condition) ? 1 : -1])
++    extern void pr_static_assert(int arg[(condition) ? 1 : 0])
+ 
+ PR_END_EXTERN_C
+ 
