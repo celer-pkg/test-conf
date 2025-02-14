@@ -1,6 +1,6 @@
-diff -ruN nspr_fixed/pr/include/prtypes.h nspr/pr/include/prtypes.h
---- nspr_fixed/pr/include/prtypes.h	2025-02-13 22:17:40.031870200 +0800
-+++ nspr/pr/include/prtypes.h	2024-10-21 19:31:57.000000000 +0800
+diff -urN nspr-4.36_old/nspr/pr/include/prtypes.h nspr-4.36/nspr/pr/include/prtypes.h
+--- nspr-4.36_old/nspr/pr/include/prtypes.h	2024-10-21 19:31:57.000000000 +0800
++++ nspr-4.36/nspr/pr/include/prtypes.h	2025-02-14 13:52:46.150239695 +0800
 @@ -551,7 +551,7 @@
  ** allowed.
  */
