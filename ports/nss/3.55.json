@@ -11,25 +11,16 @@
             ],
             "build_tool": "gyp",
             "library_type": "shared",
-            "env_vars": [
-                "CFLAGS=-I${INSTALLED_DIR}/include/nspr",
-                "CXXFLAGS=-I${INSTALLED_DIR}/include/nspr",
-                "CC=${TOOLCHAIN_PREFIX}-gcc",
-                "CCC=${TOOLCHAIN_PREFIX}-g++",
-                "BUILD_OPT=1",
-                "NSPR_INCLUDE_DIR=${INSTALLED_DIR}/include/nspr",
-                "NSPR_LIB_DIR=${INATALLED_DIR}/lib",
-                "NSS_ENABLE_WERROR=1",
-                "USE_STATIC_RTL=1",
-                "OS_TEST=arm"
-             ],
+            "env_vars": [],
             "arguments": [
                 "-v", 
                 "-g", 
                 "--disable-tests",
-                "--with-nspr=${INSTALLED_DIR}/include:${INSTALLED_DIR}/include/nspr", 
-                "-Dsign_libs=0",
-                "--target=armv8-a"
+                "--with-nspr=${INSTALLED_DIR}/include/nspr:${INSTALLED_DIR}/lib", 
+                "--target=aarch64",
+                "-Duse_hw_aes=1",
+                "-Duse_arm_neon=1",
+                "-Dsign_libs=0"
             ],
             "dependencies": [
                 "sqlite3@3.49.0",
