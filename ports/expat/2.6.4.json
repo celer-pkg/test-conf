@@ -1,8 +1,7 @@
 {
-    "url": "https://gitee.com/li_ning_jie/libexpat_github.git",
+    "url": "https://gh-proxy.com/github.com/libexpat/libexpat/releases/download/R_2_6_4/expat-2.6.4.tar.gz",
     "name": "expat",
-    "version": "R_2_6_3",
-    "source_folder": "expat",
+    "version": "2.6.4",
     "build_configs": [
         {
             "pattern": "*linux*",

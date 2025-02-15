@@ -1,7 +1,7 @@
 {
-    "url": "https://archive.mesa3d.org/older-versions/12.x/12.0.5/mesa-12.0.5.tar.gz",
+    "url": "https://archive.mesa3d.org/older-versions/10.x/10.6.0/mesa-10.6.0.tar.xz",
     "name": "mesa",
-    "version": "12.0.5",
+    "version": "10.6.0",
     "build_configs": [
         {
             "pattern": "*linux*",

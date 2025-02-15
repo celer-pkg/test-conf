@@ -1,7 +1,7 @@
 {
-    "url": "https://gitee.com/pedoc/openssl.git",
+    "url": "https://gh.api.99988866.xyz/github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1.tar.gz",
     "name": "openssl",
-    "version": "openssl-3.4.0",
+    "version": "3.4.1",
     "build_configs": [
         {
             "pattern": "aarch64-linux*",
@@ -9,8 +9,9 @@
             "env_vars": [ ],
             "arguments": [
                 "linux-aarch64",
-                "--cross-compile-prefix=${CROSS_PREFIX}",
-                "shared"
+                "shared",
+                "no-docs",
+                "no-demos"
             ],
             "dependencies": [ ]
         },
@@ -20,7 +21,9 @@
             "env_vars": [ ],
             "arguments": [
                 "linux-x86_64",
-                "shared"
+                "shared",
+                "no-docs",
+                "no-demos"
             ],
             "dependencies": [ ]
         }

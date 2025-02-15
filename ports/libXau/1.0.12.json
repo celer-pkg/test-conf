@@ -1,7 +1,7 @@
 {
-    "url": "https://xcb.freedesktop.org/dist/xcb-proto-1.6.tar.gz",
-    "name": "xcb-proto",
-    "version": "1.6",
+    "url": "https://www.x.org/releases/individual/lib/libXau-1.0.12.tar.xz",
+    "name": "libXau",
+    "version": "1.0.12",
     "build_configs": [
         {
             "pattern": "*linux*",

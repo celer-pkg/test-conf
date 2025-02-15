@@ -1,7 +1,7 @@
 {
-    "url": "https://dri.freedesktop.org/libdrm/libdrm-2.4.100.tar.gz",
-    "name": "libdrm",
-    "version": "2.4.100",
+    "url": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz",
+    "name": "eudev",
+    "version": "3.2.10",
     "build_configs": [
         {
             "pattern": "*linux*",
@@ -11,7 +11,9 @@
             "arguments": [
                 "--host=${HOST}"
             ],
-            "dependencies": [ "xcb-proto@1.6" ]
+            "dev_dependencies": [
+                "gperf@3.1"
+            ]
         }
     ]
 }

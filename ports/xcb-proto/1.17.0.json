@@ -1,7 +1,7 @@
 {
-    "url": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.5.tar.gz",
-    "name": "eudev",
-    "version": "3.2.5",
+    "url": "https://xcb.freedesktop.org/dist/xcb-proto-1.17.0.tar.xz",
+    "name": "xcb-proto",
+    "version": "1.17.0",
     "build_configs": [
         {
             "pattern": "*linux*",

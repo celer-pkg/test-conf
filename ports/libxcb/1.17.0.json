@@ -1,7 +1,7 @@
 {
-    "url": "https://xcb.freedesktop.org/dist/libxcb-1.5.tar.gz",
+    "url": "https://xcb.freedesktop.org/dist/libxcb-1.17.0.tar.xz",
     "name": "libxcb",
-    "version": "1.5",
+    "version": "1.17.0",
     "build_configs": [
         {
             "pattern": "*linux*",

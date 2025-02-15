@@ -1,7 +1,7 @@
 {
-    "url": "https://www.x.org/releases/individual/lib/libXau-1.0.7.tar.gz",
-    "name": "libXau",
-    "version": "1.0.7",
+    "url": "https://gitlab.freedesktop.org/xorg/util/macros.git",
+    "name": "macros",
+    "version": "util-macros-1.20.2",
     "build_configs": [
         {
             "pattern": "*linux*",
