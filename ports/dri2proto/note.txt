@@ -1,0 +1,2 @@
+if cannot found xorg-macros, below action is required.
+export ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal
