@@ -1,0 +1,20 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/proto/xorgproto.git",
+    "name": "xorgproto",
+    "version": "xorgproto-2024.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
+            ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [
+            ]
+        }
+    ]
+}

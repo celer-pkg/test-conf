@@ -3,7 +3,7 @@
         "url": "http://sqkm997w5.hd-bkt.clouddn.com/sysroot-glibc-8.3-2019.02-x86_64-aarch64-linux-gnu.tar.xz",
         "path": "sysroot-glibc-8.3-2019.02-x86_64-aarch64-linux-gnu",
         "pkg_config_libdir": [
-            "usr/lib/pkgconfig"
+            "usr/lib64/pkgconfig"
         ]
     },
     "toolchain": {
