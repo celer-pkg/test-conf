@@ -13,7 +13,8 @@
             ],
             "dependencies": [ 
                 "pthread-stubs@0.4",
-                "xcb-proto@1.17.0"
+                "xcb-proto@1.17.0",
+                "libXau@libXau-1.0.12"
             ]
         }
     ]
