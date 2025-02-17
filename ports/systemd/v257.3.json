@@ -1,0 +1,21 @@
+{
+    "url": "https://github.com/systemd/systemd/archive/refs/tags/v257.3.tar.gz",
+    "name": "systemd",
+    "version": "v257.3",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [
+            ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dev_dependencies": [
+                "gperf@3.1",
+                "libcap@1.10.5"
+            ]
+        }
+    ]
+}

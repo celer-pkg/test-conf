@@ -1,0 +1,21 @@
+{
+    "url": "https://git.kernel.org/pub/scm/libs/libcap/libcap.git",
+    "name": "libcap",
+    "version": "libcap-2.73",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "CROSS_COMPILE=${TOOLCHAIN_PREFIX}",
+                "BUILD_CC=gcc",
+                "lib=lib"
+            ],
+            "arguments": [
+                "RAISE_SETFCAP=no"
+            ],
+            "dependencies": []
+        }
+    ]
+}

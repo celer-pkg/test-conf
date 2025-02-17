@@ -5,6 +5,9 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "patches": [
+                "dri2proto-2.8_no_configure.patch"
+            ],
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [

@@ -1,13 +1,16 @@
 {
-    "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libxshmfence/1.3-1build4/libxshmfence_1.3.orig.tar.gz",
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libxshmfence.git",
     "name": "libxshmfence",
-    "version": "1.3",
+    "version": "libxshmfence-1.3.3",
     "build_configs": [
         {
             "pattern": "*linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [ ],
+            "env_vars": [
+                "NOCONFIGURE=1",
+                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
+            ],
             "arguments": [
                 "--host=${HOST}"
             ],
