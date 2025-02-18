@@ -6,11 +6,14 @@
         {
             "pattern": "*linux*",
             "build_tool": "makefiles",
-            "env_vars": [
-            ],
+            "env_vars": [],
             "arguments": [
+                "--host=${HOST}"
             ],
-            "dependencies": []
+            "dev_dependencies": [
+                "libtool@2.5.4",
+                "automake@1.17"
+            ]
         }
     ]
 }

@@ -13,12 +13,16 @@
             "arguments": [
                 "-DENABLE_NEON=OFF",
                 "-DBUILD_TESTING=OFF",
-                "-DWITH_FFMPEG=ON",
-                "-DCMAKE_C_FLAGS=-D_FILE_OFFSET_BITS=64",
-                "-DCMAKE_CXX_FLAGS=-D_FILE_OFFSET_BITS=64"
+                "-DBUILD_DOCS=OFF",
+                "-DBUILD_ANDROID_EXAMPLES=OFF",
+                "-DBUILD_EXAMPLES=OFF",
+                "-DBUILD_PERF_TESTS=OFF",
+                "-DBUILD_TESTS=OFF",
+                "-DWITH_FFMPEG=OFF",
+                "-DWITH_GTK=OFF",
+                "-DWITH_GSTREAMER=OFF"
             ],
             "dependencies": [
-                "ffmpeg@3.4.13",
                 "zlib@v1.3.1"
             ]
         }

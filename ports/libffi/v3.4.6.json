@@ -10,8 +10,8 @@
             ],
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [ ],
-            "prepare_steps": {
+            "env_vars": [],
+            "fix_configure": {
                 "scripts": [
                     "libtoolize",
                     "autoreconf -vfi"

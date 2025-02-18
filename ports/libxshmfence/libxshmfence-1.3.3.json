@@ -8,13 +8,26 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
-                "NOCONFIGURE=1",
-                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
+                "NOCONFIGURE=1"
             ],
+            "fix_configure": {
+                "scripts": [
+                    "libtoolize",
+                    "autoreconf -vfi"
+                ],
+                "work_dir": "${SOURCE_DIR}"
+            },
             "arguments": [
                 "--host=${HOST}"
             ],
-            "dependencies": [ ]
+            "dependencies":[
+                "util-macros@1.20.2",
+                "xproto@7.0.31"
+            ],
+            "dev_dependencies": [
+                "automake@1.17",
+                "libtool@2.5.4"
+            ]
         }
     ]
 }
