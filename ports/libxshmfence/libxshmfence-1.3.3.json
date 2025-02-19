@@ -5,9 +5,14 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "system_tools": [
+                "autoconf",
+                "automake"
+            ],
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
+                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal",
                 "NOCONFIGURE=1"
             ],
             "fix_configure": {
@@ -20,14 +25,12 @@
             "arguments": [
                 "--host=${HOST}"
             ],
-            "dependencies":[
+            "dependencies": [
                 "util-macros@1.20.2",
-                "xproto@7.0.31"
+                "xproto@7.0.31",
+                "xorgproto@xorgproto-2024.1"
             ],
-            "dev_dependencies": [
-                "automake@1.17",
-                "libtool@2.5.4"
-            ]
+            "dev_dependencies": []
         }
     ]
 }

@@ -13,11 +13,8 @@
                 "-DBUILD_TESTING=OFF",
                 "-DCMAKE_BUILD_TYPE=Release"
             ],
-            "dev_dependencies": [
-                "sqlite3@3.49.0"
-            ],
-            "dependencies": [
-            ]
+            "dev_dependencies": [],
+            "dependencies": []
         }
     ]
 }

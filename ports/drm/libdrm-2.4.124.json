@@ -1,0 +1,15 @@
+{
+    "url": "https://gitlab.freedesktop.org/mesa/drm.git",
+    "name": "drm",
+    "version": "libdrm-2.4.124",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [],
+            "arguments": [],
+            "dependencies": []
+        }
+    ]
+}

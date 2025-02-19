@@ -9,7 +9,9 @@
             "library_type": "shared",
             "env_vars": [ ],
             "arguments": [],
-            "dependencies": [ "xcb-proto@1.6" ]
+            "dependencies": [ 
+                "xcb-proto@1.17.0" 
+            ]
         }
     ]
 }

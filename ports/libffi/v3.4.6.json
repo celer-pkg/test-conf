@@ -5,6 +5,10 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "system_tools": [
+                "autoconf",
+                "libtoolize"
+            ],
             "patches": [
                 "v3.4.6_fix_configure.patch"
             ],
@@ -13,7 +17,6 @@
             "env_vars": [],
             "fix_configure": {
                 "scripts": [
-                    "libtoolize",
                     "autoreconf -vfi"
                 ],
                 "work_dir": "${SOURCE_DIR}"
@@ -24,10 +27,7 @@
                 "--disable-multi-os-directory"
             ],
             "dependencies": [],
-            "dev_dependencies": [
-                "automake@1.17",
-                "libtool@2.5.4"
-            ]
+            "dev_dependencies": []
         }
     ]
 }

@@ -5,15 +5,16 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "system_tools": [
+                "autoconf",
+                "automake"
+            ],
             "build_tool": "makefiles",
             "env_vars": [],
             "arguments": [
                 "--host=${HOST}"
             ],
-            "dev_dependencies": [
-                "libtool@2.5.4",
-                "automake@1.17"
-            ]
+            "dev_dependencies": []
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "url": "https://gh.api.99988866.xyz/github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1.tar.gz",
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1.tar.gz",
     "name": "openssl",
     "version": "3.4.1",
     "build_configs": [
