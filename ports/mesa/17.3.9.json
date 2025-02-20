@@ -1,0 +1,45 @@
+{
+    "url": "https://archive.mesa3d.org/older-versions/17.x/mesa-17.3.9.tar.gz",
+    "name": "mesa",
+    "version": "17.3.9",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "NOCONFIGURE=1"
+            ],
+            "arguments": [
+                "--target=arm-linux",
+                "--host=${HOST}",
+                "--enable-opengl",
+                "--enable-gles2",
+                "--enable-gles1",
+                "--enable-egl",
+                "--enable-shared-glapi",
+                "--enable-dri",
+                "--enable-shared-dricore",
+                "--enable-gallium-egl",
+                "--with-egl-platforms=drm,x11",
+                "--with-gallium-drivers=swrast",
+                "--with-dri-drivers=swrast"
+            ],
+            "dependencies": [
+                "glproto@1.4.14",
+                "dri2proto@dri2proto-2.8",
+                "libxshmfence@libxshmfence-1.3.3",
+                "openssl@3.4.1",
+                "expat@2.6.4",
+                "libdrm@2.4.124",
+                "zlib@v1.3.1",
+                "libxcb@1.17.0",
+                "libX11@1.8.11",
+                "libXext@libXext-1.3.6",
+                "libXfixes@libXfixes-6.0.1",
+                "libXdamage@libXdamage-1.1.6",
+                "libunwind@1.6.1"
+            ]
+        }
+    ]
+}

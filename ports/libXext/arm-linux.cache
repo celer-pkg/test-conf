@@ -1,0 +1,162 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs, see configure's option --config-cache.
+# It is not useful on other systems.  If it contains results you don't
+# want to keep, you may remove or edit it.
+#
+# config.status only pays attention to the cache file if you give it
+# the --recheck option to rerun configure.
+#
+# `ac_cv_env_foo' variables (set or unset) will be overridden when
+# loading this file, other *unset* `ac_cv_foo' will be assigned the
+# following values.
+
+ac_cv_build=${ac_cv_build=x86_64-pc-linux-gnu}
+ac_cv_c_compiler_gnu=${ac_cv_c_compiler_gnu=yes}
+ac_cv_c_undeclared_builtin_options=${ac_cv_c_undeclared_builtin_options='none needed'}
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value='aarch64-linux-gnu-gcc --sysroot=/mnt/data/work_phil/Golang/buildenv/downloads/tools/sysroot-glibc-8.3-2019.02-x86_64-aarch64-linux-gnu'
+ac_cv_env_CFLAGS_set=set
+ac_cv_env_CFLAGS_value=-O3
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_FOP_set=
+ac_cv_env_FOP_value=
+ac_cv_env_LDFLAGS_set=set
+ac_cv_env_LDFLAGS_value='-Wl,-rpath-link,/mnt/data/work_phil/Golang/buildenv/installed/aarch64-linux-gnu^project_01_standard^Release/lib'
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_LINT_FLAGS_set=
+ac_cv_env_LINT_FLAGS_value=
+ac_cv_env_LINT_set=
+ac_cv_env_LINT_value=
+ac_cv_env_LT_SYS_LIBRARY_PATH_set=
+ac_cv_env_LT_SYS_LIBRARY_PATH_value=
+ac_cv_env_PKG_CONFIG_LIBDIR_set=
+ac_cv_env_PKG_CONFIG_LIBDIR_value=
+ac_cv_env_PKG_CONFIG_PATH_set=set
+ac_cv_env_PKG_CONFIG_PATH_value='/mnt/data/work_phil/Golang/buildenv/installed/aarch64-linux-gnu^project_01_standard^Release/lib/pkgconfig'
+ac_cv_env_PKG_CONFIG_set=
+ac_cv_env_PKG_CONFIG_value=
+ac_cv_env_XEXT_CFLAGS_set=
+ac_cv_env_XEXT_CFLAGS_value=
+ac_cv_env_XEXT_LIBS_set=
+ac_cv_env_XEXT_LIBS_value=
+ac_cv_env_XMLTO_set=
+ac_cv_env_XMLTO_value=
+ac_cv_env_XSLTPROC_set=
+ac_cv_env_XSLTPROC_value=
+ac_cv_env_build_alias_set=
+ac_cv_env_build_alias_value=
+ac_cv_env_host_alias_set=set
+ac_cv_env_host_alias_value=arm-linux
+ac_cv_env_target_alias_set=
+ac_cv_env_target_alias_value=
+ac_cv_func_reallocarray=${ac_cv_func_reallocarray=yes}
+ac_cv_have_decl___INTEL_COMPILER=${ac_cv_have_decl___INTEL_COMPILER=no}
+ac_cv_have_decl___SUNPRO_C=${ac_cv_have_decl___SUNPRO_C=no}
+ac_cv_have_decl___clang__=${ac_cv_have_decl___clang__=no}
+ac_cv_header_dlfcn_h=${ac_cv_header_dlfcn_h=yes}
+ac_cv_header_inttypes_h=${ac_cv_header_inttypes_h=yes}
+ac_cv_header_minix_config_h=${ac_cv_header_minix_config_h=no}
+ac_cv_header_stdint_h=${ac_cv_header_stdint_h=yes}
+ac_cv_header_stdio_h=${ac_cv_header_stdio_h=yes}
+ac_cv_header_stdlib_h=${ac_cv_header_stdlib_h=yes}
+ac_cv_header_string_h=${ac_cv_header_string_h=yes}
+ac_cv_header_strings_h=${ac_cv_header_strings_h=yes}
+ac_cv_header_sys_stat_h=${ac_cv_header_sys_stat_h=yes}
+ac_cv_header_sys_types_h=${ac_cv_header_sys_types_h=yes}
+ac_cv_header_unistd_h=${ac_cv_header_unistd_h=yes}
+ac_cv_header_wchar_h=${ac_cv_header_wchar_h=yes}
+ac_cv_host=${ac_cv_host=arm-unknown-linux-gnu}
+ac_cv_objext=${ac_cv_objext=o}
+ac_cv_path_EGREP=${ac_cv_path_EGREP='/usr/bin/grep -E'}
+ac_cv_path_FGREP=${ac_cv_path_FGREP='/usr/bin/grep -F'}
+ac_cv_path_GREP=${ac_cv_path_GREP=/usr/bin/grep}
+ac_cv_path_SED=${ac_cv_path_SED=/usr/bin/sed}
+ac_cv_path_ac_pt_PKG_CONFIG=${ac_cv_path_ac_pt_PKG_CONFIG=/usr/bin/pkg-config}
+ac_cv_path_install=${ac_cv_path_install='/usr/bin/install -c'}
+ac_cv_path_lt_DD=${ac_cv_path_lt_DD=/usr/bin/dd}
+ac_cv_path_mkdir=${ac_cv_path_mkdir=/usr/bin/mkdir}
+ac_cv_prog_AR=${ac_cv_prog_AR=aarch64-linux-gnu-ar}
+ac_cv_prog_AWK=${ac_cv_prog_AWK=gawk}
+ac_cv_prog_CC=${ac_cv_prog_CC='aarch64-linux-gnu-gcc --sysroot=/mnt/data/work_phil/Golang/buildenv/downloads/tools/sysroot-glibc-8.3-2019.02-x86_64-aarch64-linux-gnu'}
+ac_cv_prog_OBJDUMP=${ac_cv_prog_OBJDUMP=aarch64-linux-gnu-objdump}
+ac_cv_prog_RANLIB=${ac_cv_prog_RANLIB=aarch64-linux-gnu-ranlib}
+ac_cv_prog_STRIP=${ac_cv_prog_STRIP=aarch64-linux-gnu-strip}
+ac_cv_prog_ac_ct_MANIFEST_TOOL=${ac_cv_prog_ac_ct_MANIFEST_TOOL=mt}
+ac_cv_prog_cc_c11=${ac_cv_prog_cc_c11=}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_prog_cc_stdc=${ac_cv_prog_cc_stdc=}
+ac_cv_prog_make_make_set=${ac_cv_prog_make_make_set=yes}
+ac_cv_safe_to_define___extensions__=${ac_cv_safe_to_define___extensions__=yes}
+ac_cv_should_define__xopen_source=${ac_cv_should_define__xopen_source=no}
+am_cv_CC_dependencies_compiler_type=${am_cv_CC_dependencies_compiler_type=gcc3}
+am_cv_make_support_nested_variables=${am_cv_make_support_nested_variables=yes}
+am_cv_prog_cc_c_o=${am_cv_prog_cc_c_o=yes}
+ax_cv_have___builtin_popcountl=${ax_cv_have___builtin_popcountl=yes}
+lt_cv_ar_at_file=${lt_cv_ar_at_file=@}
+lt_cv_archive_cmds_need_lc=${lt_cv_archive_cmds_need_lc=no}
+lt_cv_deplibs_check_method=${lt_cv_deplibs_check_method=pass_all}
+lt_cv_file_magic_cmd=${lt_cv_file_magic_cmd='$MAGIC_CMD'}
+lt_cv_file_magic_test_file=${lt_cv_file_magic_test_file=}
+lt_cv_ld_reload_flag=${lt_cv_ld_reload_flag=-r}
+lt_cv_nm_interface=${lt_cv_nm_interface='BSD nm'}
+lt_cv_objdir=${lt_cv_objdir=.libs}
+lt_cv_path_LD=${lt_cv_path_LD='aarch64-linux-gnu-ld --sysroot=/mnt/data/work_phil/Golang/buildenv/downloads/tools/sysroot-glibc-8.3-2019.02-x86_64-aarch64-linux-gnu'}
+lt_cv_path_NM=${lt_cv_path_NM=aarch64-linux-gnu-nm}
+lt_cv_path_mainfest_tool=${lt_cv_path_mainfest_tool=no}
+lt_cv_prog_compiler_c_o=${lt_cv_prog_compiler_c_o=yes}
+lt_cv_prog_compiler_pic=${lt_cv_prog_compiler_pic='-fPIC -DPIC'}
+lt_cv_prog_compiler_pic_works=${lt_cv_prog_compiler_pic_works=yes}
+lt_cv_prog_compiler_rtti_exceptions=${lt_cv_prog_compiler_rtti_exceptions=no}
+lt_cv_prog_compiler_static_works=${lt_cv_prog_compiler_static_works=yes}
+lt_cv_prog_gnu_ld=${lt_cv_prog_gnu_ld=yes}
+lt_cv_sharedlib_from_linklib_cmd=${lt_cv_sharedlib_from_linklib_cmd='printf %s\n'}
+lt_cv_shlibpath_overrides_runpath=${lt_cv_shlibpath_overrides_runpath=no}
+lt_cv_sys_global_symbol_pipe=${lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''}
+test ${lt_cv_sys_global_symbol_to_c_name_address+y} || lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"\1", (void *) \&\1},/p'\'''
+test ${lt_cv_sys_global_symbol_to_c_name_address_lib_prefix+y} || lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(lib.*\)$/  {"\1", (void *) \&\1},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"lib\1", (void *) \&\1},/p'\'''
+lt_cv_sys_global_symbol_to_cdecl=${lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/extern char \1;/p'\'''}
+lt_cv_sys_global_symbol_to_import=${lt_cv_sys_global_symbol_to_import=}
+lt_cv_sys_max_cmd_len=${lt_cv_sys_max_cmd_len=1572864}
+lt_cv_to_host_file_cmd=${lt_cv_to_host_file_cmd=func_convert_file_noop}
+lt_cv_to_tool_file_cmd=${lt_cv_to_tool_file_cmd=func_convert_file_noop}
+lt_cv_truncate_bin=${lt_cv_truncate_bin='/usr/bin/dd bs=4096 count=1'}
+pkg_cv_XEXT_CFLAGS=${pkg_cv_XEXT_CFLAGS='-I/mnt/data/work_phil/Golang/buildenv/installed/aarch64-linux-gnu^project_01_standard^Release/include'}
+pkg_cv_XEXT_LIBS=${pkg_cv_XEXT_LIBS='-L/mnt/data/work_phil/Golang/buildenv/installed/aarch64-linux-gnu^project_01_standard^Release/lib -lX11'}
+xorg_cv_cc_flag__Wall=${xorg_cv_cc_flag__Wall=yes}
+xorg_cv_cc_flag__Wbad_function_cast=${xorg_cv_cc_flag__Wbad_function_cast=yes}
+xorg_cv_cc_flag__Wdeclaration_after_statement=${xorg_cv_cc_flag__Wdeclaration_after_statement=yes}
+xorg_cv_cc_flag__Werror=${xorg_cv_cc_flag__Werror=yes}
+xorg_cv_cc_flag__Werror_address=${xorg_cv_cc_flag__Werror_address=yes}
+xorg_cv_cc_flag__Werror_array_bounds=${xorg_cv_cc_flag__Werror_array_bounds=yes}
+xorg_cv_cc_flag__Werror_attributes=${xorg_cv_cc_flag__Werror_attributes=yes}
+xorg_cv_cc_flag__Werror_implicit=${xorg_cv_cc_flag__Werror_implicit=yes}
+xorg_cv_cc_flag__Werror_init_self=${xorg_cv_cc_flag__Werror_init_self=yes}
+xorg_cv_cc_flag__Werror_int_to_pointer_cast=${xorg_cv_cc_flag__Werror_int_to_pointer_cast=yes}
+xorg_cv_cc_flag__Werror_main=${xorg_cv_cc_flag__Werror_main=yes}
+xorg_cv_cc_flag__Werror_missing_braces=${xorg_cv_cc_flag__Werror_missing_braces=yes}
+xorg_cv_cc_flag__Werror_nonnull=${xorg_cv_cc_flag__Werror_nonnull=yes}
+xorg_cv_cc_flag__Werror_pointer_to_int_cast=${xorg_cv_cc_flag__Werror_pointer_to_int_cast=yes}
+xorg_cv_cc_flag__Werror_return_type=${xorg_cv_cc_flag__Werror_return_type=yes}
+xorg_cv_cc_flag__Werror_sequence_point=${xorg_cv_cc_flag__Werror_sequence_point=yes}
+xorg_cv_cc_flag__Werror_trigraphs=${xorg_cv_cc_flag__Werror_trigraphs=yes}
+xorg_cv_cc_flag__Werror_write_strings=${xorg_cv_cc_flag__Werror_write_strings=yes}
+xorg_cv_cc_flag__Wformat_2=${xorg_cv_cc_flag__Wformat_2=yes}
+xorg_cv_cc_flag__Wlogical_op=${xorg_cv_cc_flag__Wlogical_op=yes}
+xorg_cv_cc_flag__Wmissing_declarations=${xorg_cv_cc_flag__Wmissing_declarations=yes}
+xorg_cv_cc_flag__Wmissing_format_attribute=${xorg_cv_cc_flag__Wmissing_format_attribute=yes}
+xorg_cv_cc_flag__Wmissing_noreturn=${xorg_cv_cc_flag__Wmissing_noreturn=yes}
+xorg_cv_cc_flag__Wmissing_prototypes=${xorg_cv_cc_flag__Wmissing_prototypes=yes}
+xorg_cv_cc_flag__Wnested_externs=${xorg_cv_cc_flag__Wnested_externs=yes}
+xorg_cv_cc_flag__Wold_style_definition=${xorg_cv_cc_flag__Wold_style_definition=yes}
+xorg_cv_cc_flag__Wpointer_arith=${xorg_cv_cc_flag__Wpointer_arith=yes}
+xorg_cv_cc_flag__Wredundant_decls=${xorg_cv_cc_flag__Wredundant_decls=yes}
+xorg_cv_cc_flag__Wshadow=${xorg_cv_cc_flag__Wshadow=yes}
+xorg_cv_cc_flag__Wstrict_prototypes=${xorg_cv_cc_flag__Wstrict_prototypes=yes}
+xorg_cv_cc_flag__Wuninitialized=${xorg_cv_cc_flag__Wuninitialized=yes}
+xorg_cv_cc_flag__Wunused=${xorg_cv_cc_flag__Wunused=yes}
+xorg_cv_cc_flag__pedantic=${xorg_cv_cc_flag__pedantic=yes}
+xorg_cv_cc_flag_unknown_warning_option=${xorg_cv_cc_flag_unknown_warning_option=no}
+xorg_cv_cc_flag_unused_command_line_argument=${xorg_cv_cc_flag_unused_command_line_argument=no}

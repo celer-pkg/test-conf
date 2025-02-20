@@ -1,0 +1,19 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libxfixes.git",
+    "name": "libXfixes",
+    "version": "libXfixes-6.0.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "NOCONFIGURE=1"
+            ],
+            "arguments": [
+                "--host=${HOST}"
+            ],
+            "dependencies": []
+        }
+    ]
+}
