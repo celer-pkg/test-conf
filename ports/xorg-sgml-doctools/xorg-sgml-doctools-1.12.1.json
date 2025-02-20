@@ -15,11 +15,9 @@
                 "--host=${HOST}"
             ],
             "dependencies": [
-                
-            ],
-            "dev_dependencies": [
                 "util-macros@1.20.2"
-            ]
+            ],
+            "dev_dependencies": []
         }
     ]
 }
