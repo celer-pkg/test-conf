@@ -11,8 +11,8 @@
                 "NOCONFIGURE=1"
             ],
             "arguments": [
-                "--host=arm-linux",
-                "--cache-file=arm-linux.cache"
+                "--host=${HOST}",
+                "--cache-file=aarch64-linux.cache"
             ],
             "dependencies": []
         }
