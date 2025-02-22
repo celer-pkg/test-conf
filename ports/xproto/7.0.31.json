@@ -7,11 +7,21 @@
             "pattern": "aarch64-linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [ ],
+            "env_vars": [],
             "arguments": [
                 "--host=arm-linux"
             ],
-            "dependencies": [ ]
+            "dependencies": []
+        },
+        {
+            "pattern": "x86_64-linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [],
+            "arguments": [
+                "--host=x86_64-linux"
+            ],
+            "dependencies": []
         }
     ]
 }
