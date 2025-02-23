@@ -8,12 +8,15 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
+                "NOCONFIGURE=1",
                 "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
             ],
             "arguments": [
                 "--host=${HOST}"
             ],
             "dependencies": [
+                "util-macros@1.20.2",
+                "libX11@1.8.11"
             ]
         }
     ]

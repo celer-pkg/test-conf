@@ -14,7 +14,7 @@
                 "--host=${HOST}"
             ],
             "dependencies": [
-                
+                "libunwind@1.6.1"
             ]
         }
     ]

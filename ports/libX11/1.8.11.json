@@ -7,14 +7,15 @@
             "pattern": "*linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [],
+            "env_vars": [
+                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
+            ],
             "arguments": [
                 "--host=${HOST}",
                 "--with-keysymdefdir=${INSTALLED_DIR}/include/X11"
             ],
             "dependencies": [
                 "util-macros@1.20.2",
-                "xproto@7.0.31",
                 "libxtrans@xtrans-1.5.2",
                 "xorgproto@xorgproto-2024.1",
                 "libxcb@1.17.0",

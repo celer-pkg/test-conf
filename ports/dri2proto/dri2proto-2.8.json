@@ -17,7 +17,7 @@
                 "--host=${HOST}",
                 "--disable-dri3"
             ],
-            "dependencies": [ 
+            "dependencies": [
                 "util-macros@1.20.2"
             ]
         }

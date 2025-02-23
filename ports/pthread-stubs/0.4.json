@@ -15,7 +15,9 @@
             "arguments": [
                 "--host=${HOST}"
             ],
-            "dependencies": [ ]
+            "dependencies": [
+                "util-macros@1.20.2"
+            ]
         }
     ]
 }

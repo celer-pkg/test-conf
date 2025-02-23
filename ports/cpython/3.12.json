@@ -8,7 +8,9 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [],
-            "arguments": [],
+            "arguments": [
+                "--host=${HOST}"
+            ],
             "dependencies": [],
             "dev_dependencies": []
         }

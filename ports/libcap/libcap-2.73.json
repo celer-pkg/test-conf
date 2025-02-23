@@ -13,6 +13,7 @@
                 "lib=lib"
             ],
             "arguments": [
+                "--host=${HOST}",
                 "RAISE_SETFCAP=no"
             ],
             "dependencies": []
