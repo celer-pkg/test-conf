@@ -8,6 +8,7 @@
             "build_tool": "makefiles",
             "env_vars": [ ],
             "arguments": [
+                "--libdir=lib",
                 "linux-aarch64",
                 "shared",
                 "no-docs",
@@ -20,6 +21,7 @@
             "build_tool": "makefiles",
             "env_vars": [ ],
             "arguments": [
+                "--libdir=lib",
                 "linux-x86_64",
                 "shared",
                 "no-docs",
