@@ -8,7 +8,7 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
-            "arguments": [
+            "options": [
                 "--host=arm-linux"
             ],
             "dependencies": [ ]
@@ -18,7 +18,7 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
-            "arguments": [
+            "options": [
                 "--host=x86_64-linux"
             ],
             "dependencies": [ ]

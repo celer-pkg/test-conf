@@ -22,7 +22,7 @@
                 ],
                 "work_dir": "${SOURCE_DIR}"
             },
-            "arguments": [
+            "options": [
                 "--host=${HOST}"
             ],
             "dependencies": [

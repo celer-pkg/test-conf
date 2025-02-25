@@ -13,7 +13,7 @@
             "env_vars": [
                 "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
             ],
-            "arguments": [
+            "options": [
                 "--host=${HOST}",
                 "--disable-dri3"
             ],

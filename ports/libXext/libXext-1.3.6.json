@@ -11,7 +11,7 @@
                 "NOCONFIGURE=1",
                 "xorg_cv_malloc0_returns_null=yes"
             ],
-            "arguments": [
+            "options": [
                 "--host=${HOST}"
             ],
             "dependencies": []

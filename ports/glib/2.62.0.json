@@ -8,7 +8,7 @@
             "build_tool": "meson",
             "library_type": "shared",
             "env_vars": [ ],
-            "arguments": [
+            "options": [
                 "-Dlibmount=false",
                 "--libdir=lib"
             ],

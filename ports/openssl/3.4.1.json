@@ -7,7 +7,7 @@
             "pattern": "aarch64-linux*",
             "build_tool": "makefiles",
             "env_vars": [ ],
-            "arguments": [
+            "options": [
                 "--libdir=lib",
                 "linux-aarch64",
                 "shared",
@@ -20,7 +20,7 @@
             "pattern": "x86_64-linux*",
             "build_tool": "makefiles",
             "env_vars": [ ],
-            "arguments": [
+            "options": [
                 "--libdir=lib",
                 "linux-x86_64",
                 "shared",

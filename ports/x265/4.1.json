@@ -8,7 +8,7 @@
             "pattern": "*linux*",
             "build_tool": "cmake",
             "library_type": "shared",
-            "arguments": [
+            "options": [
                 "-DENABLE_ASSEMBLY=OFF",
                 "-DCMAKE_EXE_LINKER_FLAGS=-ldl"
             ],

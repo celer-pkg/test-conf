@@ -10,7 +10,7 @@
             "env_vars": [
                 "NOCONFIGURE=1"
             ],
-            "arguments": [
+            "options": [
                 "--host=${HOST}",
                 "--enable-optimized",
                 "--enable-opengl",

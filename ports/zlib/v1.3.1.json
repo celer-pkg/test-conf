@@ -7,7 +7,7 @@
             "pattern": "*linux*",
             "build_tool": "cmake",
             "library_type": "shared",
-            "arguments": [
+            "options": [
                 "-DZLIB_BUILD_EXAMPLES=OFF"
             ],
             "dependencies": [ ]

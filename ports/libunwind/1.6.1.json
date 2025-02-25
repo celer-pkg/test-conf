@@ -11,7 +11,7 @@
                 "NOCONFIGURE=1",
                 "LDFLAGS=-Wl,-rpath-link,${BUILD_DIR}/src/.libs"
             ],
-            "arguments": [
+            "options": [
                 "--host=${HOST}"
             ],
             "dependencies": []

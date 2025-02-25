@@ -12,7 +12,7 @@
                 "NOCONFIGURE=1",
                 "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
              ],
-            "arguments": [
+            "options": [
                 "--host=${HOST}"
             ],
             "dependencies": [

@@ -24,7 +24,7 @@
                     "cp -f ${BUILD_DIR}/../dev/config/nsinstall ${BUILD_DIR}/config"
                 ]
             },
-            "arguments": [
+            "options": [
                 "--host=${HOST}",
                 "--enable-64bit",
                 "--with-pthreads",

@@ -8,7 +8,7 @@
             "build_tool": "cmake",
             "library_type": "shared",
             "env_vars": [],
-            "arguments": [
+            "options": [
                 "-DLIBXML2_WITH_PYTHON=OFF"
             ],
             "dependencies": [],

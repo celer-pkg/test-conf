@@ -10,7 +10,7 @@
             "env_vars": [
                 "PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
             ],
-            "arguments": [
+            "options": [
                 "-Dinstalled_tests=false",
                 "-Dtests=false",
                 "--libdir=lib"

@@ -8,7 +8,7 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
-            "arguments": [
+            "options": [
                 "--sysroot=${SYSROOT}",
                 "--cross-prefix=${CROSS_PREFIX}",
                 "--arch=${SYSTEM_PROCESSOR}",

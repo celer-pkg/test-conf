@@ -8,7 +8,7 @@
             "build_tool": "cmake",
             "library_type": "shared",
             "env_vars": [ ],
-            "arguments": [ ],
+            "options": [ ],
             "dependencies": [
             ],
             "cmake_config": "linux_shared"

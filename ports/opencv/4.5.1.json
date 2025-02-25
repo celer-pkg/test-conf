@@ -10,7 +10,7 @@
             ],
             "build_tool": "cmake",
             "library_type": "shared",
-            "arguments": [
+            "options": [
                 "-DENABLE_NEON=OFF",
                 "-DBUILD_TESTING=OFF",
                 "-DBUILD_DOCS=OFF",

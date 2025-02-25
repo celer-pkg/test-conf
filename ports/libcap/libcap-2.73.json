@@ -12,7 +12,7 @@
                 "BUILD_CC=gcc",
                 "lib=lib"
             ],
-            "arguments": [
+            "options": [
                 "--host=${HOST}",
                 "RAISE_SETFCAP=no"
             ],

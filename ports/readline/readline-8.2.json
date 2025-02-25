@@ -7,7 +7,7 @@
             "pattern": "*linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "arguments": [
+            "options": [
                 "--host=${HOST}"
             ],
             "dependencies": [ ]

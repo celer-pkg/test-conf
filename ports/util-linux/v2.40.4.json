@@ -8,7 +8,7 @@
             "build_tool": "makefiles",
             "install_with_sudo": true,
             "env_vars": [],
-            "arguments": [
+            "options": [
                 "--host=${HOST}",
                 "--disable-use-tty-group",
                 "--disable-makeinstall-chown"

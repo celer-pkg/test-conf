@@ -8,7 +8,7 @@
             "build_tool": "cmake",
             "library_type": "shared",
             "env_vars": [],
-            "arguments": [],
+            "options": [],
             "dependencies": [],
             "dev_dependencies": [
                 "libxml2@v2.13.5"
