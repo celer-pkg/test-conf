@@ -1,0 +1,17 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git",
+    "name": "libpciaccess",
+    "version": "libpciaccess-0.18.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "arguments": [
+                "-Dlibdir=lib"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "url": "https://gitee.com/kumo-hub/libatomic_ops.git",
+    "name": "libatomic_ops",
+    "version": "v7.8.2",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "arguments": [],
+            "dependencies": []
+        }
+    ]
+}

@@ -4,14 +4,32 @@
     "version": "2.4.124",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "aarch64-linux*",
             "build_tool": "meson",
             "library_type": "shared",
-            "env_vars": [ ],
+            "env_vars": [],
             "arguments": [],
-            "dependencies": [ 
-                "xcb-proto@1.17.0" 
+            "dependencies": [
+                "xcb-proto@1.17.0"
             ]
+        },
+        {
+            "pattern": "x86_64-linux*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [],
+            "arguments": [
+                "-Dintel=enabled",
+                "-Dcairo-tests=disabled",
+                "-Dtests=false"
+            ],
+            "dependencies": [
+                "xcb-proto@1.17.0",
+                "libatomic_ops@v7.8.2",
+                "libpciaccess@libpciaccess-0.18.1",
+                "libatomic_ops@v7.8.2"
+            ],
+            "dev_dependencies": []
         }
     ]
 }

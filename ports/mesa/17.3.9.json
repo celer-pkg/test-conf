@@ -4,7 +4,7 @@
     "version": "17.3.9",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "aarch64-linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
@@ -46,9 +46,7 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
-                "NOCONFIGURE=1",
-                "CFLAGS=-Werror",
-                "CXXFLAGS=-Werror"
+                "NOCONFIGURE=1"
             ],
             "arguments": [
                 "--disable-werror",
@@ -62,13 +60,13 @@
                 "--enable-shared-glapi",
                 "--enable-dri",
                 "--enable-shared-dricore",
-                "--enable-gallium-egl",
+                "--disable-llvm",
+                "--disable-gallium-egl",
                 "--with-egl-platforms=drm,x11",
-                "--with-gallium-drivers=swrast,i915,i965",
-                "--with-dri-drivers=swrast,i915,i965",
+                "--with-gallium-drivers=swrast,i915",
+                "--with-dri-drivers=swrast,i915",
                 "--enable-xa",
-                "--enable-glx",
-                "--disable-llvm"
+                "--enable-glx"
             ],
             "dependencies": [
                 "glproto@1.4.14",
@@ -83,8 +81,7 @@
                 "libXext@libXext-1.3.6",
                 "libXfixes@libXfixes-6.0.1",
                 "libXdamage@libXdamage-1.1.6",
-                "libunwind@1.6.1",
-                "llvm@9.0.1"
+                "libunwind@1.6.1"
             ]
         }
     ]
