@@ -5,14 +5,26 @@
     "source_folder": "icu4c/source",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "aarch64-linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "options": [
+                "--host=${HOST}",
+                "--with-cross-build=${BUILD_DIR}/../dev"
+            ],
+            "dev_dependencies": [
+                "icu@release-75-1"
+            ]
+        },
+        {
+            "pattern": "x86_64-linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
             "options": [
                 "--host=${HOST}"
-            ],
-            "dependencies": [ ]
+            ]
         }
     ]
 }
