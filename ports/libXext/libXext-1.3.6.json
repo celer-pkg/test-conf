@@ -4,24 +4,12 @@
     "version": "libXext-1.3.6",
     "build_configs": [
         {
-            "pattern": "aarch64-linux*",
+            "pattern": "*linux*",
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
-                "NOCONFIGURE=1"
-            ],
-            "arguments": [
-                "--host=${HOST}",
-                "--cache-file=aarch64-linux.cache"
-            ],
-            "dependencies": []
-        },
-        {
-            "pattern": "x86_64-linux*",
-            "build_tool": "makefiles",
-            "library_type": "shared",
-            "env_vars": [
-                "NOCONFIGURE=1"
+                "NOCONFIGURE=1",
+                "xorg_cv_malloc0_returns_null=yes"
             ],
             "arguments": [
                 "--host=${HOST}"
