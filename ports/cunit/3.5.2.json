@@ -1,0 +1,19 @@
+{
+    "url": "https://gitlab.com/cunity/cunit.git",
+    "name": "cunit",
+    "version": "3.5.2",
+    "source_folder": "CUnit",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [
+                "-DCUNIT_CMAKE_INSTALL=yes"
+            ],
+            "dependencies": [],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}
