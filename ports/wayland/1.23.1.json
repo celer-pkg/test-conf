@@ -21,6 +21,9 @@
                 "libffi@v3.4.6",
                 "libxml2@v2.13.5",
                 "expat@2.6.4"
+            ],
+            "dev_dependencies": [
+                "wayland@1.23.1"
             ]
         }
     ]

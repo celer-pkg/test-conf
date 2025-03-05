@@ -5,6 +5,9 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "patches": [
+                "1.6.0_fix_cannot_find_wayland_scanner.patch"
+            ],
             "build_tool": "meson",
             "system_tools": [],
             "env_vars": [],
@@ -12,7 +15,11 @@
             ],
             "dependencies": [
                 "libxcb@1.17.0",
-                "libxml2@v2.13.5"
+                "libxml2@v2.13.5",
+                "wayland@1.23.1"
+            ],
+            "dev_dependencies": [
+                "wayland@1.23.1"
             ]
         }
     ]
