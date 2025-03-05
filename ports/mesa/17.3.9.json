@@ -5,6 +5,9 @@
     "build_configs": [
         {
             "pattern": "*linux*",
+            "patches": [
+                "fix_duplicate_symbols_hash.patch"
+            ],
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [

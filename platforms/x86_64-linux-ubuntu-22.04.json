@@ -1,15 +1,15 @@
 {
     "rootfs": {
-        "url": "http://sqkm997w5.hd-bkt.clouddn.com/ubuntu-base-22.04.5-base-amd64.tar.gz",
+        "url": "https://gh-proxy.com/github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/ubuntu-base-22.04.5-base-amd64.tar.gz",
         "path": "ubuntu-base-22.04.5-base-amd64",
-        "pkg_config_libdir": [
+        "pkg_config_path": [
             "usr/lib/x86_64-linux-gnu/pkgconfig",
             "usr/share/pkgconfig",
             "usr/lib/pkgconfig"
         ]
     },
     "toolchain": {
-        "url": "http://sqkm997w5.hd-bkt.clouddn.com/gcc-11.5.0.tar.gz",
+        "url": "https://gh-proxy.com/github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/gcc-11.5.0.tar.gz",
         "path": "gcc-11.5.0/bin",
         "system_name": "Linux",
         "system_processor": "x86_64",

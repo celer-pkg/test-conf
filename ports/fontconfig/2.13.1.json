@@ -1,0 +1,29 @@
+{
+    "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
+    "name": "fontconfig",
+    "version": "2.13.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "system_tools": [
+                "gettext",
+                "autopoint"
+            ],
+            "patches": [],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "NOCONFIGURE=1"
+            ],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [
+                "freetype@VER-2-13-3",
+                "expat@2.6.4",
+                "util-linux@v2.40.4"
+            ],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

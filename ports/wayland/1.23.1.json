@@ -1,0 +1,27 @@
+{
+    "url": "https://gitlab.freedesktop.org/wayland/wayland.git",
+    "name": "wayland",
+    "version": "1.23.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "patches": [
+                "1.23.1_fix_cannot_find_wayland_scanner.patch"
+            ],
+            "build_tool": "meson",
+            "system_tools": [
+                "dot"
+            ],
+            "env_vars": [],
+            "options": [
+                "-Ddocumentation=false",
+                "-Dlibdir=lib"
+            ],
+            "dependencies": [
+                "libffi@v3.4.6",
+                "libxml2@v2.13.5",
+                "expat@2.6.4"
+            ]
+        }
+    ]
+}

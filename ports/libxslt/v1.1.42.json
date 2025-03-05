@@ -8,7 +8,9 @@
             "build_tool": "cmake",
             "library_type": "shared",
             "env_vars": [],
-            "options": [],
+            "options": [
+                "-DLIBXSLT_WITH_PYTHON=OFF"
+            ],
             "dependencies": [],
             "dev_dependencies": [
                 "libxml2@v2.13.5"

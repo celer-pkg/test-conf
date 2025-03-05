@@ -5,9 +5,7 @@
     "build_configs": [
         {
             "pattern": "*linux*",
-            "patches": [
-                "add_linux-x86_64-gnu-g++.patch"
-            ],
+            "patches": [],
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [],
@@ -15,7 +13,6 @@
                 "-xplatform linux-aarch64-gnu-g++",
                 "-sysroot ${SYSROOT}",
                 "-extprefix ${INSTALLED_DIR}",
-                "--with-cross-build",
                 "-confirm-license",
                 "-opensource",
                 "-optimize-size",
@@ -29,9 +26,12 @@
                 "-skip qtdoc"
             ],
             "dependencies": [
+                "mesa@17.3.9",
                 "icu@release-75-1",
                 "libjpeg@libjpeg-turbo-2.1.0",
-                "libdrm@2.4.124"
+                "libdrm@2.4.124",
+                "libxcb@1.17.0",
+                "libxkbcommon@xkbcommon-0.3.0"
             ]
         }
     ]
