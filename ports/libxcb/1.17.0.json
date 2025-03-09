@@ -1,7 +1,7 @@
 {
     "url": "https://xcb.freedesktop.org/dist/libxcb-1.17.0.tar.xz",
     "name": "libxcb",
-    "version": "1.17.0",
+    "ref": "1.17.0",
     "build_configs": [
         {
             "pattern": "*linux*",
@@ -14,9 +14,9 @@
                 "--host=${HOST}"
             ],
             "dependencies": [ 
+                "libxau@1.0.12",
                 "pthread-stubs@0.4",
-                "xcb-proto@1.17.0",
-                "libxau@1.0.12"
+                "xcb-proto@1.17.0"
             ]
         }
     ]

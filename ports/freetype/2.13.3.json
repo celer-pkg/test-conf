@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/freetype/freetype.git",
     "name": "freetype",
-    "version": "VER-2-13-3",
+    "ref": "VER-2-13-3",
     "build_configs": [
         {
             "pattern": "*linux*",

@@ -1,7 +1,7 @@
 {
     "url": "https://www.x.org/releases/individual/xcb/xcb-util-0.4.1.tar.xz",
     "name": "xcb-util",
-    "version": "0.4.1",
+    "ref": "0.4.1",
     "build_configs": [
         {
             "pattern": "*linux*",

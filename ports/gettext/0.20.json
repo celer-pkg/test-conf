@@ -1,7 +1,7 @@
 {
     "url": "https://mirrors.nju.edu.cn/gnu/gettext/gettext-0.20.tar.xz",
     "name": "gettext",
-    "version": "0.20",
+    "ref": "0.20",
     "build_configs": [
         {
             "pattern": "*linux*",

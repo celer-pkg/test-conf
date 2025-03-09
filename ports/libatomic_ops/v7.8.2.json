@@ -1,7 +1,7 @@
 {
     "url": "https://gitee.com/kumo-hub/libatomic_ops.git",
     "name": "libatomic_ops",
-    "version": "v7.8.2",
+    "ref": "v7.8.2",
     "build_configs": [
         {
             "pattern": "*linux*",

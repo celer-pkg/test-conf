@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxrender.git",
     "name": "libxrender",
-    "version": "libXrender-0.9.12",
+    "ref": "libXrender-0.9.12",
     "build_configs": [
         {
             "pattern": "*linux*",

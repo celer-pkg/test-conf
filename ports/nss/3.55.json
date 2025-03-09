@@ -1,7 +1,7 @@
 {
     "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_55_RTM/src/nss-3.55.tar.gz",
     "name": "nss",
-    "version": "3.55",
+    "ref": "3.55",
     "source_folder":"nss",
     "build_configs": [
         {

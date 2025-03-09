@@ -1,7 +1,7 @@
 {
     "url": "https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz",
     "name": "libdrm",
-    "version": "2.4.124",
+    "ref": "2.4.124",
     "build_configs": [
         {
             "pattern": "aarch64-linux*",
@@ -27,7 +27,7 @@
             "dependencies": [
                 "xcb-proto@1.17.0",
                 "libatomic_ops@v7.8.2",
-                "libpciaccess@libpciaccess-0.18.1",
+                "libpciaccess@0.18.1",
                 "libatomic_ops@v7.8.2",
                 "zlib@v1.3.1"
             ],

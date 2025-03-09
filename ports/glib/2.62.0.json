@@ -1,7 +1,7 @@
 {
     "url": "https://gitee.com/phil-zhang/glib.git",
     "name": "glib",
-    "version": "2.62.0",
+    "ref": "2.62.0",
     "build_configs": [
         {
             "pattern": "*linux*",
@@ -14,7 +14,7 @@
             ],
             "dependencies": [
                 "zlib@v1.3.1",
-                "pcre2@pcre2-10.44",
+                "pcre2@10.44",
                 "libffi@v3.4.6"
             ]
         }

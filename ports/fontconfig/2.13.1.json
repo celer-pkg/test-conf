@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
     "name": "fontconfig",
-    "version": "2.16.0",
+    "ref": "2.16.0",
     "build_configs": [
         {
             "pattern": "*linux*",

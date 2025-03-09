@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxau.git",
     "name": "libxau",
-    "version": "libXau-1.0.12",
+    "ref": "libXau-1.0.12",
     "build_configs": [
         {
             "pattern": "*linux*",

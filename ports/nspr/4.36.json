@@ -1,7 +1,7 @@
 {
     "url": "https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz",
     "name": "nspr",
-    "version": "4.36",
+    "ref": "4.36",
     "source_folder": "nspr",
     "build_configs": [
         {

@@ -1,7 +1,7 @@
 {
     "url": "https://gitee.com/zhangxiangzwl/gflags.git",
     "name": "gflags",
-    "version": "v2.2.2",
+    "ref": "v2.2.2",
     "build_configs": [
         {
             "pattern": "*linux*",

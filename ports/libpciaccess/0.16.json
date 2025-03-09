@@ -1,7 +1,7 @@
 {
     "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libpciaccess/0.16-0ubuntu1/libpciaccess_0.16.orig.tar.gz",
     "name": "libpciaccess",
-    "version": "0.16",
+    "ref": "0.16",
     "build_configs": [
         {
             "pattern": "*linux*",

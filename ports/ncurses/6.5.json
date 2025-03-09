@@ -1,7 +1,7 @@
 {
     "url": "https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz",
     "name": "ncurses",
-    "version": "6.5",
+    "ref": "6.5",
     "build_configs": [
         {
             "pattern": "*linux*",

@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxdamage.git",
     "name": "libXdamage",
-    "version": "libXdamage-1.1.6",
+    "ref": "libXdamage-1.1.6",
     "build_configs": [
         {
             "pattern": "*linux*",

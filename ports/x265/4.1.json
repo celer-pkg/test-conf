@@ -1,7 +1,7 @@
 {
     "url": "https://bitbucket.org/multicoreware/x265_git.git",
     "name": "x265",
-    "version": "4.1",
+    "ref": "4.1",
     "source_folder": "source",
     "build_configs": [
         {

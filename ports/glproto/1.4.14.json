@@ -1,7 +1,7 @@
 {
     "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/x11proto-gl/1.4.14-2/x11proto-gl_1.4.14.orig.tar.gz",
     "name": "glproto",
-    "version": "1.4.14",
+    "ref": "1.4.14",
     "build_configs": [
         {
             "pattern": "aarch64-linux*",

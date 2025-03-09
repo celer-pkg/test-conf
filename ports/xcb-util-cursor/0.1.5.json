@@ -1,7 +1,7 @@
 {
     "url": "https://www.x.org/releases/individual/xcb/xcb-util-cursor-0.1.5.tar.xz",
     "name": "xcb-util-cursor",
-    "version": "0.1.5",
+    "ref": "0.1.5",
     "build_configs": [
         {
             "pattern": "*linux*",

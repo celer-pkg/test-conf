@@ -1,7 +1,7 @@
 {
     "url": "https://gitee.com/kumo-hub/libffi.git",
     "name": "libffi",
-    "version": "v3.4.6",
+    "ref": "v3.4.6",
     "build_configs": [
         {
             "pattern": "*linux*",

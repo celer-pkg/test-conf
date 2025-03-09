@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxfixes.git",
     "name": "libXfixes",
-    "version": "libXfixes-6.0.1",
+    "ref": "libXfixes-6.0.1",
     "build_configs": [
         {
             "pattern": "*linux*",

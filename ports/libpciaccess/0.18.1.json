@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git",
     "name": "libpciaccess",
-    "version": "libpciaccess-0.18.1",
+    "ref": "libpciaccess-0.18.1",
     "build_configs": [
         {
             "pattern": "*linux*",

@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/doc/xorg-sgml-doctools.git",
     "name": "xorg-sgml-doctools",
-    "version": "xorg-sgml-doctools-1.12.1",
+    "ref": "xorg-sgml-doctools-1.12.1",
     "build_configs": [
         {
             "pattern": "*linux*",

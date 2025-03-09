@@ -1,7 +1,7 @@
 {
     "url": "https://gitee.com/baolingyi/opencv.git",
     "name": "opencv",
-    "version": "4.5.1",
+    "ref": "4.5.1",
     "build_configs": [
         {
             "pattern": "*linux*",

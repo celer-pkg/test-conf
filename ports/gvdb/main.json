@@ -1,7 +1,7 @@
 {
     "url": "https://gitee.com/ccx3/gvdb.git",
     "name": "gvdb",
-    "version": "main",
+    "ref": "main",
     "build_configs": [
         {
             "pattern": "*linux*",

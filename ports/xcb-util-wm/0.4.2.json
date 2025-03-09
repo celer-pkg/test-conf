@@ -1,7 +1,7 @@
 {
     "url": "https://www.x.org/releases/individual/xcb/xcb-util-wm-0.4.2.tar.xz",
     "name": "xcb-util-wm",
-    "version": "0.4.2",
+    "ref": "0.4.2",
     "build_configs": [
         {
             "pattern": "*linux*",

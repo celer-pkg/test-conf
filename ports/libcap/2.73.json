@@ -1,7 +1,7 @@
 {
     "url": "https://git.kernel.org/pub/scm/libs/libcap/libcap.git",
     "name": "libcap",
-    "version": "libcap-2.73",
+    "ref": "libcap-2.73",
     "build_configs": [
         {
             "pattern": "*linux*",

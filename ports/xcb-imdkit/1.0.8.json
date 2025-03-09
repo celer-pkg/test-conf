@@ -1,7 +1,7 @@
 {
     "url": "https://salsa.debian.org/input-method-team/xcb-imdkit.git",
     "name": "xcb-imdkit",
-    "version": "upstream/1.0.8",
+    "ref": "upstream/1.0.8",
     "build_configs": [
         {
             "pattern": "*linux*",
@@ -11,7 +11,9 @@
             "options": [],
             "dependencies": [
                 "extra-cmake-modules@v6.11.0",
-                "xcb-util-keysyms@0.4.1"
+                "xcb-util-keysyms@0.4.1",
+                "libxcb@1.17.0",
+                "xcb-util@0.4.1"
             ]
         }
     ]

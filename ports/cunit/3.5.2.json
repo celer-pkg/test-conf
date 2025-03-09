@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.com/cunity/cunit.git",
     "name": "cunit",
-    "version": "3.5.2",
+    "ref": "3.5.2",
     "source_folder": "CUnit",
     "build_configs": [
         {

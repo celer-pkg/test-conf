@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libsm.git",
     "name": "libsm",
-    "version": "libSM-1.2.5",
+    "ref": "libSM-1.2.5",
     "build_configs": [
         {
             "pattern": "*linux*",

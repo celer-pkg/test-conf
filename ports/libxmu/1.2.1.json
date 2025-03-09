@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxmu.git",
-    "name": "libXmu",
-    "version": "libXmu-1.2.1",
+    "name": "libxmu",
+    "ref": "libXmu-1.2.1",
     "build_configs": [
         {
             "pattern": "*linux*",

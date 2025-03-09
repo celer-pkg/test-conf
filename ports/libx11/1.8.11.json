@@ -1,7 +1,7 @@
 {
     "url": "https://www.x.org/archive/individual/lib/libX11-1.8.11.tar.xz",
     "name": "libx11",
-    "version": "1.8.11",
+    "ref": "1.8.11",
     "build_configs": [
         {
             "pattern": "*linux*",

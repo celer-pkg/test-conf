@@ -1,7 +1,7 @@
 {
     "url": "https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz",
     "name": "xcb-util-renderutil",
-    "version": "0.3.10",
+    "ref": "0.3.10",
     "build_configs": [
         {
             "pattern": "*linux*",

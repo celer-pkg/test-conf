@@ -1,7 +1,7 @@
 {
     "url": "https://download.qt.io/official_releases/qt/5.15/5.15.15/single/qt-everywhere-opensource-src-5.15.15.tar.xz",
     "name": "qt",
-    "version": "5.15.15",
+    "ref": "5.15.15",
     "build_configs": [
         {
             "pattern": "*linux*",

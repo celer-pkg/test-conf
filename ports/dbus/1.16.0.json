@@ -1,7 +1,7 @@
 {
     "url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz",
     "name": "dbus",
-    "version": "1.16.0",
+    "ref": "1.16.0",
     "build_configs": [
         {
             "pattern": "*linux*",

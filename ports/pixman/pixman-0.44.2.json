@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/pixman/pixman.git",
     "name": "pixman",
-    "version": "pixman-0.44.2",
+    "ref": "pixman-0.44.2",
     "build_configs": [
         {
             "pattern": "*linux*",

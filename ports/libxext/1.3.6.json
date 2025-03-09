@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxext.git",
     "name": "libxext",
-    "version": "libXext-1.3.6",
+    "ref": "libXext-1.3.6",
     "build_configs": [
         {
             "pattern": "*linux*",

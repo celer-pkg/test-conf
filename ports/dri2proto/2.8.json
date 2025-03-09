@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/proto/dri2proto.git",
     "name": "dri2proto",
-    "version": "dri2proto-2.8",
+    "ref": "dri2proto-2.8",
     "build_configs": [
         {
             "pattern": "*linux*",

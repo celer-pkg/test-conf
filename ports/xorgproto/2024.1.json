@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/proto/xorgproto.git",
     "name": "xorgproto",
-    "version": "xorgproto-2024.1",
+    "ref": "xorgproto-2024.1",
     "build_configs": [
         {
             "pattern": "*linux*",

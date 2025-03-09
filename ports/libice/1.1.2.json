@@ -1,7 +1,7 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libice.git",
     "name": "libice",
-    "version": "libICE-1.1.2",
+    "ref": "libICE-1.1.2",
     "build_configs": [
         {
             "pattern": "*linux*",
