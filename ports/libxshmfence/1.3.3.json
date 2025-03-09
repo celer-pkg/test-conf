@@ -27,7 +27,7 @@
             ],
             "dependencies": [
                 "util-macros@1.20.2",
-                "xorgproto@xorgproto-2024.1"
+                "xorgproto@2024.1"
             ],
             "dev_dependencies": []
         }

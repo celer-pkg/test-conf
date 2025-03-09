@@ -14,7 +14,7 @@
                 "--with-cross-build=${BUILD_DIR}/../dev"
             ],
             "dev_dependencies": [
-                "icu@release-75-1"
+                "icu@75.1"
             ]
         },
         {

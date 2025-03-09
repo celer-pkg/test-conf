@@ -1,0 +1,19 @@
+{
+    "url": "https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz",
+    "name": "xcb-util-keysyms",
+    "version": "0.4.1",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "NOCONFIGURE=1"
+            ],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

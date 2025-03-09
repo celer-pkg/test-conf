@@ -1,14 +1,11 @@
 {
-    "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
-    "name": "fontconfig",
-    "version": "2.16.0",
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libice.git",
+    "name": "libice",
+    "version": "libICE-1.1.2",
     "build_configs": [
         {
             "pattern": "*linux*",
-            "system_tools": [
-                "gettext",
-                "autopoint"
-            ],
+            "system_tools": [],
             "patches": [],
             "build_tool": "makefiles",
             "library_type": "shared",
@@ -18,10 +15,7 @@
             "options": [
                 "--host=${HOST}"
             ],
-            "dependencies": [
-                "freetype@2.13.3",
-                "expat@2.6.4"
-            ]
+            "dependencies": []
         }
     ]
 }

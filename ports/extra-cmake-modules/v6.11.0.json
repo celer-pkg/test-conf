@@ -1,0 +1,18 @@
+{
+    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
+    "name": "extra-cmake-modules",
+    "version": "v6.11.0",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [
+                "-DCMAKE_C_FLAGS=-Werror=narrowing",
+                "-DCMAKE_CXX_FLAGS-Werror=narrowing"
+            ],
+            "dependencies": []
+        }
+    ]
+}

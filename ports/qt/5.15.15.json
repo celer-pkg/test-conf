@@ -12,7 +12,7 @@
             "options": [
                 "-xplatform linux-aarch64-gnu-g++",
                 "-sysroot ${SYSROOT}",
-                "-extprefix ${INSTALLED_DIR}",
+                "-extprefix ${PACKAGE_DIR}",
                 "-confirm-license",
                 "-opensource",
                 "-optimize-size",
@@ -20,18 +20,54 @@
                 "-release",
                 "-xcb",
                 "-fontconfig",
+                "-dbus",
+                "-ssl",
+                "-opengl",
+                "-bundled-xcb-xinput",
                 "-make-tool make",
                 "-nomake tests",
                 "-nomake examples",
-                "-skip qtdoc"
+                "-skip qtdoc",
+                "-no-zstd",
+                "-no-feature-gssapi",
+                "-I${INSTALLED_DIR}/include",
+                "-L${INSTALLED_DIR}/lib"
             ],
             "dependencies": [
                 "mesa@17.3.9",
-                "icu@release-75-1",
-                "libjpeg@libjpeg-turbo-2.1.0",
+                "openssl@1.1.1",
+                "icu@75.1",
+                "libjpeg@2.1.0",
                 "libdrm@2.4.124",
                 "libxcb@1.17.0",
-                "libxkbcommon@xkbcommon-0.3.0"
+                "libxkbcommon@1.6.0",
+                "libx11@1.8.11",
+                "xcb-util@0.4.1",
+                "xcb-util-wm@0.4.2",
+                "xcb-util-keysyms@0.4.1",
+                "xcb-imdkit@1.0.8",
+                "xcb-util-renderutil@0.3.10",
+                "xcb-util-xrm@1.0",
+                "libxrender@0.9.12",
+                "freetype@2.13.3",
+                "libsm@1.2.5"
+            ],
+            "dev_dependencies": [
+                "openssl@1.1.1",
+                "icu@75.1",
+                "libjpeg@2.1.0",
+                "libdrm@2.4.124",
+                "libxcb@1.17.0",
+                "libxkbcommon@1.6.0",
+                "libx11@1.8.11",
+                "xcb-util@0.4.1",
+                "xcb-util-wm@0.4.2",
+                "xcb-util-keysyms@0.4.1",
+                "xcb-imdkit@1.0.8",
+                "xcb-util-renderutil@0.3.10",
+                "xcb-util-xrm@1.0",
+                "libxrender@0.9.12",
+                "libxext@1.3.6"
             ]
         }
     ]

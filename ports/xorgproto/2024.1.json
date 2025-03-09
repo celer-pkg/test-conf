@@ -20,7 +20,7 @@
             ],
             "dependencies": [
                 "util-macros@1.20.2",
-                "xorg-sgml-doctools@xorg-sgml-doctools-1.12.1"
+                "xorg-sgml-doctools@1.12.1"
             ],
             "dev_dependencies": [
                 "libxslt@v1.1.42"

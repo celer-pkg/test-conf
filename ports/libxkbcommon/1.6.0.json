@@ -12,6 +12,7 @@
             "system_tools": [],
             "env_vars": [],
             "options": [
+                "-Denable-bash-completion=false"
             ],
             "dependencies": [
                 "libxcb@1.17.0",
