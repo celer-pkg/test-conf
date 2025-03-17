@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.com/libeigen/eigen.git",
-    "name": "eigen",
     "ref": "3.4.0",
     "build_configs": [
         {

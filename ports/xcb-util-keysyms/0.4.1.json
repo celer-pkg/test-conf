@@ -1,6 +1,5 @@
 {
     "url": "https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz",
-    "name": "xcb-util-keysyms",
     "ref": "0.4.1",
     "build_configs": [
         {

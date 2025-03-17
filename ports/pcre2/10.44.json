@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/transhub/pcre2.git",
-    "name": "pcre2",
     "ref": "pcre2-10.44",
     "build_configs": [
         {

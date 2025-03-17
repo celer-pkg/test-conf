@@ -1,6 +1,5 @@
 {
     "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.25.90.tar.xz",
-    "name": "gstreamer",
     "ref": "1.25.90",
     "build_configs": [
         {

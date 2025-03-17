@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxdmcp.git",
-    "name": "libxdmcp",
     "ref": "libXdmcp-1.1.5",
     "build_configs": [
         {

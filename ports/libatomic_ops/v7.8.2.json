@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/kumo-hub/libatomic_ops.git",
-    "name": "libatomic_ops",
     "ref": "v7.8.2",
     "build_configs": [
         {

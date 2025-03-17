@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-    "name": "gtk",
     "ref": "4.17.6",
     "build_configs": [
         {

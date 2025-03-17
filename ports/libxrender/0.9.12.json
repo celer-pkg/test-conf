@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxrender.git",
-    "name": "libxrender",
     "ref": "libXrender-0.9.12",
     "build_configs": [
         {

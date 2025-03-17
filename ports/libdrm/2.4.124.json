@@ -1,6 +1,5 @@
 {
     "url": "https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz",
-    "name": "libdrm",
     "ref": "2.4.124",
     "build_configs": [
         {

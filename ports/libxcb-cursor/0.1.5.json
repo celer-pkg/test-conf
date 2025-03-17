@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor.git",
-    "name": "libxcb-cursor",
     "ref": "xcb-util-cursor-0.1.5",
     "build_configs": [
         {

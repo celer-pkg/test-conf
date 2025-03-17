@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/li_ning_jie/libexpat_github.git",
-    "name": "libexpat",
     "ref": "R_2_2_7",
     "source_folder": "expat",
     "build_configs": [

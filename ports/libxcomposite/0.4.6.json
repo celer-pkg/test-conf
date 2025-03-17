@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git",
-    "name": "libxcomposite",
     "ref": "libXcomposite-0.4.6",
     "build_configs": [
         {

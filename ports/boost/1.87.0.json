@@ -1,6 +1,5 @@
 {
     "url": "https://archives.boost.io/release/1.87.0/source/boost_1_87_0.tar.gz",
-    "name": "boost",
     "ref": "1.87.0",
     "build_configs": [
         {

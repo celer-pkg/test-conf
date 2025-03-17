@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/wayland/wayland.git",
-    "name": "wayland",
     "ref": "1.23.1",
     "build_configs": [
         {

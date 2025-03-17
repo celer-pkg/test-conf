@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.gnome.org/GNOME/libxslt.git",
-    "name": "libxslt",
     "ref": "v1.1.42",
     "build_configs": [
         {

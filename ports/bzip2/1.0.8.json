@@ -1,6 +1,5 @@
 {
     "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
-    "name": "bzip2",
     "ref": "1.0.8",
     "build_configs": [
         {

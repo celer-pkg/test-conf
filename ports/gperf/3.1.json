@@ -1,6 +1,5 @@
 {
     "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
-    "name": "gperf",
     "ref": "3.1",
     "build_configs": [
         {

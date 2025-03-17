@@ -1,6 +1,5 @@
 {
     "url": "git://git.savannah.gnu.org/readline.git",
-    "name": "readline",
     "ref": "readline-8.2",
     "build_configs": [
         {

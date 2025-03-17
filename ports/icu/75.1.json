@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/hengke/icu.git",
-    "name": "icu",
     "ref": "release-75-1",
     "source_folder": "icu4c/source",
     "build_configs": [

@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/ccx3/gvdb.git",
-    "name": "gvdb",
     "ref": "main",
     "build_configs": [
         {

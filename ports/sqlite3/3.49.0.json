@@ -1,6 +1,5 @@
 {
     "url": "https://www.sqlite.org/2025/sqlite-src-3490100.zip",
-    "name": "sqlite3",
     "ref": "3.49.0",
     "build_configs": [
         {

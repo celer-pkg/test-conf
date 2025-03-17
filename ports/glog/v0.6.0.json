@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/optimum/glog.git",
-    "name": "glog",
     "ref": "v0.6.0",
     "build_configs": [
         {

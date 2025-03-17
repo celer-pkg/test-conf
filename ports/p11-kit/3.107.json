@@ -1,6 +1,5 @@
 {
     "url": "https://gh.api.99988866.xyz/https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz",
-    "name": "p11-kit",
     "ref": "0.25.5",
     "build_configs": [
         {

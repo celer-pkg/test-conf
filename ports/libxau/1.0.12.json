@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxau.git",
-    "name": "libxau",
     "ref": "libXau-1.0.12",
     "build_configs": [
         {

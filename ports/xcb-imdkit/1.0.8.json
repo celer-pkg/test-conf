@@ -1,6 +1,5 @@
 {
     "url": "https://salsa.debian.org/input-method-team/xcb-imdkit.git",
-    "name": "xcb-imdkit",
     "ref": "upstream/1.0.8",
     "build_configs": [
         {

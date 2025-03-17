@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/chooosky/x264.git",
-    "name": "x264",
     "ref": "stable",
     "build_configs": [
         {

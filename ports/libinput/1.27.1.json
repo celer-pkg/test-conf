@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/libinput/libinput.git",
-    "name": "libinput",
     "ref": "1.27.1",
     "build_configs": [
         {

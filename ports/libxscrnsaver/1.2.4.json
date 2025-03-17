@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git",
-    "name": "libxscrnsaver",
     "ref": "libXScrnSaver-1.2.4",
     "build_configs": [
         {

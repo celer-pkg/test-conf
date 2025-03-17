@@ -1,6 +1,5 @@
 {
     "url": "https://www.x.org/releases/individual/xcb/libpthread-stubs-0.4.tar.gz",
-    "name": "pthread-stubs",
     "ref": "0.4",
     "build_configs": [
         {

@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/phil-zhang/glib.git",
-    "name": "glib",
     "ref": "2.62.0",
     "build_configs": [
         {

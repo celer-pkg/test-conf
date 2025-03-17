@@ -1,6 +1,5 @@
 {
     "url": "https://download.qt.io/official_releases/qt/5.15/5.15.16/single/qt-everywhere-opensource-src-5.15.16.tar.xz",
-    "name": "qt",
     "ref": "5.15.16",
     "build_configs": [
         {

@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/baolingyi/opencv.git",
-    "name": "opencv",
     "ref": "4.5.1",
     "build_configs": [
         {

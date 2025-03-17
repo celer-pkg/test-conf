@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxtrans.git",
-    "name": "libxtrans",
     "ref": "xtrans-1.5.2",
     "build_configs": [
         {

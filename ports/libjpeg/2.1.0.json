@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/yangyw6/libjpeg.git",
-    "name": "libjpeg",
     "ref": "libjpeg-turbo-2.1.0",
     "build_configs": [
         {

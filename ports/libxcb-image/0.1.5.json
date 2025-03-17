@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxcb-image.git",
-    "name": "libxcb-image",
     "ref": "xcb-util-image-0.4.1-gitlab",
     "build_configs": [
         {

@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.gnome.org/GNOME/libxml2.git",
-    "name": "libxml2",
     "ref": "v2.13.5",
     "build_configs": [
         {

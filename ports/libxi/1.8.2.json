@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxi.git",
-    "name": "libxi",
     "ref": "libXi-1.8.2",
     "build_configs": [
         {

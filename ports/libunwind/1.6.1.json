@@ -1,6 +1,5 @@
 {
     "url": "https://download-mirror.savannah.gnu.org/releases/libunwind/libunwind-1.6.1.tar.gz",
-    "name": "libunwind",
     "ref": "1.6.1",
     "build_configs": [
         {

@@ -1,6 +1,5 @@
 {
     "url": "https://gitee.com/framecallback/libvips.git",
-    "name": "libvips",
     "ref": "v8.16.0",
     "build_configs": [
         {

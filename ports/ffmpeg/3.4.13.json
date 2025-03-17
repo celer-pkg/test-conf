@@ -1,6 +1,5 @@
 {
     "url": "https://ffmpeg.org/releases/ffmpeg-3.4.13.tar.xz",
-    "name": "ffmpeg",
     "ref": "3.4.13",
     "build_configs": [
         {

@@ -1,6 +1,5 @@
 {
     "url": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz",
-    "name": "eudev",
     "ref": "3.2.10",
     "build_configs": [
         {

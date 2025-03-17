@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/pulseaudio/pulseaudio.git",
-    "name": "pulseaudio",
     "ref": "16.2",
     "build_configs": [
         {

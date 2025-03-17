@@ -1,6 +1,5 @@
 {
     "url": "https://gitlab.freedesktop.org/xorg/lib/libxcursor.git",
-    "name": "libxcursor",
     "ref": "libXcursor-1.2.3",
     "build_configs": [
         {
