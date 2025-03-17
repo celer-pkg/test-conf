@@ -1,3 +1,3 @@
 # README
 
-This a test config of buildenv.
+This a config repo for buildenv.
