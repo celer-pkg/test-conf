@@ -1,0 +1,14 @@
+{
+    "toolchain": {
+        "url": "file:///C:/Program Files/Microsoft Visual Studio/2022/Community",
+        "path": "VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64",
+        "system_name": "Windows",
+        "system_processor": "x86_64",
+        "host": "x64-windows",
+        "cc": "cl",
+        "cxx": "cl",
+        "ld": "link",
+        "ar": "lib"
+    },
+    "tools": []
+}
