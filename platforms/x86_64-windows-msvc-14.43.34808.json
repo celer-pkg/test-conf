@@ -9,6 +9,5 @@
         "cxx": "cl",
         "ld": "link",
         "ar": "lib"
-    },
-    "tools": []
+    }
 }
