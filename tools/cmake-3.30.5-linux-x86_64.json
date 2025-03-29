@@ -1,4 +1,6 @@
 {
     "url": "https://gh-proxy.com/github.com/Kitware/CMake/releases/download/v3.30.5/cmake-3.30.5-linux-x86_64.tar.gz",
-    "path": "cmake-3.30.5-linux-x86_64/bin"
+    "paths": [
+        "cmake-3.30.5-linux-x86_64/bin"
+    ]
 }

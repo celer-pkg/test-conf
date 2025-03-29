@@ -1,4 +1,6 @@
 {
     "url": "https://gh-proxy.com/github.com/xpack-dev-tools/ninja-build-xpack/releases/download/v1.12.1-1/xpack-ninja-build-1.12.1-1-linux-x64.tar.gz",
-    "path": "xpack-ninja-build-1.12.1-1/bin"
+    "paths": [
+        "xpack-ninja-build-1.12.1-1/bin"
+    ]
 }

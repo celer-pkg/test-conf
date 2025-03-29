@@ -11,7 +11,7 @@
         "filename": "sqlite3.lib"
     },
     "windows_shared": {
-        "filename": "sqlite3.dll",
+        "filename": "libsqlite3.dll",
         "impname": "sqlite3.lib"
     }
 }

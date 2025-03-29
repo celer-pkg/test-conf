@@ -1,4 +1,6 @@
 {
     "url": "https://gh-proxy.com/github.com/xpack-dev-tools/meson-build-xpack/releases/download/v1.6.1-1/xpack-meson-build-1.6.1-1-linux-x64.tar.gz",
-    "path": "xpack-meson-build-1.6.1-1/bin"
+    "paths": [
+        "xpack-meson-build-1.6.1-1/bin"
+    ]
 }
