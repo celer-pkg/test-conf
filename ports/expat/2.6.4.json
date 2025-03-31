@@ -3,7 +3,7 @@
     "ref": "2.6.4",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "cmake",
             "library_type": "shared",
             "env_vars": [],

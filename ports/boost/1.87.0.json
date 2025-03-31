@@ -3,7 +3,7 @@
     "ref": "1.87.0",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "b2",
             "library_type": "shared",
             "options": [
