@@ -1,26 +1,17 @@
 {
-    "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
-    "ref": "1.0.8",
+    "url": "https://gitlab.com/bzip2/bzip2.git",
+    "ref": "bzip2-1.0.8",
     "build_configs": [
         {
             "pattern": "*linux*",
-            "system_tools": [
-                "gettext",
-                "autopoint"
+            "patches": [
+                "1.0.8_support_cmake.patch"
             ],
-            "patches": [],
-            "build_tool": "makefiles",
+            "build_tool": "cmake",
             "library_type": "shared",
-            "env_vars": [
-                "NOCONFIGURE=1"
-            ],
-            "options": [
-                "--host=${HOST}"
-            ],
-            "dependencies": [
-                "freetype@2.13.3",
-                "expat@2.6.4"
-            ]
+            "env_vars": [],
+            "options": [],
+            "dependencies": []
         }
     ]
 }
