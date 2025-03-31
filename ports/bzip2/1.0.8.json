@@ -3,7 +3,7 @@
     "ref": "bzip2-1.0.8",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "patches": [
                 "1.0.8_support_cmake.patch"
             ],
