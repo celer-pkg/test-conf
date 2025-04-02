@@ -9,6 +9,22 @@
         "ld": "link",
         "ar": "lib"
     },
+    "windows_kit": {
+        "url": "file:///C:/Program Files (x86)/Windows Kits/10",
+        "version": "10.0.22621.0",
+        "header_dirs": [
+            "ucrt",
+            "shared",
+            "um",
+            "winrt",
+            "cppwinrt"
+        ],
+        "lib_dirs": [
+            "ucrt/x64",
+            "um/x64",
+            "ucrt_enclave/x64"
+        ]
+    },
     "tools": [
         "msys2-base-x86_64-20250221"
     ]
