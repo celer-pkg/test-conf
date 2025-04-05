@@ -1,11 +1,11 @@
 {
     "toolchain": {
-        "url": "file:///D:/Microsoft Visual Studio/2022/Community",
+        "url": "file:///C:/Program Files/Microsoft Visual Studio/2022/Community",
         "type": "msvc",
         "version": "14.43.34808",
         "system_name": "Windows",
-        "system_processor": "x64",
-        "host": "x64-windows",
+        "system_processor": "x86_64",
+        "host": "x86_64-windows",
         "cc": "cl.exe",
         "cxx": "cl.exe",
         "ld": "link.exe",

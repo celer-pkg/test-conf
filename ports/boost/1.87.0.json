@@ -7,7 +7,7 @@
             "build_tool": "b2",
             "library_type": "shared",
             "options": [
-                "--without-libraries=python"
+                "--without-python"
             ],
             "dependencies": [ ]
         }
