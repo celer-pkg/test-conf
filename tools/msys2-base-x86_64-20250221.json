@@ -3,5 +3,9 @@
     "paths": [
         "msys64/usr/bin",
         "msys64/bin"
+    ],
+    "packages": [
+        "base-devel",
+        "mingw-w64-x86_64-toolchain"
     ]
 }
