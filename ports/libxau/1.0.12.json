@@ -7,7 +7,6 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
-                "NOCONFIGURE=1",
                 "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
             ],
             "options": [

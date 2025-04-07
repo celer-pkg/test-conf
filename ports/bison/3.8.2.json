@@ -6,9 +6,6 @@
             "pattern": "*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [
-                "NOCONFIGURE=1"
-            ],
             "options": [
                 "--host=${HOST}"
             ],

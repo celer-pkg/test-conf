@@ -7,7 +7,6 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
-                "NOCONFIGURE=1",
                 "xorg_cv_malloc0_returns_null=yes"
             ],
             "options": [

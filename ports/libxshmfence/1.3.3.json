@@ -10,10 +10,6 @@
             ],
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [
-                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal",
-                "NOCONFIGURE=1"
-            ],
             "fix_configure": {
                 "scripts": [
                     "libtoolize",

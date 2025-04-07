@@ -6,9 +6,6 @@
             "pattern": "*linux*",
             "build_tool": "meson",
             "library_type": "shared",
-            "env_vars": [
-                "NOCONFIGURE=1"
-            ],
             "options": [
                 "--host=${HOST}"
             ],

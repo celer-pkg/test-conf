@@ -7,7 +7,6 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [
-                "NOCONFIGURE=1",
                 "LDFLAGS=-Wl,-rpath-link,${BUILD_DIR}/src/.libs"
             ],
             "options": [

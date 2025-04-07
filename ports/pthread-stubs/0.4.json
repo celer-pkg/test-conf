@@ -7,10 +7,6 @@
             "build_tool": "makefiles",
             "autogen_configure": true,
             "library_type": "shared",
-            "env_vars": [
-                "NOCONFIGURE=1",
-                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
-             ],
             "options": [
                 "--host=${HOST}"
             ],
