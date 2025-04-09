@@ -6,7 +6,8 @@
             "pattern": "*linux*",
             "system_tools": [
                 "autoconf",
-                "automake"
+                "automake",
+                "xutils-dev"
             ],
             "build_tool": "makefiles",
             "library_type": "shared",
@@ -21,7 +22,6 @@
                 "--host=${HOST}"
             ],
             "dependencies": [
-                "util-macros@1.20.2",
                 "xorgproto@2024.1"
             ],
             "dev_dependencies": []

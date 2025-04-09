@@ -7,12 +7,13 @@
             "build_tool": "makefiles",
             "autogen_configure": true,
             "library_type": "shared",
+            "system_tools": [
+                "xutils-dev"
+            ],
             "options": [
                 "--host=${HOST}"
             ],
-            "dependencies": [
-                "util-macros@1.20.2"
-            ]
+            "dependencies": []
         }
     ]
 }

@@ -3,22 +3,18 @@
     "ref": "dri2proto-2.8",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "patches": [
                 "2.8_no_configure.patch"
             ],
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [
-                "ACLOCAL_PATH=${INSTALLED_DIR}/share/aclocal"
-            ],
+            "env_vars": [],
             "options": [
                 "--host=${HOST}",
                 "--disable-dri3"
             ],
-            "dependencies": [
-                "util-macros@1.20.2"
-            ]
+            "dependencies": []
         }
     ]
 }
