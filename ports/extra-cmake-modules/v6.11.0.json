@@ -6,10 +6,12 @@
             "pattern": "*",
             "build_tool": "cmake",
             "library_type": "shared",
-            "env_vars": [],
+            "env_vars": [
+                "TRACKFILEACCESS=false"
+            ],
             "options": [
                 "-DCMAKE_C_FLAGS=-Werror=narrowing",
-                "-DCMAKE_CXX_FLAGS-Werror=narrowing"
+                "-DCMAKE_CXX_FLAGS=-Werror=narrowing"
             ],
             "dependencies": []
         }
