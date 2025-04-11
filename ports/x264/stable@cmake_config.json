@@ -11,7 +11,7 @@
         "filename": "x264.lib"
     },
     "windows_shared": {
-        "filename": "x264.dll",
+        "filename": "libx264-164.dll",
         "impname": "x264.lib"
     }
 }

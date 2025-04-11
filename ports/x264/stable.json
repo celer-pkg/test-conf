@@ -1,12 +1,18 @@
 {
-    "url": "https://gitee.com/chooosky/x264.git",
+    "url": "https://code.videolan.org/videolan/x264.git",
     "ref": "stable",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [ ],
+            "patches": [
+                "stable_fix_windows_build.patch"
+            ],
+            "env_vars": [
+                "CPATH=/mingw64/include",
+                "LIBRARY_PATH=/mingw64/lib"
+            ],
             "options": [
                 "--host=${HOST}",
                 "--sysroot=${SYSROOT}",
