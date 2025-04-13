@@ -6,7 +6,12 @@
             "pattern": "*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [ ],
+            "patches": [
+                "3.4.13_fix_windows_build.patch"
+            ],
+            "env_vars": [
+                "CFLAGS=-Wno-pointer-sign -Wno-incompatible-pointer-types -Wno-stringop-overread -Wno-stringop-truncation"
+            ],
             "options": [
                 "--sysroot=${SYSROOT}",
                 "--cross-prefix=${CROSS_PREFIX}",

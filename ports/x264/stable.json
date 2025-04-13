@@ -6,13 +6,11 @@
             "pattern": "*",
             "build_tool": "makefiles",
             "library_type": "shared",
+            "implib": true,
             "patches": [
                 "stable_fix_windows_build.patch"
             ],
-            "env_vars": [
-                "CPATH=/mingw64/include",
-                "LIBRARY_PATH=/mingw64/lib"
-            ],
+            "env_vars": [],
             "options": [
                 "--host=${HOST}",
                 "--sysroot=${SYSROOT}",
@@ -20,7 +18,7 @@
                 "--disable-cli",
                 "--enable-pic"
             ],
-            "dependencies": [ ],
+            "dependencies": [],
             "cmake_config": "linux_shared"
         }
     ]

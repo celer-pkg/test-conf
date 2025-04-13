@@ -3,7 +3,7 @@
     "ref": "v1.3.1",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "cmake",
             "library_type": "shared",
             "options": [

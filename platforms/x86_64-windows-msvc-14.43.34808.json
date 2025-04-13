@@ -18,6 +18,7 @@
             "git",
             "autoconf",
             "automake",
+            "libtool",
             "nasm",
             "xorg-util-macros",
             "mingw-w64-x86_64-binutils",

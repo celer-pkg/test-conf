@@ -3,7 +3,7 @@
     "ref": "upstream/1.0.8",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "cmake",
             "library_type": "shared",
             "env_vars": [],

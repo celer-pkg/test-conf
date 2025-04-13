@@ -3,7 +3,7 @@
     "ref": "xorgproto-2024.1",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "makefiles",
             "library_type": "shared",
             "system_tools": [

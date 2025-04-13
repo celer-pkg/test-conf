@@ -3,7 +3,7 @@
     "ref": "1.0",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "patches": [
                 "1.0_fix_configure.patch"
             ],

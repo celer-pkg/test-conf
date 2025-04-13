@@ -3,7 +3,7 @@
     "ref": "0.3.10",
     "build_configs": [
         {
-            "pattern": "*linux*",
+            "pattern": "*",
             "build_tool": "makefiles",
             "library_type": "shared",
             "options": [
