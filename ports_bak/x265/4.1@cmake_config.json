@@ -1,0 +1,17 @@
+{
+    "namespace": "x265",
+    "linux_static": {
+        "filename": "x265.a"
+    },
+    "linux_shared": {
+        "filename": "libx265.so.212",
+        "soname": "libx265.so"
+    },
+    "windows_static": {
+        "filename": "x265.lib"
+    },
+    "windows_shared": {
+        "filename": "x265.dll",
+        "impname": "x265.lib"
+    }
+}

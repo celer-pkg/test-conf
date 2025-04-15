@@ -1,0 +1,19 @@
+{
+    "url": "https://gitlab.gnome.org/GNOME/libxslt.git",
+    "ref": "v1.1.42",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [
+                "-DLIBXSLT_WITH_PYTHON=OFF"
+            ],
+            "dependencies": [],
+            "dev_dependencies": [
+                "libxml2@v2.13.5"
+            ]
+        }
+    ]
+}

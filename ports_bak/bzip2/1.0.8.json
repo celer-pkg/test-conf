@@ -1,0 +1,17 @@
+{
+    "url": "https://gitlab.com/bzip2/bzip2.git",
+    "ref": "bzip2-1.0.8",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "patches": [
+                "1.0.8_support_cmake.patch"
+            ],
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [],
+            "dependencies": []
+        }
+    ]
+}

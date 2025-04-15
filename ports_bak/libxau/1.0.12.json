@@ -1,0 +1,21 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libxau.git",
+    "ref": "libXau-1.0.12",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "system_tools": [
+                "xutils-dev"
+            ],
+            "env_vars": [],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [
+                "xorgproto@2024.1"
+            ]
+        }
+    ]
+}

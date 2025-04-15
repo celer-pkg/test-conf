@@ -1,0 +1,14 @@
+{
+    "url": "https://gh-proxy.com/github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz",
+    "ref": "2.1.12",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [],
+            "dependencies": []
+        }
+    ]
+}

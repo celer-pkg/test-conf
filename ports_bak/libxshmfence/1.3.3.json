@@ -1,0 +1,30 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libxshmfence.git",
+    "ref": "libxshmfence-1.3.3",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "system_tools": [
+                "autoconf",
+                "automake",
+                "xutils-dev"
+            ],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "fix_configure": {
+                "scripts": [
+                    "libtoolize",
+                    "autoreconf -vfi"
+                ],
+                "work_dir": "${SOURCE_DIR}"
+            },
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [
+                "xorgproto@2024.1"
+            ],
+            "dev_dependencies": []
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/proto/dri2proto.git",
+    "ref": "dri2proto-2.8",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "patches": [
+                "2.8_no_configure.patch"
+            ],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [
+                "--host=${HOST}",
+                "--disable-dri3"
+            ],
+            "dependencies": []
+        }
+    ]
+}

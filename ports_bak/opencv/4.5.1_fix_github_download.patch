@@ -1,0 +1,865 @@
+diff --git a/3rdparty/ffmpeg/ffmpeg-download.ps1.in b/3rdparty/ffmpeg/ffmpeg-download.ps1.in
+index 9397265327..048a6f30c8 100644
+--- a/3rdparty/ffmpeg/ffmpeg-download.ps1.in
++++ b/3rdparty/ffmpeg/ffmpeg-download.ps1.in
+@@ -1,4 +1,4 @@
+-$url = "https://raw.githubusercontent.com/opencv/opencv_3rdparty/@FFMPEG_BINARIES_COMMIT@/ffmpeg/opencv_videoio_ffmpeg_64.dll"
++$url = "https://raw.staticdn.net/opencv/opencv_3rdparty/@FFMPEG_BINARIES_COMMIT@/ffmpeg/opencv_videoio_ffmpeg_64.dll"
+ $expected_md5 = "@FFMPEG_FILE_HASH_BIN64@"
+ $output = "$PSScriptRoot\@OPENCV_BIN_INSTALL_PATH@\opencv_videoio_ffmpeg@OPENCV_DLLVERSION@_64.dll"
+ 
+diff --git a/3rdparty/ffmpeg/ffmpeg.cmake b/3rdparty/ffmpeg/ffmpeg.cmake
+index 8cf0f24f5e..2e3a8d34a4 100644
+--- a/3rdparty/ffmpeg/ffmpeg.cmake
++++ b/3rdparty/ffmpeg/ffmpeg.cmake
+@@ -22,7 +22,7 @@ function(download_win_ffmpeg script_var)
+                URL
+                  "$ENV{OPENCV_FFMPEG_URL}"
+                  "${OPENCV_FFMPEG_URL}"
+-                 "https://raw.githubusercontent.com/opencv/opencv_3rdparty/${FFMPEG_BINARIES_COMMIT}/ffmpeg/"
++                 "https://raw.staticdn.net/opencv/opencv_3rdparty/${FFMPEG_BINARIES_COMMIT}/ffmpeg/"
+                DESTINATION_DIR ${FFMPEG_DOWNLOAD_DIR}
+                ID FFMPEG
+                RELATIVE_URL
+diff --git a/3rdparty/ippicv/ippicv.cmake b/3rdparty/ippicv/ippicv.cmake
+index 257af6fcc6..5ef88d77ea 100644
+--- a/3rdparty/ippicv/ippicv.cmake
++++ b/3rdparty/ippicv/ippicv.cmake
+@@ -39,7 +39,7 @@ function(download_ippicv root_var)
+                URL
+                  "${OPENCV_IPPICV_URL}"
+                  "$ENV{OPENCV_IPPICV_URL}"
+-                 "https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/"
++                 "https://raw.staticdn.net/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/"
+                DESTINATION_DIR "${THE_ROOT}"
+                ID IPPICV
+                STATUS res
+diff --git a/doc/js_tutorials/js_assets/js_image_classification.html b/doc/js_tutorials/js_assets/js_image_classification.html
+index 656f2720b6..b57a7196e6 100644
+--- a/doc/js_tutorials/js_assets/js_image_classification.html
++++ b/doc/js_tutorials/js_assets/js_image_classification.html
+@@ -116,7 +116,7 @@ swapRB = false;
+ needSoftmax = false;
+ 
+ // url for label file, can from local or Internet
+-labelsUrl = "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt";
++labelsUrl = "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt";
+ </script>
+ 
+ <script id="codeSnippet1" type="text/code-snippet">
+diff --git a/doc/js_tutorials/js_assets/js_image_classification_model_info.json b/doc/js_tutorials/js_assets/js_image_classification_model_info.json
+index 67553ec2d3..7bd969cb44 100644
+--- a/doc/js_tutorials/js_assets/js_image_classification_model_info.json
++++ b/doc/js_tutorials/js_assets/js_image_classification_model_info.json
+@@ -6,9 +6,9 @@
+             "std": "1",
+             "swapRB": "false",
+             "needSoftmax": "false",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
+             "modelUrl": "http://dl.caffe.berkeleyvision.org/bvlc_alexnet.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/BVLC/caffe/master/models/bvlc_alexnet/deploy.prototxt"
++            "configUrl": "https://raw.staticdn.net/BVLC/caffe/master/models/bvlc_alexnet/deploy.prototxt"
+         },
+         {
+             "model": "densenet",
+@@ -16,9 +16,9 @@
+             "std": "0.007843",
+             "swapRB": "false",
+             "needSoftmax": "true",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
+             "modelUrl": "https://drive.google.com/open?id=0B7ubpZO7HnlCcHlfNmJkU2VPelE",
+-            "configUrl": "https://raw.githubusercontent.com/shicai/DenseNet-Caffe/master/DenseNet_121.prototxt"
++            "configUrl": "https://raw.staticdn.net/shicai/DenseNet-Caffe/master/DenseNet_121.prototxt"
+         },
+         {
+             "model": "googlenet",
+@@ -26,9 +26,9 @@
+             "std": "1",
+             "swapRB": "false",
+             "needSoftmax": "false",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
+             "modelUrl": "http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/BVLC/caffe/master/models/bvlc_googlenet/deploy.prototxt"
++            "configUrl": "https://raw.staticdn.net/BVLC/caffe/master/models/bvlc_googlenet/deploy.prototxt"
+         },
+         {
+             "model": "squeezenet",
+@@ -36,9 +36,9 @@
+             "std": "1",
+             "swapRB": "false",
+             "needSoftmax": "false",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
+-            "modelUrl": "https://raw.githubusercontent.com/forresti/SqueezeNet/master/SqueezeNet_v1.0/squeezenet_v1.0.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/forresti/SqueezeNet/master/SqueezeNet_v1.0/deploy.prototxt"
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
++            "modelUrl": "https://raw.staticdn.net/forresti/SqueezeNet/master/SqueezeNet_v1.0/squeezenet_v1.0.caffemodel",
++            "configUrl": "https://raw.staticdn.net/forresti/SqueezeNet/master/SqueezeNet_v1.0/deploy.prototxt"
+         },
+         {
+             "model": "VGG",
+@@ -46,7 +46,7 @@
+             "std": "1",
+             "swapRB": "false",
+             "needSoftmax": "false",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt",
+             "modelUrl": "http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_19_layers.caffemodel",
+             "configUrl": "https://gist.githubusercontent.com/ksimonyan/3785162f95cd2d5fee77/raw/f02f8769e64494bcd3d7e97d5d747ac275825721/VGG_ILSVRC_19_layers_deploy.prototxt"
+         }
+@@ -58,8 +58,8 @@
+             "std": "1",
+             "swapRB": "true",
+             "needSoftmax": "false",
+-            "labelsUrl": "https://raw.githubusercontent.com/petewarden/tf_ios_makefile_example/master/data/imagenet_comp_graph_label_strings.txt",
+-            "modelUrl": "https://raw.githubusercontent.com/petewarden/tf_ios_makefile_example/master/data/tensorflow_inception_graph.pb"
++            "labelsUrl": "https://raw.staticdn.net/petewarden/tf_ios_makefile_example/master/data/imagenet_comp_graph_label_strings.txt",
++            "modelUrl": "https://raw.staticdn.net/petewarden/tf_ios_makefile_example/master/data/tensorflow_inception_graph.pb"
+         }
+     ]
+ }
+\ No newline at end of file
+diff --git a/doc/js_tutorials/js_assets/js_image_classification_with_camera.html b/doc/js_tutorials/js_assets/js_image_classification_with_camera.html
+index 9a2473cf2b..0e8f632f4f 100644
+--- a/doc/js_tutorials/js_assets/js_image_classification_with_camera.html
++++ b/doc/js_tutorials/js_assets/js_image_classification_with_camera.html
+@@ -116,7 +116,7 @@ swapRB = false;
+ needSoftmax = false;
+ 
+ // url for label file, can from local or Internet
+-labelsUrl = "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt";
++labelsUrl = "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/classification_classes_ILSVRC2012.txt";
+ </script>
+ 
+ <script id="codeSnippet1" type="text/code-snippet">
+diff --git a/doc/js_tutorials/js_assets/js_object_detection.html b/doc/js_tutorials/js_assets/js_object_detection.html
+index 53f1e48639..13273e4d81 100644
+--- a/doc/js_tutorials/js_assets/js_object_detection.html
++++ b/doc/js_tutorials/js_assets/js_object_detection.html
+@@ -94,7 +94,7 @@ nmsThreshold = 0.4;
+ outType = "SSD";
+ 
+ // url for label file, can from local or Internet
+-labelsUrl = "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt";
++labelsUrl = "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt";
+ </script>
+ 
+ <script id="codeSnippet1" type="text/code-snippet">
+diff --git a/doc/js_tutorials/js_assets/js_object_detection_model_info.json b/doc/js_tutorials/js_assets/js_object_detection_model_info.json
+index c0d14be714..6a5461c476 100644
+--- a/doc/js_tutorials/js_assets/js_object_detection_model_info.json
++++ b/doc/js_tutorials/js_assets/js_object_detection_model_info.json
+@@ -7,9 +7,9 @@
+             "std": "0.007843",
+             "swapRB": "false",
+             "outType": "SSD",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt",
+-            "modelUrl": "https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/master/mobilenet_iter_73000.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/master/deploy.prototxt"
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt",
++            "modelUrl": "https://raw.staticdn.net/chuanqi305/MobileNet-SSD/master/mobilenet_iter_73000.caffemodel",
++            "configUrl": "https://raw.staticdn.net/chuanqi305/MobileNet-SSD/master/deploy.prototxt"
+         },
+         {
+             "model": "VGG_SSD",
+@@ -18,7 +18,7 @@
+             "std": "1",
+             "swapRB": "false",
+             "outType": "SSD",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt",
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt",
+             "modelUrl": "https://drive.google.com/uc?id=0BzKzrI_SkD1_WVVTSmQxU0dVRzA&export=download",
+             "configUrl": "https://drive.google.com/uc?id=0BzKzrI_SkD1_WVVTSmQxU0dVRzA&export=download"
+         }
+@@ -31,9 +31,9 @@
+             "std": "0.00392",
+             "swapRB": "false",
+             "outType": "YOLO",
+-            "labelsUrl": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/object_detection_classes_yolov3.txt",
++            "labelsUrl": "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/object_detection_classes_yolov3.txt",
+             "modelUrl": "https://pjreddie.com/media/files/yolov2-tiny.weights",
+-            "configUrl": "https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov2-tiny.cfg"
++            "configUrl": "https://raw.staticdn.net/pjreddie/darknet/master/cfg/yolov2-tiny.cfg"
+         }
+     ]
+ }
+\ No newline at end of file
+diff --git a/doc/js_tutorials/js_assets/js_object_detection_with_camera.html b/doc/js_tutorials/js_assets/js_object_detection_with_camera.html
+index 41bb609708..8756b4a632 100644
+--- a/doc/js_tutorials/js_assets/js_object_detection_with_camera.html
++++ b/doc/js_tutorials/js_assets/js_object_detection_with_camera.html
+@@ -94,7 +94,7 @@ nmsThreshold = 0.4;
+ outType = "SSD";
+ 
+ // url for label file, can from local or Internet
+-labelsUrl = "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt";
++labelsUrl = "https://raw.staticdn.net/opencv/opencv/master/samples/data/dnn/object_detection_classes_pascal_voc.txt";
+ </script>
+ 
+ <script id="codeSnippet1" type="text/code-snippet">
+diff --git a/doc/js_tutorials/js_assets/js_pose_estimation_model_info.json b/doc/js_tutorials/js_assets/js_pose_estimation_model_info.json
+index 922c813f39..3e7fc5918b 100644
+--- a/doc/js_tutorials/js_assets/js_pose_estimation_model_info.json
++++ b/doc/js_tutorials/js_assets/js_pose_estimation_model_info.json
+@@ -8,7 +8,7 @@
+             "swapRB": "false",
+             "dataset": "BODY_25",
+             "modelUrl": "http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/body_25/pose_iter_584000.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/CMU-Perceptual-Computing-Lab/openpose/master/models/pose/body_25/pose_deploy.prototxt"
++            "configUrl": "https://raw.staticdn.net/CMU-Perceptual-Computing-Lab/openpose/master/models/pose/body_25/pose_deploy.prototxt"
+         },
+         {
+             "model": "coco",
+@@ -18,7 +18,7 @@
+             "swapRB": "false",
+             "dataset": "COCO",
+             "modelUrl": "http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/CMU-Perceptual-Computing-Lab/openpose/master/models/pose/coco/pose_deploy_linevec.prototxt"
++            "configUrl": "https://raw.staticdn.net/CMU-Perceptual-Computing-Lab/openpose/master/models/pose/coco/pose_deploy_linevec.prototxt"
+         },
+         {
+             "model": "mpi",
+@@ -28,7 +28,7 @@
+             "swapRB": "false",
+             "dataset": "MPI",
+             "modelUrl": "http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/mpi/pose_iter_160000.caffemodel",
+-            "configUrl": "https://raw.githubusercontent.com/CMU-Perceptual-Computing-Lab/openpose/master/models/pose/mpi/pose_deploy_linevec.prototxt"
++            "configUrl": "https://raw.staticdn.net/CMU-Perceptual-Computing-Lab/openpose/master/models/pose/mpi/pose_deploy_linevec.prototxt"
+         }
+     ]
+ }
+\ No newline at end of file
+diff --git a/doc/tutorials/core/adding_images/adding_images.markdown b/doc/tutorials/core/adding_images/adding_images.markdown
+index 3cec9f1734..d2d570cdef 100644
+--- a/doc/tutorials/core/adding_images/adding_images.markdown
++++ b/doc/tutorials/core/adding_images/adding_images.markdown
+@@ -41,19 +41,19 @@ Source Code
+ 
+ @add_toggle_cpp
+ Download the source code from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/core/AddingImages/AddingImages.cpp).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/core/AddingImages/AddingImages.cpp).
+ @include cpp/tutorial_code/core/AddingImages/AddingImages.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ Download the source code from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/core/AddingImages/AddingImages.java).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/core/AddingImages/AddingImages.java).
+ @include java/tutorial_code/core/AddingImages/AddingImages.java
+ @end_toggle
+ 
+ @add_toggle_python
+ Download the source code from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/core/AddingImages/adding_images.py).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/core/AddingImages/adding_images.py).
+ @include python/tutorial_code/core/AddingImages/adding_images.py
+ @end_toggle
+ 
+@@ -77,7 +77,7 @@ We need two source images (\f$f_{0}(x)\f$ and \f$f_{1}(x)\f$). So, we load them
+ @snippet python/tutorial_code/core/AddingImages/adding_images.py load
+ @end_toggle
+ 
+-We used the following images: [LinuxLogo.jpg](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/LinuxLogo.jpg) and [WindowsLogo.jpg](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/WindowsLogo.jpg)
++We used the following images: [LinuxLogo.jpg](https://raw.staticdn.net/opencv/opencv/master/samples/data/LinuxLogo.jpg) and [WindowsLogo.jpg](https://raw.staticdn.net/opencv/opencv/master/samples/data/WindowsLogo.jpg)
+ 
+ @warning Since we are *adding* *src1* and *src2*, they both have to be of the same size
+ (width and height) and type.
+diff --git a/doc/tutorials/core/discrete_fourier_transform/discrete_fourier_transform.markdown b/doc/tutorials/core/discrete_fourier_transform/discrete_fourier_transform.markdown
+index 1701babf4f..a6802cb4fa 100644
+--- a/doc/tutorials/core/discrete_fourier_transform/discrete_fourier_transform.markdown
++++ b/doc/tutorials/core/discrete_fourier_transform/discrete_fourier_transform.markdown
+@@ -26,7 +26,7 @@ Source code
+ 
+ @add_toggle_cpp
+ You can [download this from here
+-](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.cpp) or
++](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.cpp) or
+ find it in the
+ `samples/cpp/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.cpp` of the
+ OpenCV source code library.
+@@ -34,7 +34,7 @@ OpenCV source code library.
+ 
+ @add_toggle_java
+ You can [download this from here
+-](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/core/discrete_fourier_transform/DiscreteFourierTransform.java) or
++](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/core/discrete_fourier_transform/DiscreteFourierTransform.java) or
+ find it in the
+ `samples/java/tutorial_code/core/discrete_fourier_transform/DiscreteFourierTransform.java` of the
+ OpenCV source code library.
+@@ -42,7 +42,7 @@ OpenCV source code library.
+ 
+ @add_toggle_python
+ You can [download this from here
+-](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.py) or
++](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.py) or
+ find it in the
+ `samples/python/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.py` of the
+ OpenCV source code library.
+@@ -229,7 +229,7 @@ An application idea would be to determine the geometrical orientation present in
+ example, let us find out if a text is horizontal or not? Looking at some text you'll notice that the
+ text lines sort of form also horizontal lines and the letters form sort of vertical lines. These two
+ main components of a text snippet may be also seen in case of the Fourier transform. Let us use
+-[this horizontal ](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/imageTextN.png) and [this rotated](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/imageTextR.png)
++[this horizontal ](https://raw.staticdn.net/opencv/opencv/master/samples/data/imageTextN.png) and [this rotated](https://raw.staticdn.net/opencv/opencv/master/samples/data/imageTextR.png)
+ image about a text.
+ 
+ In case of the horizontal text:
+diff --git a/doc/tutorials/core/mat-mask-operations/mat_mask_operations.markdown b/doc/tutorials/core/mat-mask-operations/mat_mask_operations.markdown
+index 43c71d7159..25142767ee 100644
+--- a/doc/tutorials/core/mat-mask-operations/mat_mask_operations.markdown
++++ b/doc/tutorials/core/mat-mask-operations/mat_mask_operations.markdown
+@@ -40,7 +40,7 @@ Code
+ 
+ @add_toggle_cpp
+ You can download this source code from [here
+-](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/core/mat_mask_operations/mat_mask_operations.cpp) or look in the
++](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/core/mat_mask_operations/mat_mask_operations.cpp) or look in the
+ OpenCV source code libraries sample directory at
+ `samples/cpp/tutorial_code/core/mat_mask_operations/mat_mask_operations.cpp`.
+ @include samples/cpp/tutorial_code/core/mat_mask_operations/mat_mask_operations.cpp
+@@ -48,7 +48,7 @@ OpenCV source code libraries sample directory at
+ 
+ @add_toggle_java
+ You can download this source code from [here
+-](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/core/mat_mask_operations/MatMaskOperations.java) or look in the
++](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/core/mat_mask_operations/MatMaskOperations.java) or look in the
+ OpenCV source code libraries sample directory at
+ `samples/java/tutorial_code/core/mat_mask_operations/MatMaskOperations.java`.
+ @include samples/java/tutorial_code/core/mat_mask_operations/MatMaskOperations.java
+@@ -56,7 +56,7 @@ OpenCV source code libraries sample directory at
+ 
+ @add_toggle_python
+ You can download this source code from [here
+-](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/core/mat_mask_operations/mat_mask_operations.py) or look in the
++](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/core/mat_mask_operations/mat_mask_operations.py) or look in the
+ OpenCV source code libraries sample directory at
+ `samples/python/tutorial_code/core/mat_mask_operations/mat_mask_operations.py`.
+ @include samples/python/tutorial_code/core/mat_mask_operations/mat_mask_operations.py
+diff --git a/doc/tutorials/features2d/akaze_matching/akaze_matching.markdown b/doc/tutorials/features2d/akaze_matching/akaze_matching.markdown
+index 9cb920ff1b..7138acbeca 100644
+--- a/doc/tutorials/features2d/akaze_matching/akaze_matching.markdown
++++ b/doc/tutorials/features2d/akaze_matching/akaze_matching.markdown
+@@ -42,7 +42,7 @@ You can find the images (*graf1.png*, *graf3.png*) and homography (*H1to3p.xml*)
+ 
+ @add_toggle_cpp
+ -   **Downloadable code**: Click
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/features2D/AKAZE_match.cpp)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/features2D/AKAZE_match.cpp)
+ 
+ -   **Code at glance:**
+     @include samples/cpp/tutorial_code/features2D/AKAZE_match.cpp
+@@ -50,7 +50,7 @@ You can find the images (*graf1.png*, *graf3.png*) and homography (*H1to3p.xml*)
+ 
+ @add_toggle_java
+ -   **Downloadable code**: Click
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/features2D/akaze_matching/AKAZEMatchDemo.java)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/features2D/akaze_matching/AKAZEMatchDemo.java)
+ 
+ -   **Code at glance:**
+     @include samples/java/tutorial_code/features2D/akaze_matching/AKAZEMatchDemo.java
+@@ -58,7 +58,7 @@ You can find the images (*graf1.png*, *graf3.png*) and homography (*H1to3p.xml*)
+ 
+ @add_toggle_python
+ -   **Downloadable code**: Click
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/features2D/akaze_matching/AKAZE_match.py)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/features2D/akaze_matching/AKAZE_match.py)
+ 
+ -   **Code at glance:**
+     @include samples/python/tutorial_code/features2D/akaze_matching/AKAZE_match.py
+diff --git a/doc/tutorials/imgproc/basic_geometric_drawing/basic_geometric_drawing.markdown b/doc/tutorials/imgproc/basic_geometric_drawing/basic_geometric_drawing.markdown
+index 289000cbe2..1ea990c277 100644
+--- a/doc/tutorials/imgproc/basic_geometric_drawing/basic_geometric_drawing.markdown
++++ b/doc/tutorials/imgproc/basic_geometric_drawing/basic_geometric_drawing.markdown
+@@ -88,19 +88,19 @@ Code
+ 
+ @add_toggle_cpp
+ -   This code is in your OpenCV sample folder. Otherwise you can grab it from
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/basic_drawing/Drawing_1.cpp)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/basic_drawing/Drawing_1.cpp)
+     @include samples/cpp/tutorial_code/ImgProc/basic_drawing/Drawing_1.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ -   This code is in your OpenCV sample folder. Otherwise you can grab it from
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgProc/BasicGeometricDrawing/BasicGeometricDrawing.java)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgProc/BasicGeometricDrawing/BasicGeometricDrawing.java)
+     @include samples/java/tutorial_code/ImgProc/BasicGeometricDrawing/BasicGeometricDrawing.java
+ @end_toggle
+ 
+ @add_toggle_python
+ -   This code is in your OpenCV sample folder. Otherwise you can grab it from
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/imgProc/BasicGeometricDrawing/basic_geometric_drawing.py)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/imgProc/BasicGeometricDrawing/basic_geometric_drawing.py)
+     @include samples/python/tutorial_code/imgProc/BasicGeometricDrawing/basic_geometric_drawing.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.markdown b/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.markdown
+index beb09641c1..dd25e27fef 100644
+--- a/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.markdown
++++ b/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.markdown
+@@ -105,7 +105,7 @@ Code
+ 
+ @add_toggle_cpp
+ -   **Downloadable code**: Click
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp)
+ 
+ -   **Code at glance:**
+     @include samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp
+@@ -113,7 +113,7 @@ Code
+ 
+ @add_toggle_java
+ -   **Downloadable code**: Click
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgProc/Smoothing/Smoothing.java)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgProc/Smoothing/Smoothing.java)
+ 
+ -   **Code at glance:**
+     @include samples/java/tutorial_code/ImgProc/Smoothing/Smoothing.java
+@@ -121,7 +121,7 @@ Code
+ 
+ @add_toggle_python
+ -   **Downloadable code**: Click
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/imgProc/Smoothing/smoothing.py)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/imgProc/Smoothing/smoothing.py)
+ 
+ -   **Code at glance:**
+     @include samples/python/tutorial_code/imgProc/Smoothing/smoothing.py
+@@ -228,7 +228,7 @@ already known by now.
+ Results
+ -------
+ 
+--   The code opens an image (in this case [lena.jpg](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/lena.jpg))
++-   The code opens an image (in this case [lena.jpg](https://raw.staticdn.net/opencv/opencv/master/samples/data/lena.jpg))
+     and display it under the effects of the 4 filters explained.
+ -   Here is a snapshot of the image smoothed using *medianBlur*:
+ 
+diff --git a/doc/tutorials/imgproc/hitOrMiss/hitOrMiss.markdown b/doc/tutorials/imgproc/hitOrMiss/hitOrMiss.markdown
+index 887b3765c0..9292b5cdb7 100644
+--- a/doc/tutorials/imgproc/hitOrMiss/hitOrMiss.markdown
++++ b/doc/tutorials/imgproc/hitOrMiss/hitOrMiss.markdown
+@@ -55,19 +55,19 @@ The code corresponding to the previous example is shown below.
+ 
+ @add_toggle_cpp
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/HitMiss/HitMiss.cpp)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/HitMiss/HitMiss.cpp)
+ @include samples/cpp/tutorial_code/ImgProc/HitMiss/HitMiss.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgProc/HitMiss/HitMiss.java)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgProc/HitMiss/HitMiss.java)
+ @include samples/java/tutorial_code/ImgProc/HitMiss/HitMiss.java
+ @end_toggle
+ 
+ @add_toggle_python
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/imgProc/HitMiss/hit_miss.py)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/imgProc/HitMiss/hit_miss.py)
+ @include samples/python/tutorial_code/imgProc/HitMiss/hit_miss.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/imgtrans/copyMakeBorder/copyMakeBorder.markdown b/doc/tutorials/imgproc/imgtrans/copyMakeBorder/copyMakeBorder.markdown
+index 4acc06064f..48b4aacfc7 100644
+--- a/doc/tutorials/imgproc/imgtrans/copyMakeBorder/copyMakeBorder.markdown
++++ b/doc/tutorials/imgproc/imgtrans/copyMakeBorder/copyMakeBorder.markdown
+@@ -59,19 +59,19 @@ The tutorial code's is shown lines below.
+ 
+ @add_toggle_cpp
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/copyMakeBorder_demo.cpp)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/copyMakeBorder_demo.cpp)
+ @include samples/cpp/tutorial_code/ImgTrans/copyMakeBorder_demo.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/MakeBorder/CopyMakeBorder.java)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/MakeBorder/CopyMakeBorder.java)
+ @include samples/java/tutorial_code/ImgTrans/MakeBorder/CopyMakeBorder.java
+ @end_toggle
+ 
+ @add_toggle_python
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/MakeBorder/copy_make_border.py)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/MakeBorder/copy_make_border.py)
+ @include samples/python/tutorial_code/ImgTrans/MakeBorder/copy_make_border.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/imgtrans/filter_2d/filter_2d.markdown b/doc/tutorials/imgproc/imgtrans/filter_2d/filter_2d.markdown
+index efe3fdf9ae..83f37e8b9b 100644
+--- a/doc/tutorials/imgproc/imgtrans/filter_2d/filter_2d.markdown
++++ b/doc/tutorials/imgproc/imgtrans/filter_2d/filter_2d.markdown
+@@ -75,19 +75,19 @@ The tutorial code's is shown in the lines below.
+ 
+ @add_toggle_cpp
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/filter2D_demo.cpp)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/filter2D_demo.cpp)
+ @include cpp/tutorial_code/ImgTrans/filter2D_demo.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/Filter2D/Filter2D_Demo.java)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/Filter2D/Filter2D_Demo.java)
+ @include java/tutorial_code/ImgTrans/Filter2D/Filter2D_Demo.java
+ @end_toggle
+ 
+ @add_toggle_python
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/Filter2D/filter2D.py)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/Filter2D/filter2D.py)
+ @include python/tutorial_code/ImgTrans/Filter2D/filter2D.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.markdown b/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.markdown
+index 6b2f215901..8b0bfe121c 100644
+--- a/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.markdown
++++ b/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.markdown
+@@ -51,28 +51,28 @@ Code
+ 
+ @add_toggle_cpp
+ The sample code that we will explain can be downloaded from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/houghcircles.cpp).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/houghcircles.cpp).
+ A slightly fancier version (which shows trackbars for changing the threshold values) can be found
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/HoughCircle_Demo.cpp).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/HoughCircle_Demo.cpp).
+ @include samples/cpp/tutorial_code/ImgTrans/houghcircles.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ The sample code that we will explain can be downloaded from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/HoughCircle/HoughCircles.java).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/HoughCircle/HoughCircles.java).
+ @include samples/java/tutorial_code/ImgTrans/HoughCircle/HoughCircles.java
+ @end_toggle
+ 
+ @add_toggle_python
+ The sample code that we will explain can be downloaded from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/HoughCircle/hough_circle.py).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/HoughCircle/hough_circle.py).
+ @include samples/python/tutorial_code/ImgTrans/HoughCircle/hough_circle.py
+ @end_toggle
+ 
+ Explanation
+ -----------
+ 
+-The image we used can be found [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/smarties.png)
++The image we used can be found [here](https://raw.staticdn.net/opencv/opencv/master/samples/data/smarties.png)
+ 
+ ####  Load an image:
+ 
+diff --git a/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.markdown b/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.markdown
+index 496b956aed..f661823b99 100644
+--- a/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.markdown
++++ b/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.markdown
+@@ -107,22 +107,22 @@ Code
+ 
+ @add_toggle_cpp
+ The sample code that we will explain can be downloaded from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/houghlines.cpp).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/houghlines.cpp).
+ A slightly fancier version (which shows both Hough standard and probabilistic
+ with trackbars for changing the threshold values) can be found
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/HoughLines_Demo.cpp).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/HoughLines_Demo.cpp).
+ @include samples/cpp/tutorial_code/ImgTrans/houghlines.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ The sample code that we will explain can be downloaded from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/HoughLine/HoughLines.java).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/HoughLine/HoughLines.java).
+ @include samples/java/tutorial_code/ImgTrans/HoughLine/HoughLines.java
+ @end_toggle
+ 
+ @add_toggle_python
+ The sample code that we will explain can be downloaded from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/HoughLine/hough_lines.py).
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/HoughLine/hough_lines.py).
+ @include samples/python/tutorial_code/ImgTrans/HoughLine/hough_lines.py
+ @end_toggle
+ 
+@@ -278,7 +278,7 @@ Result
+     section. It still implements the same stuff as above, only adding the Trackbar for the
+     Threshold.
+ 
+-Using an input image such as a [sudoku image](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/sudoku.png).
++Using an input image such as a [sudoku image](https://raw.staticdn.net/opencv/opencv/master/samples/data/sudoku.png).
+ We get the following result by using the Standard Hough Line Transform:
+ ![](images/hough_lines_result1.png)
+ And by using the Probabilistic Hough Line Transform:
+diff --git a/doc/tutorials/imgproc/imgtrans/laplace_operator/laplace_operator.markdown b/doc/tutorials/imgproc/imgtrans/laplace_operator/laplace_operator.markdown
+index 27b4aa98db..da29ff922f 100644
+--- a/doc/tutorials/imgproc/imgtrans/laplace_operator/laplace_operator.markdown
++++ b/doc/tutorials/imgproc/imgtrans/laplace_operator/laplace_operator.markdown
+@@ -62,19 +62,19 @@ Code
+ 
+ @add_toggle_cpp
+ -#  The tutorial code's is shown lines below. You can also download it from
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/Laplace_Demo.cpp)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/Laplace_Demo.cpp)
+     @include samples/cpp/tutorial_code/ImgTrans/Laplace_Demo.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ -#  The tutorial code's is shown lines below. You can also download it from
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/LaPlace/LaplaceDemo.java)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/LaPlace/LaplaceDemo.java)
+     @include samples/java/tutorial_code/ImgTrans/LaPlace/LaplaceDemo.java
+ @end_toggle
+ 
+ @add_toggle_python
+ -#  The tutorial code's is shown lines below. You can also download it from
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/LaPlace/laplace_demo.py)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/LaPlace/laplace_demo.py)
+     @include samples/python/tutorial_code/ImgTrans/LaPlace/laplace_demo.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.markdown b/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.markdown
+index 4183476524..1857d1cec9 100644
+--- a/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.markdown
++++ b/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.markdown
+@@ -121,19 +121,19 @@ Code
+ 
+ @add_toggle_cpp
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/Sobel_Demo.cpp)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgTrans/Sobel_Demo.cpp)
+ @include samples/cpp/tutorial_code/ImgTrans/Sobel_Demo.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/SobelDemo/SobelDemo.java)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgTrans/SobelDemo/SobelDemo.java)
+ @include samples/java/tutorial_code/ImgTrans/SobelDemo/SobelDemo.java
+ @end_toggle
+ 
+ @add_toggle_python
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/SobelDemo/sobel_demo.py)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/SobelDemo/sobel_demo.py)
+ @include samples/python/tutorial_code/ImgTrans/SobelDemo/sobel_demo.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/imgtrans/warp_affine/warp_affine.markdown b/doc/tutorials/imgproc/imgtrans/warp_affine/warp_affine.markdown
+index 22d5298f18..2ee1731552 100644
+--- a/doc/tutorials/imgproc/imgtrans/warp_affine/warp_affine.markdown
++++ b/doc/tutorials/imgproc/imgtrans/warp_affine/warp_affine.markdown
+@@ -100,19 +100,19 @@ Code
+ 
+ @add_toggle_cpp
+ -   The tutorial's code is shown below. You can also download it
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp)
+     @include samples/cpp/tutorial_code/ImgTrans/Geometric_Transforms_Demo.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ -   The tutorial's code is shown below. You can also download it
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp)
+     @include samples/java/tutorial_code/ImgTrans/warp_affine/GeometricTransformsDemo.java
+ @end_toggle
+ 
+ @add_toggle_python
+ -   The tutorial's code is shown below. You can also download it
+-    [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/warp_affine/Geometric_Transforms_Demo.py)
++    [here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/ImgTrans/warp_affine/Geometric_Transforms_Demo.py)
+     @include samples/python/tutorial_code/ImgTrans/warp_affine/Geometric_Transforms_Demo.py
+ @end_toggle
+ 
+diff --git a/doc/tutorials/imgproc/morph_lines_detection/morph_lines_detection.md b/doc/tutorials/imgproc/morph_lines_detection/morph_lines_detection.md
+index 74b117f849..e1127b29f7 100644
+--- a/doc/tutorials/imgproc/morph_lines_detection/morph_lines_detection.md
++++ b/doc/tutorials/imgproc/morph_lines_detection/morph_lines_detection.md
+@@ -61,24 +61,24 @@ Code
+ This tutorial code's is shown lines below.
+ 
+ @add_toggle_cpp
+-You can also download it from [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.cpp).
++You can also download it from [here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.cpp).
+ @include samples/cpp/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+-You can also download it from [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.java).
++You can also download it from [here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.java).
+ @include samples/java/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.java
+ @end_toggle
+ 
+ @add_toggle_python
+-You can also download it from [here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/imgProc/morph_lines_detection/morph_lines_detection.py).
++You can also download it from [here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/imgProc/morph_lines_detection/morph_lines_detection.py).
+ @include samples/python/tutorial_code/imgProc/morph_lines_detection/morph_lines_detection.py
+ @end_toggle
+ 
+ Explanation / Result
+ --------------------
+ 
+-Get image from [here](https://raw.githubusercontent.com/opencv/opencv/master/doc/tutorials/imgproc/morph_lines_detection/images/src.png) .
++Get image from [here](https://raw.staticdn.net/opencv/opencv/master/doc/tutorials/imgproc/morph_lines_detection/images/src.png) .
+ 
+ #### Load Image
+ 
+diff --git a/doc/tutorials/imgproc/pyramids/pyramids.markdown b/doc/tutorials/imgproc/pyramids/pyramids.markdown
+index adbd086cf0..b2d9f3d3b8 100644
+--- a/doc/tutorials/imgproc/pyramids/pyramids.markdown
++++ b/doc/tutorials/imgproc/pyramids/pyramids.markdown
+@@ -79,19 +79,19 @@ This tutorial code's is shown lines below.
+ 
+ @add_toggle_cpp
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Pyramids/Pyramids.cpp)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/tutorial_code/ImgProc/Pyramids/Pyramids.cpp)
+ @include samples/cpp/tutorial_code/ImgProc/Pyramids/Pyramids.cpp
+ @end_toggle
+ 
+ @add_toggle_java
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/java/tutorial_code/ImgProc/Pyramids/Pyramids.java)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/java/tutorial_code/ImgProc/Pyramids/Pyramids.java)
+ @include samples/java/tutorial_code/ImgProc/Pyramids/Pyramids.java
+ @end_toggle
+ 
+ @add_toggle_python
+ You can also download it from
+-[here](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/tutorial_code/imgProc/Pyramids/pyramids.py)
++[here](https://raw.staticdn.net/opencv/opencv/master/samples/python/tutorial_code/imgProc/Pyramids/pyramids.py)
+ @include samples/python/tutorial_code/imgProc/Pyramids/pyramids.py
+ @end_toggle
+ 
+@@ -191,7 +191,7 @@ Otherwise, an error will be shown.
+ Results
+ -------
+ 
+--   The program calls by default an image [chicky_512.png](https://raw.githubusercontent.com/opencv/opencv/master/samples/data/chicky_512.png)
++-   The program calls by default an image [chicky_512.png](https://raw.staticdn.net/opencv/opencv/master/samples/data/chicky_512.png)
+     that comes in the `samples/data` folder. Notice that this image is \f$512 \times 512\f$,
+     hence a downsample won't generate any error (\f$512 = 2^{9}\f$). The original image is shown below:
+ 
+diff --git a/doc/tutorials/others/stitcher.markdown b/doc/tutorials/others/stitcher.markdown
+index e636d83f30..9e45b84a89 100644
+--- a/doc/tutorials/others/stitcher.markdown
++++ b/doc/tutorials/others/stitcher.markdown
+@@ -114,11 +114,11 @@ configuration you can use stitching_detailed source code available in C++ or pyt
+ 
+ <H4>stitching_detailed</H4>
+ @add_toggle_cpp
+-[stitching_detailed.cpp](https://raw.githubusercontent.com/opencv/opencv/master/samples/cpp/stitching_detailed.cpp)
++[stitching_detailed.cpp](https://raw.staticdn.net/opencv/opencv/master/samples/cpp/stitching_detailed.cpp)
+ @end_toggle
+ 
+ @add_toggle_python
+-[stitching_detailed.py](https://raw.githubusercontent.com/opencv/opencv/master/samples/python/stitching_detailed.py)
++[stitching_detailed.py](https://raw.staticdn.net/opencv/opencv/master/samples/python/stitching_detailed.py)
+ @end_toggle
+ 
+ stitching_detailed program uses command line to get stitching parameter. Many parameters exists. Above examples shows some command line parameters possible :
+diff --git a/modules/gapi/cmake/DownloadADE.cmake b/modules/gapi/cmake/DownloadADE.cmake
+index ee1b645412..e6ff6e8d3a 100644
+--- a/modules/gapi/cmake/DownloadADE.cmake
++++ b/modules/gapi/cmake/DownloadADE.cmake
+@@ -7,7 +7,7 @@ ocv_download(FILENAME ${ade_filename}
+              URL
+                "${OPENCV_ADE_URL}"
+                "$ENV{OPENCV_ADE_URL}"
+-               "https://github.com/opencv/ade/archive/"
++               "https://gh.api.99988866.xyz/https://github.com/opencv/ade/archive/"
+              DESTINATION_DIR ${ade_src_dir}
+              ID ADE
+              STATUS res
+diff --git a/samples/dnn/colorization.cpp b/samples/dnn/colorization.cpp
+index b68e0ec4d8..fed41a37d1 100644
+--- a/samples/dnn/colorization.cpp
++++ b/samples/dnn/colorization.cpp
+@@ -50,7 +50,7 @@ int main(int argc, char **argv)
+         "  https://github.com/richzhang/colorization\n"
+         "Download caffemodel and prototxt files:\n"
+         "  http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel\n"
+-        "  https://raw.githubusercontent.com/richzhang/colorization/master/colorization/models/colorization_deploy_v2.prototxt\n";
++        "  https://raw.staticdn.net/richzhang/colorization/master/colorization/models/colorization_deploy_v2.prototxt\n";
+     const string keys =
+         "{ h help |                                    | print this help message }"
+         "{ proto  | colorization_deploy_v2.prototxt    | model configuration }"
+diff --git a/samples/dnn/face_detector/weights.meta4 b/samples/dnn/face_detector/weights.meta4
+index ba75e12d1b..f4f2bca932 100644
+--- a/samples/dnn/face_detector/weights.meta4
++++ b/samples/dnn/face_detector/weights.meta4
+@@ -3,11 +3,11 @@
+     <file name="res10_300x300_ssd_iter_140000_fp16.caffemodel">
+         <identity>opencv_face_detector_fp16</identity>
+         <hash type="sha-1">31fc22bfdd907567a04bb45b7cfad29966caddc1</hash>
+-        <url>https://raw.githubusercontent.com/opencv/opencv_3rdparty/dnn_samples_face_detector_20180205_fp16/res10_300x300_ssd_iter_140000_fp16.caffemodel</url>
++        <url>https://raw.staticdn.net/opencv/opencv_3rdparty/dnn_samples_face_detector_20180205_fp16/res10_300x300_ssd_iter_140000_fp16.caffemodel</url>
+     </file>
+     <file name="opencv_face_detector_uint8.pb">
+         <identity>opencv_face_detector_uint8</identity>
+         <hash type="sha-1">4f2fdf6f231d759d7bbdb94353c5a68690f3d2ae</hash>
+-        <url>https://raw.githubusercontent.com/opencv/opencv_3rdparty/dnn_samples_face_detector_20180220_uint8/opencv_face_detector_uint8.pb</url>
++        <url>https://raw.staticdn.net/opencv/opencv_3rdparty/dnn_samples_face_detector_20180220_uint8/opencv_face_detector_uint8.pb</url>
+     </file>
+ </metalink>
+diff --git a/samples/dnn/js_face_recognition.html b/samples/dnn/js_face_recognition.html
+index 48e673113f..54dab1e336 100644
+--- a/samples/dnn/js_face_recognition.html
++++ b/samples/dnn/js_face_recognition.html
+@@ -69,9 +69,9 @@ function recognize(face) {
+ 
+ function loadModels(callback) {
+   var utils = new Utils('');
+-  var proto = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy_lowres.prototxt';
+-  var weights = 'https://raw.githubusercontent.com/opencv/opencv_3rdparty/dnn_samples_face_detector_20180205_fp16/res10_300x300_ssd_iter_140000_fp16.caffemodel';
+-  var recognModel = 'https://raw.githubusercontent.com/pyannote/pyannote-data/master/openface.nn4.small2.v1.t7';
++  var proto = 'https://raw.staticdn.net/opencv/opencv/master/samples/dnn/face_detector/deploy_lowres.prototxt';
++  var weights = 'https://raw.staticdn.net/opencv/opencv_3rdparty/dnn_samples_face_detector_20180205_fp16/res10_300x300_ssd_iter_140000_fp16.caffemodel';
++  var recognModel = 'https://raw.staticdn.net/pyannote/pyannote-data/master/openface.nn4.small2.v1.t7';
+   utils.createFileFromUrl('face_detector.prototxt', proto, () => {
+     document.getElementById('status').innerHTML = 'Downloading face_detector.caffemodel';
+     utils.createFileFromUrl('face_detector.caffemodel', weights, () => {
+diff --git a/samples/dnn/models.yml b/samples/dnn/models.yml
+index 86e86925df..5331a28249 100644
+--- a/samples/dnn/models.yml
++++ b/samples/dnn/models.yml
+@@ -106,7 +106,7 @@ faster_rcnn_tf:
+ # SqueezeNet v1.1 from https://github.com/DeepScale/SqueezeNet
+ squeezenet:
+   load_info:
+-    url: "https://raw.githubusercontent.com/DeepScale/SqueezeNet/b5c3f1a23713c8b3fd7b801d229f6b04c64374a5/SqueezeNet_v1.1/squeezenet_v1.1.caffemodel"
++    url: "https://raw.staticdn.net/DeepScale/SqueezeNet/b5c3f1a23713c8b3fd7b801d229f6b04c64374a5/SqueezeNet_v1.1/squeezenet_v1.1.caffemodel"
+     sha1: "3397f026368a45ae236403ccc81cfcbe8ebe1bd0"
+   model: "squeezenet_v1.1.caffemodel"
+   config: "squeezenet_v1.1.prototxt"
+diff --git a/samples/dnn/openpose.cpp b/samples/dnn/openpose.cpp
+index 48e2dc0475..b5a75c0248 100644
+--- a/samples/dnn/openpose.cpp
++++ b/samples/dnn/openpose.cpp
+@@ -3,18 +3,18 @@
+ //
+ //  it can be used for body pose detection, using either the COCO model(18 parts):
+ //  http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel
+-//  https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/openpose_pose_coco.prototxt
++//  https://raw.staticdn.net/opencv/opencv_extra/master/testdata/dnn/openpose_pose_coco.prototxt
+ //
+ //  or the MPI model(16 parts):
+ //  http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/mpi/pose_iter_160000.caffemodel
+-//  https://raw.githubusercontent.com/opencv/opencv_extra/master/testdata/dnn/openpose_pose_mpi_faster_4_stages.prototxt
++//  https://raw.staticdn.net/opencv/opencv_extra/master/testdata/dnn/openpose_pose_mpi_faster_4_stages.prototxt
+ //
+ //  (to simplify this sample, the body models are restricted to a single person.)
+ //
+ //
+ //  you can also try the hand pose model:
+ //  http://posefs1.perception.cs.cmu.edu/OpenPose/models/hand/pose_iter_102000.caffemodel
+-//  https://raw.githubusercontent.com/CMU-Perceptual-Computing-Lab/openpose/master/models/hand/pose_deploy.prototxt
++//  https://raw.staticdn.net/CMU-Perceptual-Computing-Lab/openpose/master/models/hand/pose_deploy.prototxt
+ //
+ 
+ #include <opencv2/dnn.hpp>

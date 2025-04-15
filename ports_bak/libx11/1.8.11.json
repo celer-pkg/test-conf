@@ -1,0 +1,25 @@
+{
+    "url": "https://www.x.org/archive/individual/lib/libX11-1.8.11.tar.xz",
+    "ref": "1.8.11",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "system_tools": [
+                "xutils-dev"
+            ],
+            "env_vars": [],
+            "options": [
+                "--host=${HOST}",
+                "--with-keysymdefdir=${INSTALLED_DIR}/include/X11"
+            ],
+            "dependencies": [
+                "libxtrans@xtrans-1.5.2",
+                "xorgproto@2024.1",
+                "libxcb@1.17.0",
+                "libxau@1.0.12"
+            ]
+        }
+    ]
+}

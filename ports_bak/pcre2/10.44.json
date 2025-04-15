@@ -1,0 +1,19 @@
+{
+    "url": "https://gitee.com/transhub/pcre2.git",
+    "ref": "pcre2-10.44",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "system_tools": [
+                "autoconf",
+                "automake"
+            ],
+            "build_tool": "makefiles",
+            "env_vars": [],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dev_dependencies": []
+        }
+    ]
+}

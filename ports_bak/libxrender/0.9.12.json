@@ -1,0 +1,18 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libxrender.git",
+    "ref": "libXrender-0.9.12",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "xorg_cv_malloc0_returns_null=yes"
+            ],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": []
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libpciaccess/0.16-0ubuntu1/libpciaccess_0.16.orig.tar.gz",
+    "ref": "0.16",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}

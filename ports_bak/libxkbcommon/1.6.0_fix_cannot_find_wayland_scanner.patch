@@ -1,0 +1,18 @@
+diff -ruN src/meson.build src_fix/meson.build
+--- src/meson.build	2025-03-05 14:32:53.225460974 +0800
++++ src_fix/meson.build	2025-03-05 14:34:47.840082230 +0800
+@@ -529,13 +529,8 @@
+     if get_option('enable-wayland')
+         wayland_client_dep = dependency('wayland-client', version: '>=1.2.0', required: false)
+         wayland_protocols_dep = dependency('wayland-protocols', version: '>=1.12', required: false)
+-        wayland_scanner_dep = dependency('wayland-scanner', required: false, native: true)
+-        if not wayland_client_dep.found() or not wayland_protocols_dep.found() or not wayland_scanner_dep.found()
+-            error('''The Wayland xkbcli programs require wayland-client >= 1.2.0, wayland-protocols >= 1.7 which were not found.
+-You can disable the Wayland xkbcli programs with -Denable-wayland=false.''')
+-        endif
+ 
+-        wayland_scanner = find_program(wayland_scanner_dep.get_variable(pkgconfig: 'wayland_scanner'))
++        wayland_scanner = find_program('wayland-scanner')
+         wayland_scanner_code_gen = generator(
+             wayland_scanner,
+             output: '@BASENAME@-protocol.c',

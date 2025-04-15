@@ -1,0 +1,19 @@
+{
+    "url": "https://gh.api.99988866.xyz/https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz",
+    "ref": "0.25.5",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "options": [
+                "--host=${HOST}",
+                "--without-libtasn1"
+            ],
+            "dependencies": [
+                "libffi@v3.4.6"
+             ]
+        }
+    ]
+}

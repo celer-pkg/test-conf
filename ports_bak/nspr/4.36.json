@@ -1,0 +1,35 @@
+{
+    "url": "https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz",
+    "ref": "4.36",
+    "source_folder": "nspr",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "patches": [
+               "fix_negative_array_size.patch"
+            ],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "fix_configure": {
+                "scripts": [
+                    "sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in",
+                    "sed -i 's|$(LIBRARY) ||' config/rules.mk"
+                ],
+                "work_dir": "${SOURCE_DIR}/nspr"
+            },
+            "fix_build": {
+                "scripts": [
+                    "cp -f ${BUILD_DIR}/../dev/config/nsinstall ${BUILD_DIR}/config"
+                ]
+            },
+            "options": [
+                "--host=${HOST}",
+                "--enable-64bit",
+                "--with-pthreads",
+                "--with-mozilla",
+                "$([ $(uname -m) = x86_64 ] && echo --enable-64bit)"
+            ]
+        }
+    ]
+}

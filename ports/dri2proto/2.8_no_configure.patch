@@ -1,9 +1,0 @@
-diff -urN src/autogen.sh src_fix/autogen.sh
---- src/autogen.sh	2025-02-17 11:40:31.544937227 +0800
-+++ src_fix/autogen.sh	2025-02-17 11:46:14.840360819 +0800
-@@ -8,5 +8,3 @@
- 
- autoreconf -v --install || exit 1
- cd $ORIGDIR || exit $?
--
--$srcdir/configure --enable-maintainer-mode "$@"

@@ -1,0 +1,25 @@
+{
+    "url": "https://code.videolan.org/videolan/x264.git",
+    "ref": "stable",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "implib": true,
+            "patches": [
+                "stable_fix_windows_build.patch"
+            ],
+            "env_vars": [],
+            "options": [
+                "--host=${HOST}",
+                "--sysroot=${SYSROOT}",
+                "--cross-prefix=${CROSS_PREFIX}",
+                "--disable-cli",
+                "--enable-pic"
+            ],
+            "dependencies": [],
+            "cmake_config": "linux_shared"
+        }
+    ]
+}

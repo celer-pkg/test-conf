@@ -1,0 +1,17 @@
+{
+    "url": "https://gitlab.gnome.org/GNOME/libxml2.git",
+    "ref": "v2.13.5",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [
+                "-DLIBXML2_WITH_PYTHON=OFF"
+            ],
+            "dependencies": [],
+            "dev_dependencies": []
+        }
+    ]
+}
