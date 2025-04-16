@@ -1,0 +1,21 @@
+{
+    "url": "https://gitee.com/phil-zhang/glib.git",
+    "ref": "2.62.0",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_tool": "meson",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "options": [
+                "-Dlibmount=false",
+                "--libdir=lib"
+            ],
+            "dependencies": [
+                "zlib@v1.3.1",
+                "pcre2@10.44",
+                "libffi@v3.4.6"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
+    "ref": "2.16.0",
+    "build_configs": [
+        {
+            "pattern": "*linux*",
+            "system_tools": [
+                "gettext"
+            ],
+            "patches": [],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": [
+                "freetype@2.13.3",
+                "expat@2.6.4"
+            ],
+            "dev_dependencies": [
+                "gperf@3.1"
+            ]
+        }
+    ]
+}

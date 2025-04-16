@@ -1,0 +1,14 @@
+{
+    "url": "https://gitlab.freedesktop.org/freetype/freetype.git",
+    "ref": "VER-2-13-3",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [],
+            "dependencies": []
+        }
+    ]
+}

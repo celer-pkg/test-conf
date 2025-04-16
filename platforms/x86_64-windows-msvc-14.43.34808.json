@@ -1,6 +1,6 @@
 {
     "toolchain": {
-        "url": "file:///C:/Program Files/Microsoft Visual Studio/2022/Community",
+        "url": "file:///D:/Microsoft Visual Studio/2022/Community",
         "type": "msvc",
         "version": "14.43.34808",
         "system_name": "Windows",
@@ -20,6 +20,8 @@
             "automake",
             "libtool",
             "nasm",
+            "gperf",
+            "gettext",
             "xorg-util-macros",
             "mingw-w64-x86_64-binutils",
             "mingw-w64-x86_64-gcc",
@@ -28,5 +30,8 @@
             "mingw-w64-x86_64-make",
             "mingw-w64-x86_64-pkgconf"
         ]
-    }
+    },
+    "tools": [
+        "x86_64-windows-nasm-2.16.03"
+    ]
 }

@@ -1,0 +1,31 @@
+{
+    "url": "https://gh-proxy.com/github.com/libffi/libffi/releases/download/v3.4.8/libffi-3.4.8.tar.gz",
+    "ref": "v3.4.8",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "system_tools": [
+                "autoconf",
+                "libtoolize"
+            ],
+            "patches": [],
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [
+                "CC=${SOURCE_DIR}/msvcc.sh",
+                "CXX=${SOURCE_DIR}/msvcc.sh",
+                "LD=link",
+                "CPP=\"cl -nologo -EP\"",
+                "CXXCPP=\"cl -nologo -EP\"",
+                "CPPFLAGS=\"-DFFI_BUILDING_DLL\"",
+                "--host=${HOST}",
+                "--disable-docs",
+                "--enable-portable-binary",
+                "--disable-multi-os-directory"
+            ],
+            "dependencies": [],
+            "dev_dependencies": []
+        }
+    ]
+}
