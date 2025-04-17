@@ -12,9 +12,14 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [],
+            "pre_install": {
+                "scripts": [
+                    "cmake -E rename ${BUILD_DIR}/.libs/libffi-8.lib ${BUILD_DIR}/.libs/libffi.lib"
+                ]
+            },
             "options": [
-                "CC=${SOURCE_DIR}/msvcc.sh",
-                "CXX=${SOURCE_DIR}/msvcc.sh",
+                "CC=\"${SOURCE_DIR}/msvcc.sh -m64\"",
+                "CXX=\"${SOURCE_DIR}/msvcc.sh -m64\"",
                 "LD=link",
                 "CPP=\"cl -nologo -EP\"",
                 "CXXCPP=\"cl -nologo -EP\"",

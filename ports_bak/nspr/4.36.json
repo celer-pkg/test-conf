@@ -11,7 +11,7 @@
             "build_tool": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
-            "fix_configure": {
+            "pre_configure": {
                 "scripts": [
                     "sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in",
                     "sed -i 's|$(LIBRARY) ||' config/rules.mk"

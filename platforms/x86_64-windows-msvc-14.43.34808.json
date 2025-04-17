@@ -1,6 +1,6 @@
 {
     "toolchain": {
-        "url": "file:///D:/Microsoft Visual Studio/2022/Community",
+        "url": "file:///C:/Program Files/Microsoft Visual Studio/2022/Community",
         "type": "msvc",
         "version": "14.43.34808",
         "system_name": "Windows",
@@ -32,6 +32,7 @@
         ]
     },
     "tools": [
-        "x86_64-windows-nasm-2.16.03"
+        "x86_64-windows-nasm-2.16.03",
+        "cmake-3.31.7-windows-x86_64"
     ]
 }
