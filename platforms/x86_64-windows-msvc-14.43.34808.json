@@ -33,6 +33,7 @@
     },
     "tools": [
         "x86_64-windows-nasm-2.16.03",
-        "cmake-3.31.7-windows-x86_64"
+        "cmake-3.31.7-windows-x86_64",
+        "xpack-meson-build-1.6.1-1-win32-x64"
     ]
 }
