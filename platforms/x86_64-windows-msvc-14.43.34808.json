@@ -11,7 +11,7 @@
         "url": "https://gh-proxy.com/github.com/msys2/msys2-installer/releases/download/2025-02-21/msys2-base-x86_64-20250221.tar.xz",
         "paths": [
             "msys64/usr/bin",
-            "msys64/bin"
+            "msys64/mingw64/bin"
         ],
         "packages": [
             "base-devel",
@@ -24,11 +24,7 @@
             "gettext",
             "xorg-util-macros",
             "mingw-w64-x86_64-binutils",
-            "mingw-w64-x86_64-gcc",
-            "mingw-w64-x86_64-gdb",
-            "mingw-w64-x86_64-gdb-multiarch",
-            "mingw-w64-x86_64-make",
-            "mingw-w64-x86_64-pkgconf"
+            "mingw-w64-x86_64-make"
         ]
     },
     "tools": [

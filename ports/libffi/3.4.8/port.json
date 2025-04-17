@@ -3,7 +3,7 @@
     "ref": "v3.4.8",
     "build_configs": [
         {
-            "pattern": "*",
+            "pattern": "*linux*",
             "system_tools": [
                 "autoconf",
                 "libtoolize"
@@ -11,7 +11,20 @@
             "patches": [],
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [],
+            "options": [
+                "--host=${HOST}",
+                "--disable-docs",
+                "--enable-portable-binary",
+                "--disable-multi-os-directory"
+            ]
+        },
+        {
+            "pattern": "*windows*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [
+                "fix_configure.patch"
+            ],
             "pre_install": {
                 "scripts": [
                     "cmake -E rename ${BUILD_DIR}/.libs/libffi-8.lib ${BUILD_DIR}/.libs/libffi.lib"
@@ -28,9 +41,7 @@
                 "--disable-docs",
                 "--enable-portable-binary",
                 "--disable-multi-os-directory"
-            ],
-            "dependencies": [],
-            "dev_dependencies": []
+            ]
         }
     ]
 }
