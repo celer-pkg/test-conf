@@ -6,23 +6,18 @@
         {
             "pattern": "*linux*",
             "patches": [
-               "fix_negative_array_size.patch"
+                "fix_negative_array_size.patch"
             ],
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [ ],
-            "pre_configure": {
-                "scripts": [
-                    "sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in",
-                    "sed -i 's|$(LIBRARY) ||' config/rules.mk"
-                ],
-                "work_dir": "${SOURCE_DIR}/nspr"
-            },
-            "fix_build": {
-                "scripts": [
-                    "cp -f ${BUILD_DIR}/../dev/config/nsinstall ${BUILD_DIR}/config"
-                ]
-            },
+            "env_vars": [],
+            "pre_configure": [
+                "sed -i '/^RELEASE/s|^|#|' ${SOURCE_DIR}/nspr/pr/src/misc/Makefile.in",
+                "sed -i 's|$(LIBRARY) ||' ${SOURCE_DIR}/nspr/config/rules.mk"
+            ],
+            "fix_build": [
+                "cmake -E copy ${BUILD_DIR}/../dev/config/nsinstall ${BUILD_DIR}/config"
+            ],
             "options": [
                 "--host=${HOST}",
                 "--enable-64bit",
