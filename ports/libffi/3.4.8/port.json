@@ -22,20 +22,15 @@
             "pattern": "*windows*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "patches": [
+            "patches": [],
+            "pre_install": [
+                "cmake -E rename ${BUILD_DIR}/.libs/libffi-8.lib ${BUILD_DIR}/.libs/libffi.lib"
             ],
-            "pre_install": {
-                "commands": [
-                    "cmake -E rename ${BUILD_DIR}/.libs/libffi-8.lib ${BUILD_DIR}/.libs/libffi.lib"
-                ]
-            },
-            "post_install": {
-                "commands": [
-                    "cmake -E make_directory ${PACKAGE_DIR}/bin",
-                    "cmake -E rename ${PACKAGE_DIR}/lib/libffi.lib ${PACKAGE_DIR}/lib/ffi.lib",
-                    "cmake -E rename ${PACKAGE_DIR}/lib/libffi-8.dll ${PACKAGE_DIR}/bin/libffi-8.dll"
-                ]
-            },
+            "post_install": [
+                "cmake -E make_directory ${PACKAGE_DIR}/bin",
+                "cmake -E rename ${PACKAGE_DIR}/lib/libffi.lib ${PACKAGE_DIR}/lib/ffi.lib",
+                "cmake -E rename ${PACKAGE_DIR}/lib/libffi-8.dll ${PACKAGE_DIR}/bin/libffi-8.dll"
+            ],
             "options": [
                 "CC=\"${SOURCE_DIR}/msvcc.sh -m64\"",
                 "CXX=\"${SOURCE_DIR}/msvcc.sh -m64\"",
