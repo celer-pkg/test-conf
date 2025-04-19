@@ -22,7 +22,7 @@
             "pattern": "*windows*",
             "build_tool": "makefiles",
             "library_type": "shared",
-            "env_vars": [
+            "patches": [
                 "fix_configure.patch"
             ],
             "pre_install": {

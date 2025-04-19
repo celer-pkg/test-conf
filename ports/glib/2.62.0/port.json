@@ -6,15 +6,18 @@
             "pattern": "*",
             "build_tool": "meson",
             "library_type": "shared",
-            "env_vars": [ ],
+            "env_vars": [],
             "options": [
                 "-Dlibmount=false",
                 "--libdir=lib"
             ],
             "dependencies": [
-                "zlib@1.3.1",
-                "pcre2@10.44",
-                "libffi@3.4.8"
+                "pcre@master",
+                "libffi@3.4.8",
+                "zlib@1.3.1"
+            ],
+            "dev_dependencies": [
+                "zlib@1.3.1"
             ]
         }
     ]
