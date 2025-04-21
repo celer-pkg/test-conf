@@ -1,0 +1,20 @@
+{
+    "url": "https://gitee.com/optimum/glog.git",
+    "ref": "v0.6.0",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_tool": "cmake",
+            "library_type": "shared",
+            "options": [
+                "-DBUILD_TESTING=OFF",
+                "-DWITH_GTEST=OFF",
+                "-DBUILD_EXAMPLES=OFF",
+                "-DWITH_SYMBOLIZE=OFF"
+            ],
+            "dependencies": [
+                "gflags@2.2.2"
+            ]
+        }
+    ]
+}

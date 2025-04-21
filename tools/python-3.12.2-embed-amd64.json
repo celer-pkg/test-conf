@@ -1,0 +1,7 @@
+{
+    "url": "https://www.python.org/ftp/python/3.12.2/python-3.12.2-embed-amd64.zip",
+    "paths": [
+        "python-3.12.2-embed-amd64",
+        "python-3.12.2-embed-amd64/Scripts"
+    ]
+}

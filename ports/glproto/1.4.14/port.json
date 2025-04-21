@@ -1,0 +1,26 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/proto/glproto.git",
+    "ref": "glproto-1.4.17",
+    "build_configs": [
+        {
+            "pattern": "aarch64-linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "options": [
+                "--host=arm-linux"
+            ],
+            "dependencies": [ ]
+        },
+        {
+            "pattern": "x86_64-linux*",
+            "build_tool": "makefiles",
+            "library_type": "shared",
+            "env_vars": [ ],
+            "options": [
+                "--host=x86_64-linux"
+            ],
+            "dependencies": [ ]
+        }
+    ]
+}
