@@ -1,0 +1,1 @@
+Currently I don't known how many features can turn on in windows os, so I use "--auto-features=disabled" instead.
