@@ -1,6 +1,6 @@
 {
-    "url": "https://gh-proxy.com/github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1.tar.gz",
-    "ref": "3.4.1",
+    "url": "https://gh-proxy.com/github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz",
+    "ref": "3.5.0",
     "build_configs": [
         {
             "pattern": "aarch64-linux*",
@@ -31,7 +31,8 @@
         {
             "pattern": "*windows*",
             "build_tool": "makefiles",
-            "env_vars": [ ],
+            "with_perl": true,
+            "env_vars": [],
             "options": [
                 "--libdir=lib",
                 "VC-WIN64A",

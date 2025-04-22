@@ -29,7 +29,7 @@
         "x86_64-windows-nasm-2.16.03",
         "cmake-3.31.7-windows-x86_64",
         "python-3.11.9-embed-amd64",
-        "strawberry-perl-5.34.3.1-64bit-portable",
+        "strawberry-perl-5.40.0.1-64bit-portable",
         "ninja-win"
     ]
 }
