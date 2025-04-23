@@ -7,40 +7,40 @@
             "build_tool": "makefiles",
             "env_vars": [ ],
             "options": [
+                "--openssldir=ssl",
                 "--libdir=lib",
                 "linux-aarch64",
                 "shared",
                 "no-docs",
                 "no-demos"
-            ],
-            "dependencies": [ ]
+            ]
         },
         {
             "pattern": "x86_64-linux*",
             "build_tool": "makefiles",
             "env_vars": [ ],
             "options": [
+                "--openssldir=ssl",
                 "--libdir=lib",
                 "linux-x86_64",
                 "shared",
                 "no-docs",
                 "no-demos"
-            ],
-            "dependencies": [ ]
+            ]
         },
         {
             "pattern": "*windows*",
             "build_tool": "makefiles",
-            "with_perl": true,
+            "with_perl_nmake": true,
             "env_vars": [],
             "options": [
+                "--openssldir=ssl",
                 "--libdir=lib",
                 "VC-WIN64A",
                 "shared",
                 "no-docs",
                 "no-demos"
-            ],
-            "dependencies": [ ]
+            ]
         }
     ]
 }
