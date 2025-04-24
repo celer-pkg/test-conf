@@ -4,7 +4,7 @@
     "build_configs": [
         {
             "pattern": "aarch64-linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "env_vars": [ ],
             "options": [
                 "--libdir=lib",
@@ -15,7 +15,7 @@
         },
         {
             "pattern": "x86_64-linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "env_vars": [ ],
             "options": [
                 "--libdir=lib",
@@ -26,7 +26,7 @@
         },
         {
             "pattern": "*windows*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "env_vars": [ ],
             "options": [
                 "--libdir=lib",

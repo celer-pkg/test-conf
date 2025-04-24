@@ -4,7 +4,7 @@
     "build_configs": [
         {
             "pattern": "*linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
             "options": [

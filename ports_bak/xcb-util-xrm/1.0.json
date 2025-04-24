@@ -7,7 +7,7 @@
             "patches": [
                 "1.0_fix_configure.patch"
             ],
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "options": [
                 "--host=${HOST}"

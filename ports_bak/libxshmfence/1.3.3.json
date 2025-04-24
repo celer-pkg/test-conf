@@ -4,12 +4,12 @@
     "build_configs": [
         {
             "pattern": "*linux*",
-            "system_tools": [
+            "build_tools": [
                 "autoconf",
                 "automake",
                 "xutils-dev"
             ],
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "pre_configure": {
                 "scripts": [

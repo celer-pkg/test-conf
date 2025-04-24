@@ -4,7 +4,7 @@
     "build_configs": [
         {
             "pattern": "*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "patches": [
                 "fix_windows_build.patch"

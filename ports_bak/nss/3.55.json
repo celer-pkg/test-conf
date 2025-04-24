@@ -8,7 +8,7 @@
             "patches": [
                 "nss-standalone-1.patch"
             ],
-            "build_tool": "gyp",
+            "build_system": "gyp",
             "library_type": "shared",
             "env_vars": [],
             "options": [
@@ -35,7 +35,7 @@
             "patches": [
                 "nss-standalone-1.patch"
             ],
-            "build_tool": "gyp",
+            "build_system": "gyp",
             "library_type": "shared",
             "env_vars": [],
             "options": [

@@ -7,8 +7,8 @@
             "patches": [
                 "1.23.1_fix_cannot_find_wayland_scanner.patch"
             ],
-            "build_tool": "meson",
-            "system_tools": [
+            "build_system": "meson",
+            "build_tools": [
                 "dot"
             ],
             "env_vars": [],

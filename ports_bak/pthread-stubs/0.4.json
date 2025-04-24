@@ -4,10 +4,10 @@
     "build_configs": [
         {
             "pattern": "*linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "autogen_configure": true,
             "library_type": "shared",
-            "system_tools": [
+            "build_tools": [
                 "xutils-dev"
             ],
             "options": [

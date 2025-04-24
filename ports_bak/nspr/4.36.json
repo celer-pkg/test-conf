@@ -8,7 +8,7 @@
             "patches": [
                 "fix_negative_array_size.patch"
             ],
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "env_vars": [],
             "pre_configure": [

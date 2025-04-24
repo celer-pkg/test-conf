@@ -4,7 +4,7 @@
     "build_configs": [
         {
             "pattern": "aarch64-linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "env_vars": [ ],
             "options": [
                 "--openssldir=ssl",
@@ -17,7 +17,7 @@
         },
         {
             "pattern": "x86_64-linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "env_vars": [ ],
             "options": [
                 "--openssldir=ssl",
@@ -30,7 +30,7 @@
         },
         {
             "pattern": "*windows*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "with_perl_nmake": true,
             "env_vars": [],
             "options": [

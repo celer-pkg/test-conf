@@ -7,8 +7,8 @@
             "patches": [
                 "1.6.0_fix_cannot_find_wayland_scanner.patch"
             ],
-            "build_tool": "meson",
-            "system_tools": [],
+            "build_system": "meson",
+            "build_tools": [],
             "env_vars": [],
             "options": [
                 "-Denable-bash-completion=false"

@@ -4,7 +4,7 @@
     "build_configs": [
         {
             "pattern": "*linux*",
-            "build_tool": "meson",
+            "build_system": "meson",
             "library_type": "shared",
             "env_vars": [ ],
             "options": [ ],

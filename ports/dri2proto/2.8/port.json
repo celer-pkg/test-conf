@@ -7,7 +7,7 @@
             "patches": [
                 "no_configure.patch"
             ],
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "env_vars": [],
             "options": [

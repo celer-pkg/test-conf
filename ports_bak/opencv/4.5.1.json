@@ -7,7 +7,7 @@
             "patches": [
                 "4.5.1_fix_github_download.patch"
             ],
-            "build_tool": "cmake",
+            "build_system": "cmake",
             "library_type": "shared",
             "options": [
                 "-DENABLE_NEON=OFF",

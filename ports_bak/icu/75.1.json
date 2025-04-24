@@ -5,7 +5,7 @@
     "build_configs": [
         {
             "pattern": "aarch64-linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
             "options": [
@@ -18,7 +18,7 @@
         },
         {
             "pattern": "x86_64-linux*",
-            "build_tool": "makefiles",
+            "build_system": "makefiles",
             "library_type": "shared",
             "env_vars": [ ],
             "options": [

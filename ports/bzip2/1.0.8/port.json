@@ -5,7 +5,7 @@
         {
             "pattern": "*",
             "patches": [],
-            "build_tool": "cmake",
+            "build_system": "cmake",
             "library_type": "shared",
             "env_vars": [],
             "options": [],

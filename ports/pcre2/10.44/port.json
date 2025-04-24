@@ -4,8 +4,8 @@
     "build_configs": [
         {
             "pattern": "*",
-            "system_tools": [],
-            "build_tool": "cmake",
+            "build_tools": [],
+            "build_system": "cmake",
             "env_vars": [],
             "options": [],
             "dev_dependencies": []

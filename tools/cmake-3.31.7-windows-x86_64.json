@@ -1,6 +1,0 @@
-{
-    "url": "https://gh-proxy.com/github.com/Kitware/CMake/releases/download/v3.31.7/cmake-3.31.7-windows-x86_64.zip",
-    "paths": [
-        "cmake-3.31.7-windows-x86_64/bin"
-    ]
-}

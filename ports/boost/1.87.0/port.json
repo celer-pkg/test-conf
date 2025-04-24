@@ -4,7 +4,7 @@
     "build_configs": [
         {
             "pattern": "*",
-            "build_tool": "b2",
+            "build_system": "b2",
             "library_type": "shared",
             "options": [
                 "--without-python",
