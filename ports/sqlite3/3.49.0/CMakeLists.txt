@@ -83,5 +83,5 @@ install(
 
 configure_file(sqlite3.pc.in sqlite3.pc @ONLY)
 
-install(FILES sqlite3.h sqlite3ext.h DESTINATION include CONFIGURATIONS Release)
+install(FILES sqlite3.h sqlite3ext.h DESTINATION include)
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/sqlite3.pc" DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig")
