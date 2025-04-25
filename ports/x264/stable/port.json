@@ -6,7 +6,9 @@
             "pattern": "*",
             "build_system": "makefiles",
             "library_type": "shared",
-            "implib": true,
+            "build_tools": [
+                "nasm"
+            ],
             "patches": [
                 "stable_fix_windows_build.patch"
             ],
