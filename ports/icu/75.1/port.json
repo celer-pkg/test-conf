@@ -32,7 +32,9 @@
             "build_tools": [
                 "python3"
             ],
-            "env_vars": [],
+            "env_vars": [
+                "CXXFLAGS=/std:c++17"
+            ],
             "options": [
                 "--host=${HOST}"
             ]
