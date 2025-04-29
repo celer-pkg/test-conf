@@ -31,7 +31,10 @@
         {
             "pattern": "*windows*",
             "build_system": "makefiles",
-            "with_perl_nmake": true,
+            "build_tools": [
+                "nasm",
+                "strawberry-perl"
+            ],
             "env_vars": [],
             "options": [
                 "--openssldir=ssl",
