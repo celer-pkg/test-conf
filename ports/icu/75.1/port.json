@@ -29,11 +29,9 @@
             "pattern": "*windows*",
             "build_system": "makefiles",
             "library_type": "shared",
+            "cpp_standard": "c++17",
             "build_tools": [
                 "python3"
-            ],
-            "env_vars": [
-                "CXXFLAGS=/std:c++17"
             ],
             "options": [
                 "--host=${HOST}"
