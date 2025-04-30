@@ -3,9 +3,12 @@
     "ref": "3.4.13",
     "build_configs": [
         {
-            "pattern": "*",
+            "pattern": "*linux*",
             "build_system": "makefiles",
             "library_type": "shared",
+            "build_tools": [
+                "nasm"
+            ],
             "patches": [
                 "fix_windows_build.patch"
             ],
@@ -31,6 +34,36 @@
                 "x264@stable"
             ],
             "cmake_config": "linux_shared"
+        },
+        {
+            "pattern": "*windows*",
+            "build_system": "makefiles",
+            "library_type": "shared",
+            "build_tools": [
+                "nasm"
+            ],
+            "patches": [
+                "fix_windows_build.patch"
+            ],
+            "env_vars": [],
+            "options": [
+                "--sysroot=${SYSROOT}",
+                "--cross-prefix=${CROSS_PREFIX}",
+                "--arch=${SYSTEM_PROCESSOR}",
+                "--target-os=win64",
+                "--pkg-config=pkg-config",
+                "--enable-cross-compile",
+                "--toolchain=msvc",
+                "--disable-programs",
+                "--disable-doc",
+                "--enable-libx264",
+                "--disable-libx265",
+                "--enable-pic",
+                "--enable-gpl"
+            ],
+            "dependencies": [
+                "x264@stable"
+            ]
         }
     ]
 }
