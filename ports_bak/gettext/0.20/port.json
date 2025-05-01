@@ -9,8 +9,7 @@
             "env_vars": [ ],
             "options": [
                 "--host=${HOST}"
-            ],
-            "dependencies": [  ]
+            ]
         }
     ]
 }

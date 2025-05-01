@@ -5,8 +5,7 @@
         {
             "pattern": "*linux*",
             "build_tools": [
-                "autoconf",
-                "libtoolize"
+                "autoconf"
             ],
             "patches": [],
             "build_system": "makefiles",

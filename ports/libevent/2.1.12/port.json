@@ -1,6 +1,6 @@
 {
-    "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
-    "ref": "3.1",
+    "url": "https://github.com/libevent/libevent.git",
+    "ref": "release-2.1.12-stable",
     "build_configs": [
         {
             "pattern": "*",

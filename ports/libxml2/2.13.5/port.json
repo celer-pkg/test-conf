@@ -1,0 +1,17 @@
+{
+    "url": "https://gitlab.gnome.org/GNOME/libxml2.git",
+    "ref": "v2.13.5",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_system": "cmake",
+            "library_type": "shared",
+            "options": [
+                "-DLIBXML2_WITH_PYTHON=OFF"
+            ],
+            "dependencies": [
+                "libiconv@1.14@windows"
+            ]
+        }
+    ]
+}

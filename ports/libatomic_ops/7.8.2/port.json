@@ -1,6 +1,6 @@
 {
-    "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
-    "ref": "3.1",
+    "url": "https://github.com/ivmai/libatomic_ops.git",
+    "ref": "v7.8.2",
     "build_configs": [
         {
             "pattern": "*",
