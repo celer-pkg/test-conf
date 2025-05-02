@@ -1,0 +1,14 @@
+{
+    "url": "https://github.com/pkgconf/pkgconf.git",
+    "ref": "pkgconf-2.4.3",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_system": "meson",
+            "library_type": "shared",
+            "env_vars": [],
+            "options": [],
+            "dependencies": []
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+diff -Nur src/meson.build src_fix/meson.build
+--- src/meson.build	2025-05-02 17:02:04.081426200 +0800
++++ src_fix/meson.build	2025-05-02 17:03:31.560344500 +0800
+@@ -825,5 +825,3 @@
+ subdir('man')
+ subdir('po')
+ subdir('tools')
+-subdir('test')
+-subdir('fuzz')

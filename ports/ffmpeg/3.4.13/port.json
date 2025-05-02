@@ -20,7 +20,7 @@
                 "--cross-prefix=${CROSS_PREFIX}",
                 "--arch=${SYSTEM_PROCESSOR}",
                 "--target-os=win64",
-                "--pkg-config=pkg-config",
+                "--pkg-config=pkgconf",
                 "--enable-cross-compile",
                 "--toolchain=msvc",
                 "--disable-programs",
@@ -32,6 +32,9 @@
             ],
             "dependencies": [
                 "x264@stable"
+            ],
+            "dev_dependencies": [
+                "pkgconf@2.4.3"
             ],
             "cmake_config": "linux_shared"
         },
@@ -51,7 +54,7 @@
                 "--cross-prefix=${CROSS_PREFIX}",
                 "--arch=${SYSTEM_PROCESSOR}",
                 "--target-os=win64",
-                "--pkg-config=pkg-config",
+                "--pkg-config=pkgconf",
                 "--enable-cross-compile",
                 "--toolchain=msvc",
                 "--disable-programs",
@@ -63,6 +66,9 @@
             ],
             "dependencies": [
                 "x264@stable"
+            ],
+            "dev_dependencies": [
+                "pkgconf@2.4.3"
             ]
         }
     ]
