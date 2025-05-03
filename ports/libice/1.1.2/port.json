@@ -5,8 +5,7 @@
         {
             "pattern": "*",
             "build_tools": [
-                "xutils-dev",
-                "msys2:xorg-util-macros"
+                "xutils-dev"
             ],
             "build_system": "makefiles",
             "library_type": "shared",
