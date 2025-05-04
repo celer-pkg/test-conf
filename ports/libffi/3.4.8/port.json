@@ -27,7 +27,7 @@
             ],
             "post_install": [
                 "cmake -E make_directory ${PACKAGE_DIR}/bin",
-                "cmake -E rename ${PACKAGE_DIR}/lib/libffi.lib ${PACKAGE_DIR}/lib/ffi.lib",
+                "cmake -E copy ${BUILD_DIR}/.libs/libffi.lib ${PACKAGE_DIR}/lib/libffi.lib",
                 "cmake -E rename ${PACKAGE_DIR}/lib/libffi-8.dll ${PACKAGE_DIR}/bin/libffi-8.dll"
             ],
             "options": [
