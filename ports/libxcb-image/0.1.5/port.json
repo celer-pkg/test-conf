@@ -1,0 +1,18 @@
+{
+    "url": "https://gitlab.freedesktop.org/xorg/lib/libxcb-image.git",
+    "ref": "xcb-util-image-0.4.1-gitlab",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_system": "makefiles",
+            "library_type": "shared",
+            "build_tools": [
+                "xutils-dev"
+            ],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": []
+        }
+    ]
+}

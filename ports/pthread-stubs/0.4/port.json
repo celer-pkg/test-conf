@@ -1,0 +1,18 @@
+{
+    "url": "https://www.x.org/releases/individual/xcb/libpthread-stubs-0.4.tar.gz",
+    "ref": "0.4",
+    "build_configs": [
+        {
+            "pattern": "*",
+            "build_system": "makefiles",
+            "library_type": "shared",
+            "build_tools": [
+                "xutils-dev"
+            ],
+            "options": [
+                "--host=${HOST}"
+            ],
+            "dependencies": []
+        }
+    ]
+}
