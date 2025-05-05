@@ -1,6 +1,7 @@
 {
     "url": "https://github.com/libexpat/libexpat.git",
     "ref": "R_2_6_4",
+    "source_folder": "expat",
     "build_configs": [
         {
             "pattern": "*",
