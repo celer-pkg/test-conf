@@ -47,7 +47,7 @@
                 "xcb-util-keysyms@0.4.1",
                 "xcb-util-xrm@1.0",
                 "mesa@17.3.9",
-                "openssl@1.1.1",
+                "openssl@1.1.1w",
                 "icu@75.1",
                 "libjpeg@2.1.0",
                 "freetype@2.13.3",

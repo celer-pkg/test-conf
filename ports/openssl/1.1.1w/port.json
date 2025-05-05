@@ -1,6 +1,6 @@
 {
-    "url": "https://gh-proxy.com/github.com/openssl/openssl/releases/download/OpenSSL_1_1_1/openssl-1.1.1.tar.gz",
-    "ref": "1.1.1",
+    "url": "https://github.com/openssl/openssl.git",
+    "ref": "OpenSSL_1_1_1w",
     "build_configs": [
         {
             "pattern": "aarch64-linux*",

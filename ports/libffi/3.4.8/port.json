@@ -1,5 +1,5 @@
 {
-    "url": "https://gh-proxy.com/github.com/libffi/libffi/releases/download/v3.4.8/libffi-3.4.8.tar.gz",
+    "url": "https://github.com/libffi/libffi.git",
     "ref": "v3.4.8",
     "build_configs": [
         {

@@ -1,6 +1,6 @@
 {
     "rootfs": {
-        "url": "https://gh-proxy.com/github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/sysroot-glibc-9.2-2019.12-x86_64-aarch64-linux-gnu.tar.gz",
+        "url": "https://github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/sysroot-glibc-9.2-2019.12-x86_64-aarch64-linux-gnu.tar.gz",
         "name": "gcc",
         "version": "9.2",
         "path": "sysroot-glibc-9.2-2019.12-x86_64-aarch64-linux-gnu",
@@ -10,7 +10,7 @@
         ]
     },
     "toolchain": {
-        "url": "https://gh-proxy.com/github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.gz",
+        "url": "https://github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.gz",
         "path": "gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin",
         "system_name": "Linux",
         "system_processor": "aarch64",

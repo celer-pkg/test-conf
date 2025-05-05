@@ -1,6 +1,6 @@
 {
-    "url": "https://gh-proxy.com/github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz",
-    "ref": "3.5.0",
+    "url": "https://github.com/openssl/openssl.git",
+    "ref": "openssl-3.5.0",
     "build_configs": [
         {
             "pattern": "aarch64-linux*",

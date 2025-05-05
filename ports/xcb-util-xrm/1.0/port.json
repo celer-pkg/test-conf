@@ -1,11 +1,11 @@
 {
-    "url": "https://gh-proxy.com/github.com/Airblader/xcb-util-xrm/releases/download/v1.0/xcb-util-xrm-1.0.tar.gz",
-    "ref": "1.0",
+    "url": "https://github.com/Airblader/xcb-util-xrm.git",
+    "ref": "v1.0",
     "build_configs": [
         {
             "pattern": "*",
             "patches": [
-                "1.0_fix_configure.patch"
+                "fix_configure.patch"
             ],
             "build_system": "makefiles",
             "library_type": "shared",
