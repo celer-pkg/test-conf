@@ -24,10 +24,5 @@
         "nm": "aarch64-linux-gnu-nm",
         "objdump": "aarch64-linux-gnu-objdump",
         "strip": "aarch64-linux-gnu-strip"
-    },
-    "tools": [
-        "cmake-3.30.5-linux-x86_64",
-        "xpack-meson-build-1.6.1-1-linux-x64",
-        "xpack-ninja-build-1.12.1-1-linux-x64"
-    ]
+    }
 }
