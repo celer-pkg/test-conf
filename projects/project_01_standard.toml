@@ -1,0 +1,21 @@
+ports = [
+    "x264@stable",
+    "sqlite3@3.49.0",
+    "ffmpeg@3.4.13",
+    "zlib@v1.3.1",
+    "opencv@4.5.1"
+]
+
+cmake_vars = [
+    "CMAKE_VAR1=value1",
+    "CMAKE_VAR2=value2"
+]
+
+env_vars = [
+    "ENV_VAR1=/home/ubuntu/ccache"
+]
+
+micro_vars = [
+    "MICRO_VAR1=111",
+    "MICRO_VAR2"
+]
