@@ -1,13 +1,13 @@
 [rootfs]
 url = "https://github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/gcc-arm-8.3-2019.02-x86_64-aarch64-linux-gnu.tar.xz"
-name = "gcc"
-version = "8.3"
 path = "sysroot-glibc-8.3-2019.02-x86_64-aarch64-linux-gnu"
 pkg_config_path = ["usr/lib64/pkgconfig"]
 
 [toolchain]
 url = "https://github.com/cppbuildenv/buildenv_test_resource/releases/download/v1.0.0/gcc-arm-8.3-2019.02-x86_64-aarch64-linux-gnu.tar.xz"
 path = "gcc-arm-8.3-2019.02-x86_64-aarch64-linux-gnu/bin"
+name = "gcc"
+version = "8.3"
 system_name = "Linux"
 system_processor = "aarch64"
 host = "aarch64-linux-gnu"
