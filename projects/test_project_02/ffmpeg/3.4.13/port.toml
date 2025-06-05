@@ -1,0 +1,38 @@
+[package]
+url = "https://ffmpeg.org/releases/ffmpeg-3.4.13.tar.xz"
+ref = "3.4.13"
+
+# ================ build for Linux ================ #
+[[build_configs]]
+pattern = "*linux*"
+options = [
+    "--sysroot=${SYSROOT}",
+    "--cross-prefix=${CROSS_PREFIX}",
+    "--arch=${SYSTEM_PROCESSOR}",
+    "--target-os=linux",
+    "--pkg-config=pkgconf",
+    "--enable-cross-compile",
+    "--disable-programs",
+    "--disable-doc",
+    "--enable-libx264",
+    "--enable-pic",
+    "--enable-gpl",
+]
+dependencies = ["x264@stable"]
+
+# ================ build for Windows ================ #
+[[build_configs]]
+pattern = "*windows*"
+options = [
+    "--arch=${SYSTEM_PROCESSOR}",
+    "--target-os=win32",
+    "--pkg-config=pkgconf",
+    "--toolchain=msvc",
+    "--enable-cross-compile",
+    "--disable-programs",
+    "--disable-doc",
+    "--enable-libx264",
+    "--enable-pic",
+    "--enable-gpl",
+]
+dependencies = ["x264@stable"]
