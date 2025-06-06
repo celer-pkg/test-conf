@@ -14,9 +14,9 @@ options = [
     "--enable-cross-compile",
     "--disable-programs",
     "--disable-doc",
-    "--enable-libx264",
     "--enable-pic",
     "--enable-gpl",
+    "--enable-libx264",
 ]
 dependencies = ["x264@stable"]
 
@@ -24,15 +24,13 @@ dependencies = ["x264@stable"]
 [[build_configs]]
 pattern = "*windows*"
 options = [
-    "--arch=${SYSTEM_PROCESSOR}",
-    "--target-os=win32",
-    "--pkg-config=pkgconf",
     "--toolchain=msvc",
-    "--enable-cross-compile",
+    "--target-os=win64",
+    "--pkg-config=pkgconf",
     "--disable-programs",
     "--disable-doc",
-    "--enable-libx264",
     "--enable-pic",
     "--enable-gpl",
+    "--enable-libx264",
 ]
 dependencies = ["x264@stable"]
