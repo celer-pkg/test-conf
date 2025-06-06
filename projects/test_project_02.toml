@@ -1,1 +1,1 @@
-ports = ["ffmpeg@3.4.13"]
+ports = ["ffmpeg@5.1.6"]
