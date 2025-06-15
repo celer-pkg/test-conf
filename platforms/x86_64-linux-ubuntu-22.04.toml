@@ -3,8 +3,6 @@ url = "https://github.com/cppbuildenv/buildenv_test_resource/releases/download/v
 path = "ubuntu-base-22.04.5-base-amd64"
 pkg_config_path = [
     "usr/lib/x86_64-linux-gnu/pkgconfig",
-    "usr/share/pkgconfig",
-    "usr/lib/pkgconfig",
 ]
 
 [toolchain]
