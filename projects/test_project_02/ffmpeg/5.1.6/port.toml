@@ -16,7 +16,7 @@ options = [
     "--disable-doc",
     "--enable-pic",
     "--enable-gpl",
-    "--disable-libx264",
+    "--enable-libx264",
 ]
 dependencies = ["x264@stable"]
 
