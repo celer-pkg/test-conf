@@ -1,5 +1,5 @@
 [rootfs]
-url = "https://github.com/celer-pkg/celer-resource/releases/download/v1.0.0/ubuntu-base-20.04.5-base-amd64.tar.gz"
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-20.04.5-base-amd64.tar.gz"
 path = "ubuntu-base-20.04.5-base-amd64"
 pkg_config_path = [
     "usr/lib/x86_64-linux-gnu/pkgconfig",
@@ -8,7 +8,7 @@ pkg_config_path = [
 ]
 
 [toolchain]
-url = "https://github.com/celer-pkg/celer-resource/releases/download/v1.0.0/gcc-9.5.0.tar.gz"
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-9.5.0.tar.gz"
 path = "gcc-9.5.0/bin"
 name = "gcc"
 version = "9.5"
