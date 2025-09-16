@@ -18,3 +18,9 @@ micros = [
     "MICRO_VAR1=111",
     "MICRO_VAR2"
 ]
+
+[opt_level]
+    debug = "-g"
+    release = "-03"
+    relwithdebinfo = "-02 -g"
+    minsizerel = "-0s"
