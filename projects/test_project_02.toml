@@ -2,6 +2,6 @@ ports = ["ffmpeg@5.1.6", "protobuf@3.21.12"]
 
 [opt_flags]
     debug = "-g"
-    release = "-03"
-    relwithdebinfo = "-02 -g"
-    minsizerel = "-0s"
+    release = "-O3"
+    relwithdebinfo = "-O2 -g"
+    minsizerel = "-Os"
