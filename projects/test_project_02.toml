@@ -1,6 +1,6 @@
 ports = ["ffmpeg@5.1.6", "protobuf@3.21.12"]
 
-[opt_flags]
+[optimize]
     debug = "-g"
     release = "-O3"
     relwithdebinfo = "-O2 -g"

@@ -19,8 +19,12 @@ micros = [
     "MICRO_VAR2"
 ]
 
-[opt_flags]
+flags = [
+    "-std=c++17"
+]
+
+[optimize]
     debug = "-g"
-    release = "-03"
-    relwithdebinfo = "-02 -g"
-    minsizerel = "-0s"
+    release = "-O3"
+    relwithdebinfo = "-O2 -g"
+    minsizerel = "-Os"
