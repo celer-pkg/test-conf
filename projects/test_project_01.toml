@@ -20,7 +20,9 @@ micros = [
 ]
 
 flags = [
-    "-std=c++17"
+    "-Wall",
+    "-Wno-unused-variable",
+    "-Wno-deprecated"
 ]
 
 [optimize_windows]
