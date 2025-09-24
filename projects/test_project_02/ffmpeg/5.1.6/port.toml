@@ -18,6 +18,7 @@ options = [
     "--enable-gpl",
     "--enable-libx264",
 ]
+dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
 dependencies = ["x264@stable"]
 
 # ================ build for Windows ================ #
@@ -33,4 +34,5 @@ options = [
     "--enable-gpl",
     "--enable-libx264",
 ]
+dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
 dependencies = ["x264@stable"]
