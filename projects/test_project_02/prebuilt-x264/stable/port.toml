@@ -1,5 +1,4 @@
 [package]
-url = "https://code.videolan.org/videolan/x264.git"
 ref = "stable"
 
 [[build_configs]]

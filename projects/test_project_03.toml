@@ -1,0 +1,7 @@
+ports = ["prebuilt-ffmpeg@5.1.6"]
+
+[optimize]
+    debug = "-g"
+    release = "-O3"
+    relwithdebinfo = "-O2 -g"
+    minsizerel = "-Os"
