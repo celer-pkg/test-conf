@@ -1,0 +1,16 @@
+namespace = "FFmpeg"
+
+[package]
+version = "5.1.6"
+name = "ffmpeg"
+
+libraries = [
+    "libswscale.so",
+    "libswresample.so",
+    "libpostproc.so",
+    "libavutil.so",
+    "libavformat.so",
+    "libavfilter.so",
+    "libavdevice.so",
+    "libavcodec.so"
+]
