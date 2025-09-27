@@ -1,16 +1,25 @@
 namespace = "FFmpeg"
 
-[package]
-version = "5.1.6"
-name = "ffmpeg"
-
+[linux_interface]
 libraries = [
-    "libswscale.so",
-    "libswresample.so",
-    "libpostproc.so",
-    "libavutil.so",
-    "libavformat.so",
-    "libavfilter.so",
-    "libavdevice.so",
-    "libavcodec.so"
+    "libavutil.so.57",
+    "libavcodec.so.59",
+    "libavdevice.so.59",
+    "libavfilter.so.8",
+    "libavformat.so.59",
+    "libpostproc.so.56",
+    "libswresample.so.4",
+    "libswscale.so.6",
+]
+
+[windows_interface]
+libraries = [
+    "avutil.lib",
+    "avcodec.lib",
+    "avdevice.lib",
+    "avfilter.lib",
+    "avformat.lib",
+    "postproc.lib",
+    "swresample.lib",
+    "swscale.lib",
 ]
