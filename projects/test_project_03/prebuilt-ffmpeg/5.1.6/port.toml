@@ -5,3 +5,5 @@ ref = "5.1.6"
 url = "https://github.com/celer-pkg/test-conf/releases/download/resource/prebuilt-ffmpeg@5.1.6@x86_64-linux.tar.gz"
 pattern = "x86_64-linux*"
 build_system = "prebuilt"
+dev_dependencies = []
+dependencies = []
