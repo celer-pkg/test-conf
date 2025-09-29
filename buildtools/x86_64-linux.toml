@@ -1,0 +1,8 @@
+[[build_tools]]
+name = "doxygen"
+version = "1.14.0"
+url = "https://www.doxygen.nl/files/doxygen-1.14.0.linux.bin.tar.gz"
+archive = "doxygen-1.14.0.linux.bin.tar.gz"
+paths = [
+  "doxygen-1.14.0/bin"
+]
