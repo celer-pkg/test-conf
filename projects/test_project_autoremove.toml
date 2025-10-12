@@ -1,4 +1,4 @@
-ports = ["glog@0.6.0"]
+ports = ["glog@0.6.0", "x264@stable"]
 
 [optimize_windows]
     debug = "/MDd /Zi /Ob0 /Od /RTC1"
