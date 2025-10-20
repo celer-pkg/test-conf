@@ -22,7 +22,8 @@ micros = [
 flags = [
     "-Wall",
     "-Wno-unused-variable",
-    "-Wno-deprecated"
+    "-Wno-deprecated",
+    "-Wl,--allow-shlib-undefined"
 ]
 
 [optimize_windows]
