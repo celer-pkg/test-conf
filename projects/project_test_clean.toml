@@ -8,12 +8,12 @@ ports = ["x264@stable"]
 
 [optimize_gcc]
     debug = "-O0 -g3 -fno-omit-frame-pointer"
-    release = "-O3 -DNDEBUG -march=native"
+    release = "-O3 -DNDEBUG"
     relwithdebinfo = "-O2 -g -DNDEBUG"
     minsizerel = "-Os -DNDEBUG"
 
 [optimize_clang]
     debug = "-O0 -g3 -fno-omit-frame-pointer"
-    release = "-O3 -DNDEBUG -march=native"
+    release = "-O3 -DNDEBUG"
     relwithdebinfo = "-O2 -g -DNDEBUG"
     minsizerel = "-Oz -DNDEBUG"
