@@ -25,15 +25,3 @@ flags = [
     "-Wno-deprecated",
     "-Wl,--allow-shlib-undefined"
 ]
-
-[optimize_windows]
-    debug = "/MDd /Zi /Ob0 /Od /RTC1"
-    release = "/MD /O2 /Ob2 /DNDEBUG"
-    relwithdebinfo = "/MD /Zi /O2 /Ob1 /DNDEBUG"
-    minsizerel = "/MD /O1 /Ob1 /DNDEBUG"
-
-[optimize_linux]
-    debug = "-g"
-    release = "-O3"
-    relwithdebinfo = "-O2 -g"
-    minsizerel = "-Os"
