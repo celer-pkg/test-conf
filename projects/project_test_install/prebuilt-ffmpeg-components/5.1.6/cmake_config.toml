@@ -53,47 +53,47 @@ dependencies = ["avcodec", "avutil", "avformat"]
 [[windows_shared.components]]
 component = "avutil"
 impname = "avutil.lib"
-filename = "avutil-57.dll"
+filename = "avutil-55.dll"
 dependencies = []
 
 [[windows_shared.components]]
 component = "avcodec"
 impname = "avcodec.lib"
-filename = "avcodec-59.dll"
+filename = "avcodec-57.dll"
 dependencies = ["avutil"]
 
 [[windows_shared.components]]
 component = "avdevice"
 impname = "avdevice.lib"
-filename = "avdevice-59.dll"
+filename = "avdevice-57.dll"
 dependencies = ["avformat", "avutil"]
 
 [[windows_shared.components]]
 component = "avfilter"
 impname = "avfilter.lib"
-filename = "avfilter-8.dll"
+filename = "avfilter-6.dll"
 dependencies = ["swscale", "swresample"]
 
 [[windows_shared.components]]
 component = "avformat"
 impname = "avformat.lib"
-filename = "avformat-59.dll"
+filename = "avformat-57.dll"
 dependencies = ["avcodec", "avutil"]
 
 [[windows_shared.components]]
 component = "postproc"
 impname = "postproc.lib"
-filename = "postproc-56.dll"
+filename = "postproc-54.dll"
 dependencies = ["avcodec", "swscale", "avutil"]
 
 [[windows_shared.components]]
 component = "swresample"
 impname = "swresample.lib"
-filename = "swresample-4.dll"
+filename = "swresample-2.dll"
 dependencies = ["avcodec", "swscale", "avutil", "avformat"]
 
 [[windows_shared.components]]
 component = "swscale"
 impname = "swscale.lib"
-filename = "swscale-6.dll"
+filename = "swscale-4.dll"
 dependencies = ["avcodec", "avutil", "avformat"]
