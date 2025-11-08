@@ -2,7 +2,13 @@
 ref = "5.1.6"
 
 [[build_configs]]
-url = "https://github.com/celer-pkg/test-conf/releases/download/resource/prebuilt-ffmpeg@5.1.6@x86_64-linux.tar.gz"
 pattern = "x86_64-linux*"
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/prebuilt-ffmpeg@5.1.6@x86_64-linux.tar.gz"
+build_system = "prebuilt"
+library_type = "interface"
+
+[[build_configs]]
+pattern = "x86_64-windows*"
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/prebuilt-ffmpeg@5.1.6@x86_64-windows.tar.gz"
 build_system = "prebuilt"
 library_type = "interface"
