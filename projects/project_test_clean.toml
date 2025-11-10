@@ -1,13 +1,19 @@
 ports = ["x264@stable"]
 
-[optimize_windows]
-    debug = "/MDd /Zi /Ob0 /Od /RTC1"
+[optimize_msvc]
+    debug = "/MDd /Zi /Od /Ob0 /RTC1"
     release = "/MD /O2 /Ob2 /DNDEBUG"
     relwithdebinfo = "/MD /Zi /O2 /Ob1 /DNDEBUG"
     minsizerel = "/MD /O1 /Ob1 /DNDEBUG"
 
-[optimize_linux]
-    debug = "-g"
-    release = "-O3"
-    relwithdebinfo = "-O2 -g"
-    minsizerel = "-Os"
+[optimize_gcc]
+    debug = "-O0 -g3 -fno-omit-frame-pointer"
+    release = "-O3 -DNDEBUG"
+    relwithdebinfo = "-O2 -g -DNDEBUG"
+    minsizerel = "-Os -DNDEBUG"
+
+[optimize_clang]
+    debug = "-O0 -g3 -fno-omit-frame-pointer"
+    release = "-O3 -DNDEBUG"
+    relwithdebinfo = "-O2 -g -DNDEBUG"
+    minsizerel = "-Oz -DNDEBUG"

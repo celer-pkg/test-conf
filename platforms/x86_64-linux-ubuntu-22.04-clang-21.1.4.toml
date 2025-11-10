@@ -1,0 +1,18 @@
+[rootfs]
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.gz"
+path = "ubuntu-base-22.04.5-base-amd64"
+pkg_config_path = [
+    "usr/lib/x86_64-linux-gnu/pkgconfig",
+]
+
+[toolchain]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.4/LLVM-21.1.4-Linux-X64.tar.xz"
+path = "LLVM-21.1.4-Linux-X64/bin"
+name = "clang"
+version = "21.1.4"
+system_name = "Linux"
+system_processor = "x86_64"
+host = "x86_64-linux-gnu"
+crosstool_prefix = "x86_64-linux-gnu-"
+cc = "clang"
+cxx = "clang++"
