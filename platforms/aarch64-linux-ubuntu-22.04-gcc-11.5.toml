@@ -1,0 +1,25 @@
+[rootfs]
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-arm64.tar.xz"
+path = "ubuntu-base-22.04.5-base-arm64"
+pkg_config_path = [
+    "usr/lib/aarch64-linux-gnu/pkgconfig",
+]
+
+[toolchain]
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-ubuntu-11.5.0-x86_64-aarch64-linux-gnu.tar.xz"
+path = "gcc-ubuntu-11.5.0-x86_64-aarch64-linux-gnu/bin"
+name = "gcc"
+version = "11.5.0"
+system_name = "Linux"
+system_processor = "aarch64"
+host = "aarch64-linux-gnu"
+crosstool_prefix = "aarch64-linux-gnu-"
+cc = "aarch64-linux-gnu-gcc"
+cxx = "aarch64-linux-gnu-g++"
+fc = "aarch64-linux-gnu-gfortran"
+ld = "aarch64-linux-gnu-ld"
+ranlib = "aarch64-linux-gnu-ranlib"
+ar = "aarch64-linux-gnu-ar"
+nm = "aarch64-linux-gnu-nm"
+objdump = "aarch64-linux-gnu-objdump"
+strip = "aarch64-linux-gnu-strip"
