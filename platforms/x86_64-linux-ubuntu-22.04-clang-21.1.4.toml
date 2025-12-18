@@ -16,3 +16,13 @@ host = "x86_64-linux-gnu"
 crosstool_prefix = "x86_64-linux-gnu-"
 cc = "clang"
 cxx = "clang++"
+
+# Mandatory, otherwise GNU ld will be used by default.
+ld = "ld.lld" 
+
+# Not mandatory, uncomment if needed.
+# ranlib = "llvm-ranlib"
+# ar = "llvm-ar"
+# nm = "llvm-nm"
+# objdump = "llvm-objdump"
+# strip = "llvm-strip"
