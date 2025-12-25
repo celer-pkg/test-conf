@@ -1,85 +1,83 @@
 namespace = "FFmpeg"
 
 [linux]
-[[linux.components]]
+[[linux_components]]
 component = "avutil"
 filename = "libavutil.so.57"
 dependencies = []
 
-[[linux.components]]
+[[linux_components]]
 component = "avcodec"
 filename = "libavcodec.so.59"
 dependencies = ["avutil"]
 
-[[linux.components]]
+[[linux_components]]
 component = "avdevice"
 filename = "libavdevice.so.59"
 dependencies = ["avformat", "avutil"]
 
-[[linux.components]]
+[[linux_components]]
 component = "avfilter"
 filename = "libavfilter.so.8"
 dependencies = ["swscale", "swresample"]
 
-[[linux.components]]
+[[linux_components]]
 component = "avformat"
 filename = "libavformat.so.59"
 dependencies = ["avcodec", "avutil"]
 
-[[linux.components]]
+[[linux_components]]
 component = "postproc"
 filename = "libpostproc.so.56"
 dependencies = ["avcodec", "swscale", "avutil"]
 
-[[linux.components]]
+[[linux_components]]
 component = "swresample"
 filename = "libswresample.so.4"
 dependencies = ["avcodec", "swscale", "avutil", "avformat"]
 
-[[linux.components]]
+[[linux_components]]
 component = "swscale"
 filename = "libswscale.so.6"
 dependencies = ["avcodec", "avutil", "avformat"]
 
 [windows]
-[[windows.components]]
+[[windows_components]]
 component = "avutil"
 filename = "avutil.lib"
 dependencies = []
 
-[[windows.components]]
+[[windows_components]]
 component = "avcodec"
 filename = "avcodec.lib"
 dependencies = ["avutil"]
 
-[[windows.components]]
+[[windows_components]]
 component = "avdevice"
 filename = "avdevice.lib"
 dependencies = ["avformat", "avutil"]
 
-[[windows.components]]
+[[windows_components]]
 component = "avfilter"
 filename = "avfilter.lib"
 dependencies = ["swscale", "swresample"]
 
-[[windows.components]]
+[[windows_components]]
 component = "avformat"
-impname = "avformat.lib"
-filename = "avformat-57.dll"
+filename = "avformat.lib"
 dependencies = ["avcodec", "avutil"]
 
-[[windows.components]]
+[[windows_components]]
 component = "postproc"
-impname = "postproc.lib"
-filename = "postproc-54.dll"
+filename = "postproc.lib"
 dependencies = ["avcodec", "swscale", "avutil"]
 
-[[windows.components]]
+[[windows_components]]
 component = "swresample"
 filename = "swresample.lib"
 dependencies = ["avcodec", "swscale", "avutil", "avformat"]
 
-[[windows.components]]
+[[windows_components]]
 component = "swscale"
 filename = "swscale.lib"
 dependencies = ["avcodec", "avutil", "avformat"]
