@@ -1,3 +1,4 @@
+target_platform = "x86_64-linux-ubuntu-22.04-gcc-11.5.0"
 ports = ["ffmpeg@5.1.6"]
 
 [optimize_msvc]

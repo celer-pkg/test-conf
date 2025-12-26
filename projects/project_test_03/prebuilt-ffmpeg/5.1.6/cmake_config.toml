@@ -1,7 +1,7 @@
 namespace = "FFmpeg"
 
-[linux_interface]
-libraries = [
+[linux]
+filenames = [
     "libavutil.so.57",
     "libavcodec.so.59",
     "libavdevice.so.59",
@@ -12,8 +12,8 @@ libraries = [
     "libswscale.so.6",
 ]
 
-[windows_interface]
-libraries = [
+[windows]
+filenames = [
     "avutil.lib",
     "avcodec.lib",
     "avdevice.lib",
