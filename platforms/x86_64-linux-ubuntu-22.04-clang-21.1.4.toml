@@ -11,7 +11,7 @@ cc = "clang"
 cxx = "clang++"
 
 # Mandatory, otherwise GNU ld will be used by default.
-ld = "ld.lld" 
+ld = "ld.lld"
 
 # Not mandatory, uncomment if needed.
 # ranlib = "llvm-ranlib"
@@ -23,6 +23,5 @@ ld = "ld.lld"
 [rootfs]
 url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.gz"
 path = "ubuntu-base-22.04.5-base-amd64"
-pkg_config_path = [
-    "usr/lib/x86_64-linux-gnu/pkgconfig",
-]
+pkg_config_path = ["usr/lib/x86_64-linux-gnu/pkgconfig"]
+lib_dirs = ["lib/x86_64-linux-gnu", "usr/lib/x86_64-linux-gnu"]

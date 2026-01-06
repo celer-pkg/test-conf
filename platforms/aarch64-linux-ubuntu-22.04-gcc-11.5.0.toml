@@ -21,3 +21,4 @@ strip = "aarch64-linux-gnu-strip"
 url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-arm64.tar.xz"
 path = "ubuntu-base-22.04.5-base-arm64"
 pkg_config_path = ["usr/lib/aarch64-linux-gnu/pkgconfig"]
+lib_dirs = ["lib/aarch64-linux-gnu", "usr/lib/aarch64-linux-gnu"]

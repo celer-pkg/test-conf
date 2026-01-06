@@ -19,8 +19,5 @@ strip = "x86_64-linux-gnu-strip"
 [rootfs]
 url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-20.04.5-base-amd64.tar.gz"
 path = "ubuntu-base-20.04.5-base-amd64"
-pkg_config_path = [
-    "usr/lib/x86_64-linux-gnu/pkgconfig",
-    "usr/share/pkgconfig",
-    "usr/lib/pkgconfig",
-]
+pkg_config_path = ["usr/lib/x86_64-linux-gnu/pkgconfig"]
+lib_dirs = ["lib/x86_64-linux-gnu", "usr/lib/x86_64-linux-gnu"]
