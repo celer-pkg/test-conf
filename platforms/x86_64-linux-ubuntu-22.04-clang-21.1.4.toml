@@ -9,16 +9,15 @@ host = "x86_64-linux-gnu"
 crosstool_prefix = "x86_64-linux-gnu-"
 cc = "clang"
 cxx = "clang++"
-
-# Mandatory, otherwise GNU ld will be used by default.
+ar = "llvm-ar"
 ld = "ld.lld"
-
-# Not mandatory, uncomment if needed.
-# ranlib = "llvm-ranlib"
-# ar = "llvm-ar"
-# nm = "llvm-nm"
-# objdump = "llvm-objdump"
-# strip = "llvm-strip"
+cpp = "clang-cpp"
+gcov = "llvm-cov"
+nm = "llvm-nm"
+objdump = "llvm-objdump"
+strip = "llvm-strip"
+objcopy = "llvm-objcopy"
+as = "llvm-as"
 
 [rootfs]
 url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.gz"
