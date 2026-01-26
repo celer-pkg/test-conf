@@ -11,7 +11,7 @@ cc = "x86_64-linux-gnu-gcc"
 cxx = "x86_64-linux-gnu-g++"
 
 [rootfs]
-url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.gz"
+url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.xz"
 path = "ubuntu-base-22.04.5-base-amd64"
 pkg_config_path = ["usr/lib/x86_64-linux-gnu/pkgconfig"]
 lib_dirs = ["lib/x86_64-linux-gnu", "usr/lib/x86_64-linux-gnu"]
