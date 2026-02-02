@@ -1,6 +1,0 @@
-[toolchain]
-url = "file:///C:/Program Files/Microsoft Visual Studio/2022/Enterprise"
-name = "clang-cl"
-version = "14.44.35207"
-system_name = "Windows"
-system_processor = "x86_64"
