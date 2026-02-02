@@ -1,6 +1,0 @@
-[toolchain]
-url = "file:///C:/Program Files/Microsoft Visual Studio/18/Community"
-name = "msvc"
-version = "14.50.35717"
-system_name = "Windows"
-system_processor = "x86_64"
