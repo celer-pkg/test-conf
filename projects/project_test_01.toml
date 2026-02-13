@@ -5,12 +5,13 @@ ports = [
 ]
 
 vars = [
-    "CMAKE_VAR1=value1",
-    "CMAKE_VAR2=value2"
+    "VAR1=value1",
+    "VAR2=value2"
 ]
 
 envs = [
-    "ENV_VAR1=/home/ubuntu/ccache"
+    "ENV_VAR1=/home/ubuntu/ccache",
+    "LLVM_CONFIG=${LLVM_CONFIG}",
 ]
 
 micros = [
