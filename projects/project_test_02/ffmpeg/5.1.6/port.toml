@@ -4,7 +4,7 @@ ref = "5.1.6"
 
 # ================ build for Linux ================ #
 [[build_configs]]
-pattern = "*linux*"
+system_name = "linux"
 options = [
     "--sysroot=${SYSROOT}",
     "--cross-prefix=${CROSS_PREFIX}",
@@ -23,7 +23,7 @@ dependencies = ["x264@stable"]
 
 # ================ build for Windows ================ #
 [[build_configs]]
-pattern = "*windows*"
+system_name = "windows"
 options = [
     "--toolchain=msvc",
     "--target-os=win64",

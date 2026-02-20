@@ -2,5 +2,5 @@
 url = "file:///C:/Program Files/Microsoft Visual Studio/2022/Community"
 name = "clang-cl"
 version = "14.44.35207"
-system_name = "Windows"
+system_name = "windows"
 system_processor = "x86_64"
