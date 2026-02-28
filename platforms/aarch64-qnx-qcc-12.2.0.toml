@@ -18,8 +18,6 @@
   c_compiler_target = "gcc_ntoaarch64le"
   cxx_compiler_target = "gcc_ntoaarch64le_cxx"
   envs = [
-    "QNX_HOST=${TOOLCHAIN_DIR}/host/linux/x86_64",
-    "QNX_TARGET=${TOOLCHAIN_DIR}/target/qnx",
     "QNX_CONFIGURATION=${TOOLCHAIN_DIR}/.qnx",
     "QNX_CONFIGURATION_EXCLUSIVE=${TOOLCHAIN_DIR}/.qnx",
     "MAKEFLAGS=${TOOLCHAIN_DIR}/target/qnx/usr/include",
