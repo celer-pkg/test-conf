@@ -18,10 +18,3 @@ micros = [
     "MICRO_VAR1=111",
     "MICRO_VAR2"
 ]
-
-flags = [
-    "-Wall",
-    "-Wno-unused-variable",
-    "-Wno-deprecated",
-    "-Wl,--allow-shlib-undefined"
-]
