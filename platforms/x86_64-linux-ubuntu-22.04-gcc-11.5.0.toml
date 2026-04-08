@@ -9,6 +9,13 @@
   crosstool_prefix = "x86_64-linux-gnu-"
   cc = "x86_64-linux-gnu-gcc"
   cxx = "x86_64-linux-gnu-g++"
+  fc = "x86_64-linux-gnu-gfortran"
+  ld = "x86_64-linux-gnu-ld"
+  ranlib = "x86_64-linux-gnu-ranlib"
+  ar = "x86_64-linux-gnu-ar"
+  nm = "x86_64-linux-gnu-nm"
+  objdump = "x86_64-linux-gnu-objdump"
+  strip = "x86_64-linux-gnu-strip"
 
 [rootfs]
   url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.xz"
