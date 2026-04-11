@@ -1,5 +1,5 @@
 [toolchain]
-  url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-9.5.0.tar.gz"
+  url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-9.5.0.tar.xz"
   path = "gcc-9.5.0/bin"
   name = "gcc"
   version = "9.5.0"
