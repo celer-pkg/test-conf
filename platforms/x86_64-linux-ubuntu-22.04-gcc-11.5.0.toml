@@ -1,5 +1,6 @@
 [toolchain]
   url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-11.5.0.tar.xz"
+  sha256 = "511a7f2f2e3bece19187dc9c5a6ac3412eee12b7bbb88d9f2d2118f181403014"
   path = "gcc-11.5.0/bin"
   name = "gcc"
   version = "11.5.0"
@@ -19,6 +20,7 @@
 
 [rootfs]
   url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-22.04.5-base-amd64.tar.xz"
+  sha256 = "08442eca9ccf64fd307d8a92582902315a66dc075216812d454596b1208da3bb"
   path = "ubuntu-base-22.04.5-base-amd64"
   pkg_config_path = ["usr/lib/x86_64-linux-gnu/pkgconfig"]
   lib_dirs = ["lib/x86_64-linux-gnu", "usr/lib/x86_64-linux-gnu"]

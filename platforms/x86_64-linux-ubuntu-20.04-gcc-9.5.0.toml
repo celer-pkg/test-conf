@@ -1,5 +1,6 @@
 [toolchain]
   url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-9.5.0.tar.xz"
+  sha256 = "aeab5c0adf83518797210390b47e03235434c2e327c52406aba391e096e9b255"
   path = "gcc-9.5.0/bin"
   name = "gcc"
   version = "9.5.0"
@@ -18,6 +19,7 @@
 
 [rootfs]
   url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-20.04.5-base-amd64.tar.gz"
+  sha256 = "34b028e33719c6f626d24dfc87da9a663476160af902d94767a9cb3a05fd202f"
   path = "ubuntu-base-20.04.5-base-amd64"
   pkg_config_path = ["usr/lib/x86_64-linux-gnu/pkgconfig"]
   lib_dirs = ["lib/x86_64-linux-gnu", "usr/lib/x86_64-linux-gnu"]
