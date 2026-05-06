@@ -1,0 +1,8 @@
+[package]
+  ref = "1.0.1"
+
+[[build_configs]]
+  system_name = "linux"
+  system_processor = "x86_64"
+  url = "https://nexus.imotion.ai/repository/imoapp_resource/v1.0.1/imoapp_v1.0.1_x86_64-linux.tar.gz"
+  build_system = "prebuilt"

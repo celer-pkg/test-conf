@@ -1,0 +1,36 @@
+[toolchain]
+  url = "https://nexus.imotion.ai/repository/build_resource/toolchain/aarch64-linux/arm-gnu-toolchain-12.2.rel1-x86_64-aarch64-none-linux-gnu.tar.gz"
+  sha256 = "4c0dcb1d0147091d92a4f5dd47f21c132f2fc89862ebd20fef46bf286245f761"
+  path = "arm-gnu-toolchain-12.2.rel1-x86_64-aarch64-none-linux-gnu/bin"
+  name = "gcc"
+  version = "12.2"
+  system_name = "linux"
+  system_processor = "aarch64"
+  host = "aarch64-none-linux-gnu"
+  crosstool_prefix = "aarch64-none-linux-gnu-"
+  cc = "aarch64-none-linux-gnu-gcc"
+  cxx = "aarch64-none-linux-gnu-g++"
+  fc = "aarch64-none-linux-gnu-gfortran"
+  ld = "aarch64-none-linux-gnu-ld"
+  ranlib = "aarch64-none-linux-gnu-gcc-ranlib"
+  ar = "aarch64-none-linux-gnu-gcc-ar"
+  nm = "aarch64-none-linux-gnu-nm"
+  objdump = "aarch64-none-linux-gnu-objdump"
+  strip = "aarch64-none-linux-gnu-strip"
+  cflags = [
+    "-Wall",
+    "-Wno-unused-variable",
+    "-Wno-deprecated",
+  ]
+  cxxflags = [
+    "-Wall",
+    "-Wno-unused-variable",
+    "-Wno-deprecated",
+  ]
+
+[rootfs]
+  url = "https://nexus.imotion.ai/repository/build_resource/external_binary/test_data/rootfs-sdk-bookworm_0.0.1.20250804_all.tar.gz"
+  sha256 = "049e84d47949ab366ca397fe7efcc060f547dbfede2aeeaeb2b403cfcc62f743"
+  path = "rootfs-sdk-bookworm_0.0.1.20250804_all"
+  pkg_config_path = []
+  lib_dirs = ["usr/lib/aarch64-linux-gnu"]

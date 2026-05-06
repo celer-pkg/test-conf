@@ -1,8 +1,17 @@
 [[build_tools]]
-name = "doxygen"
-version = "1.14.0"
-url = "https://www.doxygen.nl/files/doxygen-1.14.0.linux.bin.tar.gz"
-archive = "doxygen-1.14.0.linux.bin.tar.gz"
-paths = [
-  "doxygen-1.14.0/bin"
-]
+  name = "doxygen"
+  version = "1.14.0"
+  url = "https://www.doxygen.nl/files/doxygen-1.14.0.linux.bin.tar.gz"
+  archive = "doxygen-1.14.0.linux.bin.tar.gz"
+  paths = [
+    "doxygen-1.14.0/bin"
+  ]
+
+[[build_tools]]
+  name = "imoapp_bin"
+  version = "1.0.1"
+  url = "https://nexus.imotion.ai/repository/imoapp_resource/v1.0.1/imoapp_v1.0.1_x86_64-linux.tar.gz"
+  archive = "imoapp_v1.0.1_x86_64-linux.tar.gz"
+  paths = [
+    "imoapp_v1.0.1_x86_64-linux/bin"
+  ]

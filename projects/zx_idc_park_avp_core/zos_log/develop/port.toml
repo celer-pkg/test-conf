@@ -1,0 +1,8 @@
+[package]
+  url = "ssh://git@bitbucket.imotion.ai:7999/zos/zos_log.git"
+  ref = "develop"
+  depth = 1
+
+[[build_configs]]
+  build_system = "cmake"
+  dependencies = ["yaml-cpp@0.9.0", "lz4@1.9.4", "zos_scripts@develop"]
