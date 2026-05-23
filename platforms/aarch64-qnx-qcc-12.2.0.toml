@@ -19,6 +19,6 @@
   c_compiler_target = "gcc_ntoaarch64le"
   cxx_compiler_target = "gcc_ntoaarch64le_cxx"
   envs = [
-    "QNX_CONFIGURATION=${TOOLCHAIN_DIR}/.qnx",
-    "QNX_CONFIGURATION_EXCLUSIVE=${TOOLCHAIN_DIR}/.qnx",
+    "QNX_CONFIGURATION=${TOOLCHAIN}/.qnx",
+    "QNX_CONFIGURATION_EXCLUSIVE=${TOOLCHAIN}/.qnx",
   ]
