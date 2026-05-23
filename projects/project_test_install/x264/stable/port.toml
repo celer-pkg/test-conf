@@ -1,15 +1,19 @@
 [package]
-url = "https://code.videolan.org/videolan/x264.git"
-ref = "31e19f92f00c7003fa115047ce50978bc98c3a0d"
-depth = 1
+  url = "https://code.videolan.org/videolan/x264.git"
+  ref = "31e19f92f00c7003fa115047ce50978bc98c3a0d"
+  depth = 1
 
 [[build_configs]]
-build_system = "makefiles"
-build_shared = "--enable-shared"
-build_static = "--enable-static"
-patches = ["fix_windows_build.patch"]
-dev_dependencies = ["nasm@2.16.03"]
-options = [
-    "--sysroot=${SYSROOT}",
+  build_system = "makefiles"
+  build_shared = "--enable-shared"
+  build_static = "--enable-static"
+  patches = ["fix_windows_build.patch"]
+  dev_dependencies = ["nasm@2.16.03"]
+  options = [
     "--cross-prefix=${CROSSTOOL_PREFIX}",
-]
+    "--host=${HOST}",
+    "--sysroot=${SYSROOT}",
+    "--arch=${SYSTEM_PROCESSOR}",
+    "--target-os=${SYSTEM_NAME}",
+    "--build=${BUILD_HOST}"
+  ]
