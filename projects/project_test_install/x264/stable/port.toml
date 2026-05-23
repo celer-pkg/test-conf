@@ -13,7 +13,4 @@
     "--cross-prefix=${CROSSTOOL_PREFIX}",
     "--host=${HOST}",
     "--sysroot=${SYSROOT}",
-    "--arch=${SYSTEM_PROCESSOR}",
-    "--target-os=${SYSTEM_NAME}",
-    "--build=${BUILD_HOST}"
   ]
