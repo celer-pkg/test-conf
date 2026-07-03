@@ -16,6 +16,7 @@
   nm = "x86_64-linux-gnu-nm"
   objdump = "x86_64-linux-gnu-objdump"
   strip = "x86_64-linux-gnu-strip"
+  objcopy = "x86_64-linux-gnu-objcopy"
 
 [rootfs]
   url = "https://github.com/celer-pkg/test-conf/releases/download/resource/ubuntu-base-20.04.5-base-amd64.tar.gz"

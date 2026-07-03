@@ -17,6 +17,7 @@
   nm = "aarch64-linux-gnu-nm"
   objdump = "aarch64-linux-gnu-objdump"
   strip = "aarch64-linux-gnu-strip"
+  objcopy = "aarch64-linux-gnu-objcopy"
   cflags = [
     "-Wall",
     "-Wno-unused-variable",
