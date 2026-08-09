@@ -1,11 +1,12 @@
 [package]
-url = "https://ffmpeg.org/releases/ffmpeg-5.1.6.tar.xz"
-ref = "5.1.6"
+  url = "https://ffmpeg.org/releases/ffmpeg-5.1.6.tar.xz"
+  ref = "5.1.6"
 
 # ================ build for Linux ================ #
 [[build_configs]]
-system_name = "linux"
-options = [
+  build_system = "makefiles"
+  system_name = "linux"
+  options = [
     "--sysroot=${SYSROOT}",
     "--cross-prefix=${CROSS_PREFIX}",
     "--arch=${SYSTEM_PROCESSOR}",
@@ -17,14 +18,15 @@ options = [
     "--enable-pic",
     "--enable-gpl",
     "--enable-libx264",
-]
-dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
-dependencies = ["x264@stable"]
+  ]
+  dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
+  dependencies = ["x264@stable"]
 
 # ================ build for Windows ================ #
 [[build_configs]]
-system_name = "windows"
-options = [
+  build_system = "makefiles"
+  system_name = "windows"
+  options = [
     "--toolchain=msvc",
     "--target-os=win64",
     "--pkg-config=pkgconf",
@@ -33,6 +35,6 @@ options = [
     "--enable-pic",
     "--enable-gpl",
     "--enable-libx264",
-]
-dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
-dependencies = ["x264@stable"]
+  ]
+  dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
+  dependencies = ["x264@stable"]
