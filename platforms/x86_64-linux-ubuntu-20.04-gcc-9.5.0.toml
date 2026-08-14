@@ -1,7 +1,7 @@
 [toolchain]
-  url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-9.5.0.tar.xz"
-  sha256 = "aeab5c0adf83518797210390b47e03235434c2e327c52406aba391e096e9b255"
-  path = "gcc-9.5.0/bin"
+  url = "https://github.com/celer-pkg/test-conf/releases/download/resource/gcc-ubuntu-9.5.0-x86_64-x86_64-linux-gnu.tar.xz"
+  sha256 = "1fdacdab1b0c509d208750c57603076ccb84e0bd3fe4eb6a1844ce69d095bf63"
+  path = "gcc-ubuntu-9.5.0-x86_64-x86_64-linux-gnu/bin"
   name = "gcc"
   version = "9.5.0"
   system_name = "linux"
