@@ -1,1 +1,2 @@
+ports_baseline = "master"
 ports = ["ffmpeg@5.1.6"]
